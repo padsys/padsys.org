@@ -1,0 +1,45 @@
+/* humanstxt.org */
+/* The humans responsible & technology colophon */
+
+/* TEAM */
+
+Chief: Xiaoyi Lu
+Site: https://sites.ucmerced.edu/luxi
+Why?: Lead PADSYS Lab. The website is built by Xiaoyi for the lab.
+
+/* THANKS */
+
+Name: Chris Eliasmith
+Site: celiasmith@uwaterloo.ca
+Why?: Provide a very good example of this technology
+
+Developer & Designer: Trevor Bekolay
+Site: tbekolay@gmail.com
+Twitter: @TrevorBekolay
+
+Name: Simon Sapin
+Site: http://exyr.org/
+Why?: Frozen-flask and some inspiration on exyr.org
+
+Name: Nicolas Perriault
+Site: https://nicolas.perriault.net/
+Why?: Very helpful blog post!
+      https://nicolas.perriault.net/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask/
+
+/* TECHNOLOGY COLOPHON */
+
+Backend:
+Python with Flask, Frozen-flask, Flask-script, markdown, pyyaml, pybtex, jinja2.
+
+Frontend:
+Custom templates using Bootstrap, Google WebFonts (Lato font),
+Font-awesome, modernizr, jquery, Mathjax, list.js,
+subtlepatterns.com (Debut-Light pattern).
+
+/* SITE */
+
+Last update:02/02/2020
+Language: English 
+Doctype: HTML, CSS, Javascript
+IDE: vim
+Source: https://github.com/padsys/padsys.org

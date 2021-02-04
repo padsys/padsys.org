@@ -1,0 +1,561 @@
+/* ==========================================================================
+   PADSYS Lab custom styles
+   ========================================================================== */
+
+/* General stuff */
+
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  background-image: url(debut_light.png);
+  background-repeat: repeat
+}
+
+a, a:hover, a:focus {
+  color: #002856;
+}
+
+a.anchor{ /* Because # links are off with fixed top nav */
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #122d4d;
+}
+
+.hidden {
+  display:none;
+}
+
+.well {
+  background-color: #fcf5e0;
+}
+
+.edit-link {
+  position: relative;
+  top: 21px;
+  font-size: 18px;
+}
+
+.rightcol-link {
+  display: block;
+  text-align: center;
+}
+
+.edit-link:hover, .edit-link:visited, .edit-link:link, .edit-link:active {
+  text-decoration: none;
+}
+
+.two-column {
+  column-count: 2;
+  column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -o-column-count: 2;
+  -o-column-gap: 20px;
+}
+
+.three-column {
+  column-count: 3;
+  column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -o-column-count: 3;
+  -o-column-gap: 20px;
+}
+
+
+/* Navbar theming */
+
+.navbar .nav > li > a {
+  font-size: 16px;
+}
+
+.navbar .brand-active {
+  color: #000000;
+}
+
+.navbar-inverse .brand-active {
+  color: #FFFFFF;
+  background-color: #0456b5;
+}
+
+.navbar-inverse .btn-navbar,
+.navbar-inverse .btn-navbar {
+  padding: 4px 12px;
+}
+
+.navbar-inverse .navbar-inner {
+  background-image: -moz-linear-gradient(top, #002856, #122d4d);
+  background-image: -ms-linear-gradient(top, #002856, #122d4d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#002856), to(#122d4d));
+  background-image: -webkit-linear-gradient(top, #002856, #122d4d);
+  background-image: -o-linear-gradient(top, #002856, #122d4d);
+  background-image: linear-gradient(top, #002856, #122d4d);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'002856, endColorstr='#'122d4d, GradientType=0);
+}
+
+.navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+  background-color: #0456b5;
+}
+
+/* Footer stuff */
+
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: #000000;
+  font-size: 120%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #909090;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.footer a:hover, .footer a:focus {
+  color: white;
+}
+
+@media (min-width: 980px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    margin-right: -40px;
+  }
+
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+/* nav-pills */
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover,
+.nav-pills>.active>a:focus {
+  background-color: #0456b5;
+
+}
+
+/* news-sidenav for News pages */
+
+.pagination ul>.active>a,
+.pagination ul>.active>a:hover,
+.pagination ul>.active>a:focus {
+  background-color: #0456b5;
+  color: #FFFFFF;
+}
+
+.pagination-sidenav li a {
+  text-align: center;
+}
+
+.pagination-sidenav {
+  position: fixed;
+  top: 60px;
+}
+
+@media (max-width: 767px) {
+  .pagination-sidenav {
+    position: static;
+  }
+  .pagination-sidenav li a {
+    width: 64.5px;
+  }
+  .pagination-sidenav li a #newer:after {
+    content: "Newer";
+  }
+  .pagination-sidenav li a #older:after {
+    content: "Older";
+  }
+  .pagination-sidenav li a #next:after {
+    content: "Next";
+  }
+  .pagination-sidenav li a #prev:after {
+    content: "Prev.";
+  }
+}
+
+@media (min-width: 768px) {
+  .pagination-sidenav li a {
+    min-width: 19px;
+  }
+}
+
+@media (min-width: 980px) {
+  .pagination-sidenav li a {
+    width: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pagination-sidenav li a {
+    width: 64.5px;
+  }
+  .pagination-sidenav li a #newer:after {
+    content: "Newer";
+  }
+  .pagination-sidenav li a #older:after {
+    content: "Older";
+  }
+  .pagination-sidenav li a #next:after {
+    content: "Next";
+  }
+  .pagination-sidenav li a #prev:after {
+    content: "Prev.";
+  }
+}
+
+/* header-sidenav for various pages
+   Inspired by http://marcua.net/writing/gradschool-guide/css/gradschool-guide.css */
+
+.headers-sidenav .active > a,
+.headers-sidenav .active a:hover,
+.headers-sidenav .active a:focus {
+  background-color: #0456b5;
+  color: #FFFFFF;
+}
+
+.headers-sidenav {
+  text-align: right;
+  position: fixed;
+  top: 110px;
+  width: 270px;
+}
+
+@media (max-width: 767px) {
+  .headers-sidenav {
+    position: static;
+  }
+
+  .headers-sidenav {
+    width: 270px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headers-sidenav {
+    width: 166px;
+  }
+}
+
+@media (min-width: 980px) {
+  .headers-sidenav {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .headers-sidenav {
+    width: 270px;
+  }
+}
+
+.headers-sidenav > li > a:hover {
+  background-color: #fcf5e0;
+}
+
+/* header-side chevron stuff */
+
+.headers-sidenav .icon-chevron-left {
+  float: left;
+  margin-top: 5px;
+  margin-right: -6px;
+  opacity: .25;
+}
+
+.headers-sidenav a:hover .icon-chevron-left {
+  opacity: .5;
+}
+
+.headers-sidenav .active .icon-chevron-left,
+.headers-sidenav .active a:hover .icon-chevron-left {
+  opacity: 1;
+}
+
+/* index stuff */
+.teaser-img {
+  position: relative;
+  left: -20px;
+}
+
+/* publications stuff */
+#publication-list .media-body p.authors {
+  margin-bottom: 2px;
+}
+
+#publication-list .media-body > ul > li {
+  display: inline;
+}
+
+#publication-list .media-body .nav > li > a {
+  display: inline;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#publication-list .media-body .nav a:hover,
+#publication-list .media-body .nav a:focus {
+  text-decoration: underline;
+  background: none;
+}
+
+#publication-list .media-body > ul {
+  margin-bottom: 4px;
+  font-size: 90%;
+  opacity: 0;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+#publication-list .media-body:hover > ul,
+#publication-list .media-body:focus > ul {
+  opacity: 1;
+}
+
+#publication-list > ul.list > li {
+  margin: 0px;
+  padding: 0px;
+}
+
+#publication-list div.media-body {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 5px;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+#publication-list div.media-body:hover {
+  background-color: #dddddd;
+}
+
+#publication-list {
+  min-height: 300px;
+}
+
+.publication-controls {
+  width: 240px;
+}
+
+@media (min-width: 768px) {
+  .publication-controls {
+    position: fixed;
+    top: 60px;
+    right: 0px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .publication-controls {
+    right: 150px;
+  }
+}
+
+.publication-img {
+  float: left;
+  padding: 10px;
+}
+
+/* Citation modal popup stuff */
+
+.tab-content > .tab-pane {
+    cursor: pointer;
+}
+
+/* make list.js pagination like bootstrap pagination */
+
+.pagination ul>li:first-child>.page>a, .pagination ul>li:first-child>.page>span {
+  border-left-width: 1px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.pagination ul>li:last-child>.page>a, .pagination ul>li:last-child>.page>span {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.pagination ul>li>.page>a, .pagination ul>li>.page>span {
+  float: left;
+  padding: 4px 8px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-left-width: 0;
+}
+
+.pagination ul>li>.page>a:hover,
+.pagination ul>li>.page>a:focus,
+.pagination ul>li>.page>.active {
+  background-color:#f5f5f5;
+}
+
+.pagination ul .active {
+  color:#999999;
+  cursor:default;
+}
+
+.pagination ul>li>.page {
+  display: inline;
+}
+
+/* Research stuff */
+
+.research-topics>li {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.research-topics img.media-object {
+  padding: 5px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  text-align: center;
+  width: 200px;
+}
+
+.research-img {
+  padding-bottom: 10px;
+  padding-right: 25px;
+}
+
+.research-unit {
+  padding: 40px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.research-unit h1 {
+  margin-bottom: 8px;
+  font-size: 60px;
+  line-height: 1;
+  color: inherit;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.research-unit .lead {
+  margin-bottom: 0px;
+}
+
+/* Make nested lists display nice */
+ol.nested {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li.nested:before {
+  counter-increment: section;
+  content: counters(section, ".") ". ";
+}
+
+/* People index stuff */
+.person-thumbnail {
+  display: table;
+}
+
+.person-thumbnail > .thumbnail {
+  height: 320px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+img.thumbsize {
+  max-height: 280px;
+  max-width: 160px;
+}
+#psc-table tbody td, #psc-table thead th {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+#psc-table tbody td { border-right: 1px solid #222; }
+#psc-table tbody tr td:last-child { border-right: none; }
+#psc-table tbody th { text-align: center; background: #FFF6DD; }
+#psc-table tbody tr:nth-child(even) { background-color: #DDD; }
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotactive {
+  background-color: #717171;
+}
