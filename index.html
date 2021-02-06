@@ -69,19 +69,16 @@
     <div class="span8">
 
 <div class="slideshow-container">
-      <div class="hero-unit clearfix">
-        <img class="pull-left teaser-img" src="https://sites.ucmerced.edu/files/luxi/files/0ylgvjo.jpg">
-        <h2 class="text-center">
-          Parallel and Distributed Systems Laboratory<br/>
-          (PADSYS Lab) <br/>
-          <small>Welcome to visit <em>PADSYS Lab</em> at UC Merced!</small>
-        </h2>
-        <p><span style="font-size:6px;">(Note: Logo is designed by PADSYS Lab. All rights reserved.)</span></p>
+      <div class="bannerSlides">
+	 <div class="numberTextSlide">1 / 3</div>
+	<img class="pull-left" src="https://sites.ucmerced.edu/files/luxi/files/padsys-banner.png?m=1612649722">
       </div>
-      <div class="hero-unit clearfix">
+      <div class="bannerSlides">
+	 <div class="numberTextSlide">2 / 3</div>
         <img class="pull-left" src="https://sites.ucmerced.edu/files/luxi/files/building2.jpg?m=1612461600"> 
       </div>
-      <div class="hero-unit clearfix">
+      <div class="bannerSlides">
+	 <div class="numberTextSlide">3 / 3</div>
         <img class="pull-left" src="https://sites.ucmerced.edu/files/luxi/files/campus.jpg?m=1612461587">
       </div>
 </div>
@@ -90,7 +87,7 @@
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
-      <p class="lead">Welcome to the Parallel and Distributed Systems Laboratory (PADSYS) site. We
+      <p class="lead">Welcome to visit the Parallel and Distributed Systems Laboratory (PADSYS Lab) website. We
 are one of the labs in the <a href="https://engineering.ucmerced.edu/soe-bylaw-units/computer-science-engineering-cse">Department of Computer Science and Engineering, The
 University of California,
 Merced</a>.</p>
@@ -223,7 +220,7 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("hero-unit");
+  var slides = document.getElementsByClassName("bannerSlides");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
