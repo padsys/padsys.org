@@ -178,7 +178,7 @@ h6 {
 
 .pagination-sidenav {
   position: fixed;
-  top: 60px;
+  top: 70px;
 }
 
 @media (max-width: 767px) {
@@ -186,7 +186,7 @@ h6 {
     position: static;
   }
   .pagination-sidenav li a {
-    width: 64.5px;
+    width: 95px;
   }
   .pagination-sidenav li a #newer:after {
     content: "Newer";
@@ -216,7 +216,7 @@ h6 {
 
 @media (min-width: 1200px) {
   .pagination-sidenav li a {
-    width: 64.5px;
+    width: 95px;
   }
   .pagination-sidenav li a #newer:after {
     content: "Newer";
@@ -245,8 +245,8 @@ h6 {
 .headers-sidenav {
   text-align: right;
   position: fixed;
-  top: 110px;
-  width: 270px;
+  top: 120px;
+  width: 285px;
 }
 
 @media (max-width: 767px) {
@@ -255,7 +255,7 @@ h6 {
   }
 
   .headers-sidenav {
-    width: 270px;
+    width: 285px;
   }
 }
 
@@ -273,7 +273,7 @@ h6 {
 
 @media (min-width: 1200px) {
   .headers-sidenav {
-    width: 270px;
+    width: 285px;
   }
 }
 
@@ -286,7 +286,7 @@ h6 {
 .headers-sidenav .icon-chevron-left {
   float: left;
   margin-top: 5px;
-  margin-right: -6px;
+  margin-right: 2px;
   opacity: .25;
 }
 
@@ -351,7 +351,7 @@ h6 {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  padding-left: 5px;
+  padding-left: 0px;
   -webkit-transition: all 150ms ease;
   -moz-transition: all 150ms ease;
   -ms-transition: all 150ms ease;
@@ -368,7 +368,7 @@ h6 {
 }
 
 .publication-controls {
-  width: 240px;
+  width: 255px;
 }
 
 @media (min-width: 768px) {
@@ -381,7 +381,8 @@ h6 {
 
 @media (min-width: 1120px) {
   .publication-controls {
-    right: 150px;
+    top: 85px;
+    right: 400px;
   }
 }
 
