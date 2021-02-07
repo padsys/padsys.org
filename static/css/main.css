@@ -249,7 +249,7 @@ h6 {
   width: 270px;
 }
 
-@media (max-width: 767px) {
+@media (max-width:2767px) {
   .headers-sidenav {
     position: static;
   }
@@ -376,7 +376,7 @@ h6 {
 @media (min-width: 768px) {
   .publication-controls {
     position: fixed;
-    top: 60px;
+    top: 85px;
     right: 0px;
   }
 }
@@ -384,7 +384,21 @@ h6 {
 @media (min-width: 1120px) {
   .publication-controls {
     top: 85px;
-    right: 400px;
+    right: 150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .publication-controls {
+    top: 85px;
+    right: 200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .publication-controls {
+    top: 85px;
+    right: 350px;
   }
 }
 
