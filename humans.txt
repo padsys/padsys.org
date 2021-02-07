@@ -38,7 +38,7 @@ subtlepatterns.com (Debut-Light pattern).
 
 /* SITE */
 
-Last update:02/04/2020
+Last update:02/02/2020
 Language: English 
 Doctype: HTML, CSS, Javascript
 IDE: vim
