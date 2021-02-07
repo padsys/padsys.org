@@ -249,7 +249,7 @@ h6 {
   width: 270px;
 }
 
-@media (max-width:2767px) {
+@media (max-width: 767px) {
   .headers-sidenav {
     position: static;
   }
