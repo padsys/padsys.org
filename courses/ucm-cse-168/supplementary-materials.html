@@ -33,7 +33,7 @@
     <!-- Load modernizr here (other JavaScript at the bottom of the page -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".headers-sidenav">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -74,70 +74,85 @@
     </nav>
 <div class="container">
   <div class="row">
-    <div class="offset1 span9">
-      <header>
-        <div class="research-unit clearfix">
-          <img class="research-img pull-left" src="https://sites.ucmerced.edu/files/luxi/files/dnv2sjx.png" width="200" alt="UCM CSE 2xx - Modern Distributed Systems">
-          <h1>UCM CSE 2xx - Modern Distributed Systems</h1>
-          <p class="lead">Course information for UCM CSE 2xx - Modern Distributed Systems, supposed to be taught in Autumn 2021 for graduate students.
-</p>
-          <p><span style="font-size:9px">(Note: Logo is designed by PADSYS Lab. All rights reserved.)</span></p>
-        </div>
-      </header>
-      <a class="anchor" id="ucm-cse-2xx-modern-distributed-systems"></a><h1>UCM CSE 2xx - Modern Distributed Systems</h1>
-<ul>
-<li>
-<p><strong>Instructor</strong>  </p>
-<ul>
-<li><a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></li>
-</ul>
-</li>
-<li>
-<p><strong>Course times and location</strong></p>
-<ul>
-<li>TBD</li>
-</ul>
-</li>
-<li>
-<p><strong>Office hours</strong></p>
-<ul>
-<li>By appointment. If possible, please email me in advance if you plan to come to office hours.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<a class="anchor" id="course-description"></a><h2>Course Description</h2>
-<ul>
-<li>TBD.</li>
-</ul>
-<hr>
-<a class="anchor" id="academic-misconduct"></a><h2>Academic Misconduct</h2>
-<p>Academic misconduct will not be tolerated in any form, including cheating on
-exams/assignments, using answers found online or from external sources, copying
-from other students, etc. Instances of academic misconduct will be reported
-promptly to the Office of Academic Affairs.</p>
-<hr>
-<a class="anchor" id="course-prerequisites"></a><h2>Course Prerequisites</h2>
-<p>Knowing basic concepts of Operating Systems, Big Data, AI Systems, and Cloud Computing is
-highly recommended.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="offset1 span8">
-      <h2>More information</h2>
-    </div>
-    <div class="span1"><span class="pull-right">
-    <a href="https://github.com/padsys/padsys.org/edit/master//courses/ucm-cse-2xx.html"
+    <div class="offset1 span7">
+      <article>
+        <header>
+          <a class="anchor" id="supplementary-materials"></a>
+          <div class="page-header row">
+            <div class="span6">
+              <h2>
+                Supplementary Materials
+              </h2>
+            </div>
+            <div class="span1"><span class="pull-right">
+    <a href="https://github.com/padsys/padsys.org/edit/master/courses/ucm-cse-168/supplementary-materials.html"
      data-tooltip class="edit-link" title="Edit on Github">
       <i class="icon-github"></i>
     </a>
   </span></div>
-  </div>
-  <div class="row">
-    <div class=offset1 span9">
-      <ol class="nested">
-        <li class="nested"><a href="/courses/ucm-cse-2xx/supplementary-materials.html">Supplementary materials</a></li>
-      </ol>
+          </div>
+        </header>
+        <a class="anchor" id="representative-textbooks-and-other-course-materials"></a><h2>Representative Textbooks and Other Course Materials</h2>
+<p>There is no official textbook, but the following books have relevant material:</p>
+<ul>
+<li>
+<p>Distributed Systems: Principles and Paradigms, 2nd Edition, Andrew S. Tanenbaum
+  and Maarten van Steen</p>
+</li>
+<li>
+<p>Fundamentals of Database Systems, Addison-Wesley, 7th edition, Ramez Elmasri
+  and Shamkant Navathe </p>
+</li>
+<li>
+<p>Data-Intensive Text Processing with MapReduce, Jimmy Lin and Chris Dyer,
+  Morgan and Claypool Synthesis
+  <a href="https://lintool.github.io/MapReduceAlgorithms/MapReduce-book-final.pdf">Download</a></p>
+</li>
+<li>
+<p>Data Center as a Computer, Barroso, Clidaras and Hoilzle
+  <a href="https://www.morganclaypool.com/doi/abs/10.2200/S00516ED2V01Y201306CAC024">Download</a></p>
+</li>
+</ul>
+      </article>
+    </div>
+
+    <div class="offset1 span3">
+      <nav>
+        <div class="pagination">
+          <ul class="pagination-sidenav">
+            <li class=disabled>
+              <a href="#">
+                <i class="icon-chevron-sign-left"></i> <span id="prev"></span>
+              </a>
+            </li>
+            <li><a href="/courses/ucm-cse-168.html">Index</a></li>
+            <li class=disabled>
+              <a href="#">
+                <span id="next"></span> <i class="icon-chevron-sign-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+        <nav>
+          <div class="headers-sidenav">
+            <ul class="nav nav-tabs nav-stacked">
+              <li>
+                <a href="#supplementary-materials">
+                  <i class="icon-chevron-left"></i> Supplementary Materials
+                </a>
+              </li>
+              <li>
+                <a href="#representative-textbooks-and-other-course-materials">
+                  <i class="icon-chevron-left"></i> Representative Textbooks and Other Course Materials
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      
     </div>
   </div>
 </div>
