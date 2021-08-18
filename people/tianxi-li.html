@@ -14,7 +14,7 @@
     </script>
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-    <title>PADSYS Lab  | Publications </title>
+    <title>PADSYS Lab  | People </title>
     <meta name="description" content="PADSYS Lab">
     <meta name="viewport" content="width=device-width">
     <meta name="google-site-verification" content="nYD5zMH9wJ2yVNGSVyucER2a5ImxWiVGohvZa29ioPU">
@@ -33,7 +33,7 @@
     <!-- Load modernizr here (other JavaScript at the bottom of the page -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".headers-sidenav">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -54,10 +54,10 @@
                 <li>
                   <a href="/news.html">News</a>
                 </li>
-                <li>
+                <li class=active>
                   <a href="/people.html">People</a>
                 </li>
-                <li class=active>
+                <li>
                   <a href="/publications.html">Publications</a>
                 </li>
                 <li>
@@ -74,91 +74,68 @@
     </nav>
 <div class="container">
   <div class="row">
-    <div class="offset1 span7">
-      <header>
-        <h2>
-          Three-Dimensional Characterization on Edge AI Processors with Object Detection Workloads
-          <h4>
-            <span class="journal">Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</span>,
-            <span class="year">2019</span>
-            &nbsp;<span>(Poster Paper)</span>
-            </h4>
-        </h2>
-        <p><em>Yujie Hui, Jeffrey Lien, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></em></p>
-      </header>
+    <div class="offset1 span8">
+      <div class="research-unit clearfix">
+        <header>
+          <img class="pull-right" src="https://sites.ucmerced.edu/files/luxi/files/you.gif" width="200">
+          <h1>Tianxi Li</h1>
+          <p>Junior Specialist</p>
+          <ul class="two-column">
+            <li><a href="mailto:tli67@ucmerced.edu"><i class="icon-envelope"></i> Email</a></li>
+            <li>Personal Home Page</li>
+            <li><a href="https://github.com/FlyingHObb1t" target="_blank">Github</a></li>
+            </ul>
+        </header>
       </div>
-    <div class="span3">
-      <h4>Conference Proceedings</h4>
-      <dl>
-        
-          <dt>Publisher</dt>
-          <dd>Association for Computing Machinery</dd>
-        
-          <dt>Address</dt>
-          <dd>New York, NY, USA</dd>
-        
-          <dt>Booktitle</dt>
-          <dd>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</dd>
-        
-          <dt>Location</dt>
-          <dd>Denver, Colorado</dd>
-        
-          <dt>Note</dt>
-          <dd>Poster Paper</dd>
-        
-          <dt>Series</dt>
-          <dd>SC &#39;19</dd>
-        
-      </dl>
-      <h4>Cite</h4>
-      <p>
-        <a href="#conf-sc-hui19cite"  onclick="showmodaltab('conf-sc-hui19', 'pt');">Plain text</a>
-      </p>
-      <p>
-        <a href="#conf-sc-hui19cite" onclick="showmodaltab('conf-sc-hui19', 'bt');">BibTeX</a>
-      </p>
-      <p>
-        <span class="rightcol-link">
-    <a href="https://github.com/padsys/padsys.org/edit/master/publications/conf-sc-hui19.html"
+    </div>
+  </div>
+  <div class="row">
+    <div class="offset1 span7">
+      <a class="anchor" id="about-me"></a>
+      <a class="anchor" id="short-bio"></a><h2>Short Bio</h2>
+<p>Hello! I’m Tianxi, a junior specialist in the PADSYS Lab at University of 
+California, Merced. I'm a Ph.D. student in the Computer Science
+department at The Ohio State University. </p>
+<a class="anchor" id="research-interests"></a><h2>Research Interests</h2>
+<p>My research interests include persistent memory, RDMA, and high-performance 
+networks. The current projects that I am part of are on HatRPC and persistent
+memory.</p>
+      <a class="anchor" id="publications"></a>
+      <h2>Publications</h2>
+      <ul class="icons-ul">
+        <li>
+          <i class="icon-li icon-file-alt"></i><a href="/publications/conf-ipdps-shashank21.html"><strong>[IPDPS &#39;21]</strong> NVMe-CR: A Scalable Ephemeral Storage Runtime for Checkpoint/Restart with NVMe-over-Fabrics</a>
+        </li><li>
+          <i class="icon-li icon-file-alt"></i><a href="/publications/conf-sc-tianxi21.html"><strong>[SC &#39;21]</strong> HatRPC: Hint-Accelerated Thrift RPC over RDMA</a>
+        </li><li>
+          <i class="icon-li icon-file-alt"></i><a href="/publications/conf-sc-tianxi20.html"><strong>[SC &#39;20]</strong> RDMP-KV: Designing Remote Direct Memory Persistence Based Key-Value Stores with PMEM</a>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="offset1 span2">
+      <nav>
+        <div class="headers-sidenav">
+          <ul class="nav nav-tabs nav-stacked">
+            <li>
+              <a href="#about-me">
+                <i class="icon-chevron-left"></i> About me
+              </a>
+            </li>
+            <li>
+              <a href="#publications">
+                <i class="icon-chevron-left"></i> Publications
+              </a>
+            </li>
+          </ul>
+          <span class="rightcol-link">
+    <a href="https://github.com/padsys/padsys.org/edit/master/people/tianxi-li.html"
      data-tooltip class="edit-link" title="Edit on Github">
       <i class="icon-github"></i>
     </a>
   </span>
-      </p>
-    </div>
-  </div>
-  <div id="conf-sc-hui19cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3 id="title">Cite "Three-Dimensional Characterization on Edge AI Processors with Object Detection Workloads"</h3>
-    </div>
-    <div class="modal-body">
-      <ul class="nav nav-tabs" id="cite">
-        <li class="active"><a href="#conf-sc-hui19pt" data-toggle="tab">Plain text</a></li>
-        <li><a href="#conf-sc-hui19bt" data-toggle="tab">BibTeX</a></li>
-      </ul>
-      <div class="tab-content">
-        <div class="tab-pane active" id="conf-sc-hui19pt" onclick="selectdiv('conf-sc-hui19pt')">
-          <p>Yujie Hui, Jeffrey Lien, and Xiaoyi Lu. Three-dimensional characterization on edge ai processors with object detection workloads. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, SC &#39;19. New York, NY, USA, 2019. Association for Computing Machinery. Poster Paper.</p>
         </div>
-        <div class="tab-pane" id="conf-sc-hui19bt" onclick="selectdiv('conf-sc-hui19bt')">
-          <p><pre>@inproceedings{conf-sc-hui19,
-author = {Hui, Yujie and Lien, Jeffrey and Lu, Xiaoyi},
-title = {Three-Dimensional Characterization on Edge AI Processors with Object Detection Workloads},
-year = {2019},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
-keywords = {Edge Computing, AI, Object Detection},
-location = {Denver, Colorado},
-note = {Poster Paper},
-series = {SC &#39;19}
-}</pre></p>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-      </div>
+      </nav>
     </div>
   </div>
 </div>

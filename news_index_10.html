@@ -77,6 +77,62 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="two-papers-got-accepted-in-sc-2020"></a>
+          <h1>
+            <a href="/news/two-papers-got-accepted-in-sc-2020.html">
+              Two papers got accepted in SC 2020!
+            </a>
+          </h1>
+        </header>
+        <p>Two papers are accepted in SC 2020: "INEC: Fast and
+Coherent In-Network Erasure Coding" and "RDMP-KV: Designing Remote Direct
+Memory Persistence-based Key-Value Stores with PMEM". </p>
+<p>Congratulations to
+Haiyang, Tianxi, Shashank, and Dr. Shankar!</p>
+<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
+<p><strong>[SC'20] INEC: Fast and Coherent In-Network Erasure Coding</strong></p>
+<p>Haiyang Shi and Xiaoyi Lu.</p>
+<p>In Proceedings of the 33rd International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2020. (Acceptance Rate: 22.3%)</p>
+<p><strong>Abstract</strong></p>
+<p>Erasure coding (EC) is a promising fault tolerance scheme that has been applied
+to many well-known distributed storage systems. The capability of Coherent EC
+Calculation and Networking on modern SmartNICs has demonstrated that EC will be
+an essential feature of in-network computing. In this paper, we propose a set
+of coherent in-network EC primitives, named INEC. Our analyses based on the
+proposed <mathjax>$\alpha$</mathjax>-<mathjax>$\beta$</mathjax> performance model demonstrate that INEC primitives can enable
+different kinds of EC schemes to fully leverage the EC offload capability on
+modern SmartNICs. We implement INEC on commodity RDMA NICs and integrate it
+into five state-of-the-art EC schemes. Our experiments show that INEC
+primitives significantly reduce 50th , 95th , and 99th percentile latencies,
+and accelerate the end-to-end throughput, write, and degraded read performance
+of the key-value store co-designed with INEC by up to 99.57%, 47.30%, and
+49.55%, respectively.</p>
+<p><strong>[SC'20] RDMP-KV: Designing Remote Direct Memory Persistence-based Key-Value Stores with PMEM</strong></p>
+<p>Tianxi Li*, Dipti Shankar*, Shashank Gugnani, and Xiaoyi Lu.</p>
+<p>In Proceedings of the 33rd International Conference for High Performance
+Computing, Networking, Storage and Analysis (SC), 2020. (Acceptance Rate:
+22.3%, *Co-First Authors)</p>
+<p><strong>Abstract</strong></p>
+<p>Byte-addressable persistent memory (PMEM) can be directly manipulated by Remote
+Direct Memory Access (RDMA) capable networks. However, existing studies to
+combine RDMA and PMEM can not deliver the desired performance due to their
+PMEM-oblivious communication protocols. In this paper, we propose novel
+PMEM-aware RDMA-based communication protocols for persistent key-value stores,
+referred to as Remote Direct Memory Persistence based Key-Value stores (RDMP-
+KV). RDMP-KV employs a hybrid ‘server-reply/server-bypass’ approach to
+‘durably’ store individual key-value objects on PMEM-equipped servers.
+RDMP-KV’s runtime can easily adapt to existing (server-assisted durability) and
+emerging (appliance durability) RDMA-capable interconnects, while ensuring
+server scalability through a lightweight consistency scheme. Performance
+evaluations show that RDMP-KV can improve the server-side performance with
+different persistent key-value storage architectures by up to 22x, as compared
+with PMEM-oblivious RDMA-‘Server-Reply’ protocols. Our evaluations also show
+that RDMP-KV outperforms a distributed PMEM-based filesystem by up to 65% and a
+recent RDMA-to-PMEM framework by up to 71%.</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences"></a>
           <h1>
             <a href="/news/xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences.html">
@@ -249,49 +305,6 @@ average write latency by up to 23.2% and the recovery time by up to 37.8%.
 TriEC outperforms BiEC by 1.32x for a full-node recovery with 8 million
 records.</p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="umr-ec-paper-got-accepted-in-hpdc19"></a>
-          <h1>
-            <a href="/news/umr-ec-paper-got-accepted-in-hpdc19.html">
-              UMR-EC paper got accepted in HPDC19!
-            </a>
-          </h1>
-        </header>
-        <p>A paper is accepted in HPDC 2019: UMR-EC: A Unified and Multi-Rail Erasure Coding Library for High-Performance Distributed Storage Systems. This year, HPDC only accepted 22 papers out of 106. 11 papers have gone through shepherding. This paper got accepted directly. The first author of this paper is one of my Ph.D. students, Haiyang Shi. Congratulations to Haiyang and other co-authors!</p>
-<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
-<p><strong>[HPDC'19] UMR-EC: A Unified and Multi-Rail Erasure Coding Library for High-Performance Distributed Storage Systems</strong></p>
-<p>Haiyang Shi, Xiaoyi Lu, Dipti Shankar, and Dhabaleswar K. Panda.</p>
-<p>In Proceedings of the 28th ACM International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2019. (Acceptance Rate: 20.7%, 22/106)</p>
-<p><strong>Abstract</strong></p>
-<p>Distributed storage systems typically need data to be stored redundantly to
-guarantee data durability and reliability. While the conventional approach
-towards this objective is to store multiple replicas, today’s unprecedented
-data growth rates encourage modern distributed storage systems to employ
-Erasure Coding (EC) techniques, which can achieve better storage efficiency.
-Various hardware-based EC schemes have been proposed in the community to
-leverage the advanced compute capabilities on modern data center and cloud
-environments. Currently, there is no unified and easy way for distributed
-storage systems to fully exploit multiple devices such as CPUs, GPUs, and
-network devices (i.e., multi-rail support) to perform EC operations in
-parallel; thus, leading to the under-utilization of the available compute
-power. In this paper, we first introduce an analytical model to analyze the
-design scope of efficient EC schemes in distributed storage systems. Guided by
-the performance model, we propose UMR-EC, a Unified and Multi-Rail Erasure
-Coding library that can fully exploit heterogeneous EC coders. Our proposed
-interface is complemented by asynchronous semantics with optimized
-metadata-free scheme and EC rate-aware task scheduling that can enable a
-highly-efficient I/O pipeline. To show the benefits and effectiveness of
-UMR-EC, we re-design HDFS 3.x write/read pipelines based on the guidelines
-observed in the proposed performance model. Our performance evaluations show
-that our proposed designs can outperform the write performance of replication
-schemes and the default HDFS EC coder by 3.7x - 6.1x and 2.4x - 3.3x,
-respectively, and can improve the performance of read with failure recoveries
-up to 5.1x compared with the default HDFS EC coder. Compared with the fastest
-available CPU coder (i.e., ISA-L), our proposed designs have an improvement of
-up to 66.0% and 19.4% for write and read with failure recoveries, respectively.</p>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -317,6 +330,11 @@ up to 66.0% and 19.4% for write and read with failure recoveries, respectively.<
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#two-papers-got-accepted-in-sc-2020">
+                <i class="icon-chevron-left"></i> Two papers got accepted in SC 2020!
+              </a>
+            </li>
+            <li>
               <a href="#xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences">
                 <i class="icon-chevron-left"></i> Xiaoyi will serve as TPCs/Chairs for multiple 2020 conferences!
               </a>
@@ -334,11 +352,6 @@ up to 66.0% and 19.4% for write and read with failure recoveries, respectively.<
             <li>
               <a href="#triec-paper-got-accepted-in-sc19-and-nominated-as-a-bsp-finalist">
                 <i class="icon-chevron-left"></i> TriEC paper got accepted in SC19 and nominated as a BSP Finalist!
-              </a>
-            </li>
-            <li>
-              <a href="#umr-ec-paper-got-accepted-in-hpdc19">
-                <i class="icon-chevron-left"></i> UMR-EC paper got accepted in HPDC19!
               </a>
             </li>
           </ul>

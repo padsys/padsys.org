@@ -77,50 +77,45 @@
     <div class="offset1 span7">
       <header>
         <h2>
-          NVMe-CR: A Scalable Ephemeral Storage Runtime for Checkpoint/Restart with NVMe-over-Fabrics
+          HatRPC: Hint-Accelerated Thrift RPC over RDMA
           <h4>
-            <span class="journal">Proceedings of IEEE International Parallel and Distributed Processing Symposium</span>,
+            <span class="journal">Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</span>,
             <span class="year">2021</span>
             </h4>
         </h2>
-        <p><em>Shashank Gugnani, <a href="/people/tianxi-li.html">Tianxi Li</a>, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></em></p>
+        <p><em><a href="/people/tianxi-li.html">Tianxi Li</a>, Haiyang Shi, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></em></p>
       </header>
-      <h3>Abstract</h3>
-      <p>Emerging SSDs with NVMe-over-Fabrics (NVMf) support provide new opportunities to significantly improve the performance of IO-intensive HPC applications. However, state-of-the-art parallel filesystems can not extract the best possible performance from fast NVMe SSDs and are not designed for latency-critical ephemeral IO tasks, such as checkpoint/restart. In this paper, we propose a powerful abstraction called microfs to peel away unnecessary software layers and eliminate namespace coordination. Building upon this abstraction, we present the design of NVMe-CR, a scalable ephemeral storage runtime for clusters with disaggregated compute and storage. NVMe-CR proposes techniques like metadata provenance, log record coalescing, and logically isolated shared device access, built around the microfs abstraction, to reduce the overhead of writing millions of concurrent checkpoint files. NVMe-CR utilizes high-density all-flash arrays accessible via NVMf to absorb bursty checkpoint IO and increase the progress rates of HPC applications obliviously. Using the ECP CoMD application as a use case, results show that on a local cluster our runtime can achieve near perfect (&gt; 0.96) efficiency at 448 processes. Moreover, our designs can reduce checkpoint overhead by as much as 2x compared to state-of-the- art storage systems.</p>
       </div>
     <div class="span3">
       <h4>Conference Proceedings</h4>
       <dl>
         
-          <dt>Date-added</dt>
-          <dd>2021-02-22 19:42:43 +0000</dd>
-        
-          <dt>Date-modified</dt>
-          <dd>2021-02-03 04:02:36 +0000</dd>
-        
           <dt>Booktitle</dt>
-          <dd>Proceedings of IEEE International Parallel and Distributed Processing Symposium</dd>
+          <dd>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</dd>
         
-          <dt>Crossref</dt>
-          <dd>conf/ipdps/2021</dd>
+          <dt>Location</dt>
+          <dd>St. Louis, Missouri</dd>
         
           <dt>Publisher</dt>
-          <dd>IEEE Computer Society</dd>
+          <dd>Association for Computing Machinery</dd>
+        
+          <dt>Address</dt>
+          <dd>New York, NY, USA</dd>
         
           <dt>Series</dt>
-          <dd>IPDPS &#39;21</dd>
+          <dd>SC &#39;21</dd>
         
       </dl>
       <h4>Cite</h4>
       <p>
-        <a href="#conf-ipdps-shashank21cite"  onclick="showmodaltab('conf-ipdps-shashank21', 'pt');">Plain text</a>
+        <a href="#conf-sc-tianxi21cite"  onclick="showmodaltab('conf-sc-tianxi21', 'pt');">Plain text</a>
       </p>
       <p>
-        <a href="#conf-ipdps-shashank21cite" onclick="showmodaltab('conf-ipdps-shashank21', 'bt');">BibTeX</a>
+        <a href="#conf-sc-tianxi21cite" onclick="showmodaltab('conf-sc-tianxi21', 'bt');">BibTeX</a>
       </p>
       <p>
         <span class="rightcol-link">
-    <a href="https://github.com/padsys/padsys.org/edit/master/publications/conf-ipdps-shashank21.html"
+    <a href="https://github.com/padsys/padsys.org/edit/master/publications/conf-sc-tianxi21.html"
      data-tooltip class="edit-link" title="Edit on Github">
       <i class="icon-github"></i>
     </a>
@@ -128,33 +123,30 @@
       </p>
     </div>
   </div>
-  <div id="conf-ipdps-shashank21cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+  <div id="conf-sc-tianxi21cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3 id="title">Cite "NVMe-CR: A Scalable Ephemeral Storage Runtime for Checkpoint/Restart with NVMe-over-Fabrics"</h3>
+      <h3 id="title">Cite "HatRPC: Hint-Accelerated Thrift RPC over RDMA"</h3>
     </div>
     <div class="modal-body">
       <ul class="nav nav-tabs" id="cite">
-        <li class="active"><a href="#conf-ipdps-shashank21pt" data-toggle="tab">Plain text</a></li>
-        <li><a href="#conf-ipdps-shashank21bt" data-toggle="tab">BibTeX</a></li>
+        <li class="active"><a href="#conf-sc-tianxi21pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-sc-tianxi21bt" data-toggle="tab">BibTeX</a></li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane active" id="conf-ipdps-shashank21pt" onclick="selectdiv('conf-ipdps-shashank21pt')">
-          <p>Shashank Gugnani, Tianxi Li, and Xiaoyi Lu. Nvme-cr: a scalable ephemeral storage runtime for checkpoint/restart with nvme-over-fabrics. In Proceedings of IEEE International Parallel and Distributed Processing Symposium, IPDPS &#39;21. IEEE Computer Society, 2021.</p>
+        <div class="tab-pane active" id="conf-sc-tianxi21pt" onclick="selectdiv('conf-sc-tianxi21pt')">
+          <p>Tianxi Li, Haiyang Shi, and Xiaoyi Lu. Hatrpc: hint-accelerated thrift rpc over rdma. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, SC &#39;21. New York, NY, USA, 2021. Association for Computing Machinery.</p>
         </div>
-        <div class="tab-pane" id="conf-ipdps-shashank21bt" onclick="selectdiv('conf-ipdps-shashank21bt')">
-          <p><pre>@inproceedings{conf-ipdps-shashank21,
-  author = {Gugnani, Shashank and Li, Tianxi and Lu, Xiaoyi},
-  Date-Added = {2021-02-22 19:42:43 +0000},
-  Date-Modified = {2021-02-03 04:02:36 +0000},
-  booktitle = {Proceedings of IEEE International Parallel and Distributed Processing Symposium},
-  crossref = {conf/ipdps/2021},
-  keywords = {Checkpoint/Restart, NVMe, NVMf, Exascale},
-  publisher = {IEEE Computer Society},
-  title = {NVMe-CR: A Scalable Ephemeral Storage Runtime for Checkpoint/Restart with NVMe-over-Fabrics},
-  abstract = {Emerging SSDs with NVMe-over-Fabrics (NVMf) support provide new opportunities to significantly improve the performance of IO-intensive HPC applications. However, state-of-the-art parallel filesystems can not extract the best possible performance from fast NVMe SSDs and are not designed for latency-critical ephemeral IO tasks, such as checkpoint/restart. In this paper, we propose a powerful abstraction called microfs to peel away unnecessary software layers and eliminate namespace coordination. Building upon this abstraction, we present the design of NVMe-CR, a scalable ephemeral storage runtime for clusters with disaggregated compute and storage. NVMe-CR proposes techniques like metadata provenance, log record coalescing, and logically isolated shared device access, built around the microfs abstraction, to reduce the overhead of writing millions of concurrent checkpoint files. NVMe-CR utilizes high-density all-flash arrays accessible via NVMf to absorb bursty checkpoint IO and increase the progress rates of HPC applications obliviously. Using the ECP CoMD application as a use case, results show that on a local cluster our runtime can achieve near perfect (&gt; 0.96) efficiency at 448 processes. Moreover, our designs can reduce checkpoint overhead by as much as 2x compared to state-of-the- art storage systems.},
-  series = {IPDPS &#39;21},
-  year = {2021}
+        <div class="tab-pane" id="conf-sc-tianxi21bt" onclick="selectdiv('conf-sc-tianxi21bt')">
+          <p><pre>@inproceedings{conf-sc-tianxi21,
+	Author = {Li, Tianxi and Shi, Haiyang and Lu, Xiaoyi},
+	Booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+	Location = {St. Louis, Missouri},
+	Publisher = {Association for Computing Machinery},
+	Address = {New York, NY, USA},
+	Series = {SC &#39;21},
+	Title = {HatRPC: Hint-Accelerated Thrift RPC over RDMA},
+	Year = {2021}
 }</pre></p>
         </div>
       </div>
