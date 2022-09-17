@@ -33,7 +33,7 @@
     <!-- Load modernizr here (other JavaScript at the bottom of the page -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".headers-sidenav">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -74,45 +74,86 @@
     </nav>
 <div class="container">
   <div class="row">
-    <div class="offset1 span8">
-      <ul class="media-list research-topics">
-        <li class="media">
-          <a class="pull-left" href="/courses/ucm-eecs-268.html">
-            <img class="media-object" src="https://sites.ucmerced.edu/files/luxi/files/eecs268-logo.png" width="100px">
-          </a>
-          <div class="media-body">
-            <a href="/courses/ucm-eecs-268.html">
-              <h3 class="media-heading">UCM EECS 268 - Datacenter-Scale Computing</h3>
-            </a>
-            <p>Course information for UCM EECS 268 - Datacenter-Scale Computing, which are usually taught in Spring semesters for graduate students.
-</p>
+    <div class="offset1 span7">
+      <article>
+        <header>
+          <a class="anchor" id="supplementary-materials"></a>
+          <div class="page-header row">
+            <div class="span6">
+              <h2>
+                Supplementary Materials
+              </h2>
+            </div>
+            <div class="span1"><span class="pull-right">
+    <a href="https://github.com/padsys/padsys.org/edit/master/courses/ucm-eecs-268/supplementary-materials.html"
+     data-tooltip class="edit-link" title="Edit on Github">
+      <i class="icon-github"></i>
+    </a>
+  </span></div>
           </div>
-        </li>
-        <li class="media">
-          <a class="pull-left" href="/courses/ucm-cse-168.html">
-            <img class="media-object" src="https://sites.ucmerced.edu/files/luxi/files/dist-sys.png" width="100px">
-          </a>
-          <div class="media-body">
-            <a href="/courses/ucm-cse-168.html">
-              <h3 class="media-heading">UCM CSE 168 - Distributed Software Systems</h3>
-            </a>
-            <p>Course information for UCM CSE 168 - Distributed Software Systems, which are usually taught in Autumn semesters for undergraduate students.
-</p>
+        </header>
+        <a class="anchor" id="representative-textbooks-and-other-course-materials"></a><h2>Representative Textbooks and Other Course Materials</h2>
+<p>There is no official textbook, but the following books have relevant material:</p>
+<ul>
+<li>
+<p>Data Center as a Computer, Barroso, Clidaras and Hoilzle
+  <a href="https://www.morganclaypool.com/doi/abs/10.2200/S00516ED2V01Y201306CAC024">Download</a></p>
+</li>
+<li>
+<p>Distributed Systems: Principles and Paradigms, 2nd Edition, Andrew S. Tanenbaum
+  and Maarten van Steen
+  <a href="https://www.distributed-systems.net/index.php/books/ds3/">Download</a></p>
+</li>
+<li>
+<p>Data-Intensive Text Processing with MapReduce, Jimmy Lin and Chris Dyer,
+  Morgan and Claypool Synthesis
+  <a href="https://lintool.github.io/MapReduceAlgorithms/MapReduce-book-final.pdf">Download</a></p>
+</li>
+<li>
+<p>High-Performance Big Data Computing, Dhabaleswar K. Panda, Xiaoyi Lu, and Dipti Shankar 
+  <a href="https://mitpress.mit.edu/9780262046855/">Book Information</a></p>
+</li>
+</ul>
+      </article>
+    </div>
+
+    <div class="offset1 span3">
+      <nav>
+        <div class="pagination">
+          <ul class="pagination-sidenav">
+            <li class=disabled>
+              <a href="#">
+                <i class="icon-chevron-sign-left"></i> <span id="prev"></span>
+              </a>
+            </li>
+            <li><a href="/courses/ucm-eecs-268.html">Index</a></li>
+            <li class=disabled>
+              <a href="#">
+                <span id="next"></span> <i class="icon-chevron-sign-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+        <nav>
+          <div class="headers-sidenav">
+            <ul class="nav nav-tabs nav-stacked">
+              <li>
+                <a href="#supplementary-materials">
+                  <i class="icon-chevron-left"></i> Supplementary Materials
+                </a>
+              </li>
+              <li>
+                <a href="#representative-textbooks-and-other-course-materials">
+                  <i class="icon-chevron-left"></i> Representative Textbooks and Other Course Materials
+                </a>
+              </li>
+            </ul>
           </div>
-        </li>
-        <li class="media">
-          <a class="pull-left" href="/courses/osu-cse-3244.html">
-            <img class="media-object" src="https://sites.ucmerced.edu/files/luxi/files/ertndfk.png" width="100px">
-          </a>
-          <div class="media-body">
-            <a href="/courses/osu-cse-3244.html">
-              <h3 class="media-heading">OSU CSE 3244 - Data Mgmt in Cloud</h3>
-            </a>
-            <p>Course information for OSU CSE 3244 - Data Management in Cloud, taught in Autumn 2020 for undergraduate students.
-</p>
-          </div>
-        </li>
-      </ul>
+        </nav>
+      
     </div>
   </div>
 </div>

@@ -84,13 +84,15 @@
         <div class="publication-controls">
           <ul class="nav nav-pills nav-stacked clearfix">
             <li class=active>
-              <a href="#" data-toggle="pill" onclick="filterList('All')">All [126]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('All')">All [132]</a>
+            </li><li>
+              <a href="#" data-toggle="pill" onclick="filterList('Book')">Book [1]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book Chapter')">Book Chapter [2]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [113]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [116]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [11]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [13]</a>
             </li>
           </ul>
           <input class="search search-query" type="text" placeholder="Search publications">
@@ -104,6 +106,258 @@
         </div>
         <ul class="list">
           <li class="media">
+            <div class="media-body">
+              <p class="type hidden">Book</p>
+              <strong class="title">
+                  [MIT Press &#39;22]&nbsp; 
+		  <a href="/publications/book-hpbdc-mit22.html">
+		  High-Performance Big Data Computing
+		  </a>
+		  </strong>
+              <p class="authors">Dhabaleswar K. Panda, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Dipti Shankar</p>
+              <p>
+                    <span class="journal">The MIT Press</span>,
+                    <span class="year">2022</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#book-hpbdc-mit22abs">Abstract</a></li>
+                <li><a href="#book-hpbdc-mit22cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://mitpress.mit.edu/9780262046855/high-performance-big-data-computing/" target="_blank">Full text</a></li>
+                </ul>
+              <div id="book-hpbdc-mit22abs" class="collapse">
+                <p><strong>Abstract: </strong> Over the last decade, the exponential explosion of data known as big data has changed the way we understand and harness the power of data. The emerging field of high-performance big data computing, which brings together high-performance computing (HPC), big data processing, and deep learning, aims to meet the challenges posed by large-scale data processing. This book offers an in-depth overview of high-performance big data computing and the associated technical issues, approaches, and solutions. The book covers basic concepts and necessary background knowledge, including data processing frameworks, storage systems, and hardware capabilities; offers a detailed discussion of technical issues in accelerating big data computing in terms of computation, communication, memory and storage, codesign, workload characterization and benchmarking, and system deployment and management; and surveys benchmarks and workloads for evaluating big data middleware systems. It presents a detailed discussion of big data computing systems and applications with high-performance networking, computing, and storage technologies, including state-of-the-art designs for data processing and storage systems. Finally, the book considers some advanced research topics in high-performance big data computing, including designing high-performance deep learning over big data (DLoBD) stacks and HPC cloud technologies.</p>
+              </div>
+              </div>
+            <div id="book-hpbdc-mit22cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "High-Performance Big Data Computing"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#book-hpbdc-mit22pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#book-hpbdc-mit22bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="book-hpbdc-mit22pt" onclick="selectdiv('book-hpbdc-mit22pt')">
+          <p>Dhabaleswar K. Panda, Xiaoyi Lu, and Dipti Shankar. High-Performance Big Data Computing. MIT Press &#39;22. The MIT Press, 2022. ISBN 9780262046855. URL: https://mitpress.mit.edu/9780262046855/high-performance-big-data-computing/.</p>
+        </div>
+        <div class="tab-pane" id="book-hpbdc-mit22bt" onclick="selectdiv('book-hpbdc-mit22bt')">
+          <p><pre>@book{book-hpbdc-mit22,
+place = {Cambridge, MA}, 
+title = &#34;{High-Performance Big Data Computing}&#34;, 
+publisher = {The MIT Press}, 
+author = {Panda, Dhabaleswar K. and Lu, Xiaoyi and Shankar, Dipti}, 
+year = {2022},
+abstract = {Over the last decade, the exponential explosion of data known as big data has changed the way we understand and harness the power of data. The emerging field of high-performance big data computing, which brings together high-performance computing (HPC), big data processing, and deep learning, aims to meet the challenges posed by large-scale data processing. This book offers an in-depth overview of high-performance big data computing and the associated technical issues, approaches, and solutions.
+The book covers basic concepts and necessary background knowledge, including data processing frameworks, storage systems, and hardware capabilities; offers a detailed discussion of technical issues in accelerating big data computing in terms of computation, communication, memory and storage, codesign, workload characterization and benchmarking, and system deployment and management; and surveys benchmarks and workloads for evaluating big data middleware systems. It presents a detailed discussion of big data computing systems and applications with high-performance networking, computing, and storage technologies, including state-of-the-art designs for data processing and storage systems. Finally, the book considers some advanced research topics in high-performance big data computing, including designing high-performance deep learning over big data (DLoBD) stacks and HPC cloud technologies.},
+isbn = {9780262046855},
+url=&#34;https://mitpress.mit.edu/9780262046855/high-performance-big-data-computing/&#34;,
+series=&#34;MIT Press &#39;22&#34;
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Journal Article</p>
+              <strong class="title">
+                  [VLDB &#39;22]&nbsp; 
+		  <a href="/publications/conf-vldb-yang22.html">
+		  A Study of Database Performance Sensitivity to Experiment Settings
+		  </a>
+		  </strong>
+              <p class="authors">Yang Wang, Miao Yu, Yujie Hui, Fang Zhou, Yuyang Huang, Rui Zhu, Xueyuan Ren, <a href="/people/tianxi-li.html">Tianxi Li</a>, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Proc. VLDB Endow.</span>,
+                    <span class="year">2022</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-vldb-yang22abs">Abstract</a></li>
+                <li><a href="#conf-vldb-yang22cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://www.vldb.org/pvldb/vol15/p1439-wang.pdf" type="application/pdf">PDF</a></li>
+                <li><a href="https://doi.org/10.14778/3523210.3523221" target="_blank">Full text</a></li>
+                </ul>
+              <div id="conf-vldb-yang22abs" class="collapse">
+                <p><strong>Abstract: </strong> To allow performance comparison across different systems, our community has developed multiple benchmarks, such as TPC-C and YCSB, which are widely used. However, despite such effort, interpreting and comparing performance numbers is still a challenging task, because one can tune benchmark parameters, system features, and hardware settings, which can lead to very different system behaviors. Such tuning creates a long-standing question of whether the conclusion of a work can hold under different settings.This work tries to shed light on this question by reproducing 11 works evaluated under TPC-C and YCSB, measuring their performance under a wider range of settings, and investigating the reasons for the change of performance numbers. By doing so, this paper tries to motivate the discussion about whether and how we should address this problem. While this paper does not give a complete solution—this is beyond the scope of a single paper, it proposes concrete suggestions we can take to improve the state of the art.</p>
+              </div>
+              </div>
+            <div id="conf-vldb-yang22cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "A Study of Database Performance Sensitivity to Experiment Settings"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-vldb-yang22pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-vldb-yang22bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-vldb-yang22pt" onclick="selectdiv('conf-vldb-yang22pt')">
+          <p>Yang Wang, Miao Yu, Yujie Hui, Fang Zhou, Yuyang Huang, Rui Zhu, Xueyuan Ren, Tianxi Li, and Xiaoyi Lu. A study of database performance sensitivity to experiment settings. Proc. VLDB Endow., 15(7):1439–1452, mar 2022. URL: https://doi.org/10.14778/3523210.3523221, doi:10.14778/3523210.3523221.</p>
+        </div>
+        <div class="tab-pane" id="conf-vldb-yang22bt" onclick="selectdiv('conf-vldb-yang22bt')">
+          <p><pre>@article{conf-vldb-yang22,
+author = {Wang, Yang and Yu, Miao and Hui, Yujie and Zhou, Fang and Huang, Yuyang and Zhu, Rui and Ren, Xueyuan and Li, Tianxi and Lu, Xiaoyi},
+title = {A Study of Database Performance Sensitivity to Experiment Settings},
+year = {2022},
+issue_date = {March 2022},
+publisher = {VLDB Endowment},
+volume = {15},
+number = {7},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3523210.3523221},
+doi = {10.14778/3523210.3523221},
+abstract = {To allow performance comparison across different systems, our community has developed multiple benchmarks, such as TPC-C and YCSB, which are widely used. However, despite such effort, interpreting and comparing performance numbers is still a challenging task, because one can tune benchmark parameters, system features, and hardware settings, which can lead to very different system behaviors. Such tuning creates a long-standing question of whether the conclusion of a work can hold under different settings.This work tries to shed light on this question by reproducing 11 works evaluated under TPC-C and YCSB, measuring their performance under a wider range of settings, and investigating the reasons for the change of performance numbers. By doing so, this paper tries to motivate the discussion about whether and how we should address this problem. While this paper does not give a complete solution---this is beyond the scope of a single paper, it proposes concrete suggestions we can take to improve the state of the art.},
+journal = {Proc. VLDB Endow.},
+month = {mar},
+pages = {1439–1452},
+numpages = {14},
+series = {VLDB &#39;22},
+pdf = {https://www.vldb.org/pvldb/vol15/p1439-wang.pdf}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [HPDC &#39;22]&nbsp; 
+		  <a href="/publications/conf-hpdc-arjun22.html">
+		  NVMe-oAF: Towards Adaptive NVMe-oF for IO-Intensive Workloads on HPC Cloud
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/arjun-kashyap.html">Arjun Kashyap</a>, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Proceedings of the 31st International Symposium on High-Performance Parallel and Distributed Computing</span>,
+                    <span class="year">2022</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-hpdc-arjun22abs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#conf-hpdc-arjun22kw">Keywords</a></li>
+                <li><a href="#conf-hpdc-arjun22cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://dl.acm.org/doi/pdf/10.1145/3502181.3531476" type="application/pdf">PDF</a></li>
+                <li><a href="https://doi.org/10.1145/3502181.3531476" target="_blank">Full text</a></li>
+                </ul>
+              <div id="conf-hpdc-arjun22kw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> nvme-over-fabrics, shared memory, hpc cloud, spdk
+                </p>
+              </div>
+              <div id="conf-hpdc-arjun22abs" class="collapse">
+                <p><strong>Abstract: </strong> Applications running inside containers or virtual machines, traditionally use TCP/IP for communication in HPC clouds and data centers. The TCP/IP path usually becomes a major performance bottleneck for applications performing NVMe-over-Fabrics (NVMe-oF) based I/O operations in disaggregated storage settings. We propose an adaptive communication channel, called NVMe-over-Adaptive-Fabric (NVMe-oAF), that applications could leverage to eliminate the high-latency and low-bandwidth incurred by remote I/O requests over TCP/IP. NVMe-oAF accelerates I/O intensive applications using locality awareness along with optimized shared memory and TCP/IP paths. The adaptiveness of the fabric stems from the ability to adaptively select shared memory or TCP channel and further applying optimizations for the chosen channel. To evaluate NVMe-oAF, we co-design Intel&#39;s SPDK library with our designs and show up to 7.1x bandwidth improvement and up to 4.2x latency reduction for various workloads over commodity TCP/IP-based Ethernet networks (e.g., 10Gbps, 25Gbps, and 100Gbps). We achieve similar (or sometimes better) performance when compared to NVMe-over-RDMA by avoiding the cumbersome management of RDMA in HPC cloud environments. Finally, we also co-design NVMe-oAF with H5bench to showcase the benefit it brings to HDF5 applications. Our evaluation indicates up to a 7x bandwidth improvement when compared with the network file system (NFS).</p>
+              </div>
+              </div>
+            <div id="conf-hpdc-arjun22cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "NVMe-oAF: Towards Adaptive NVMe-oF for IO-Intensive Workloads on HPC Cloud"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-hpdc-arjun22pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-hpdc-arjun22bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-hpdc-arjun22pt" onclick="selectdiv('conf-hpdc-arjun22pt')">
+          <p>Arjun Kashyap and Xiaoyi Lu. Nvme-oaf: towards adaptive nvme-of for io-intensive workloads on hpc cloud. In Proceedings of the 31st International Symposium on High-Performance Parallel and Distributed Computing, HPDC &#39;22, 56–70. New York, NY, USA, 2022. Association for Computing Machinery. URL: https://doi.org/10.1145/3502181.3531476, doi:10.1145/3502181.3531476.</p>
+        </div>
+        <div class="tab-pane" id="conf-hpdc-arjun22bt" onclick="selectdiv('conf-hpdc-arjun22bt')">
+          <p><pre>@inproceedings{conf-hpdc-arjun22,
+author = {Kashyap, Arjun and Lu, Xiaoyi},
+title = {NVMe-oAF: Towards Adaptive NVMe-oF for IO-Intensive Workloads on HPC Cloud},
+year = {2022},
+isbn = {9781450391993},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3502181.3531476},
+doi = {10.1145/3502181.3531476},
+abstract = {Applications running inside containers or virtual machines, traditionally use TCP/IP for communication in HPC clouds and data centers. The TCP/IP path usually becomes a major performance bottleneck for applications performing NVMe-over-Fabrics (NVMe-oF) based I/O operations in disaggregated storage settings. We propose an adaptive communication channel, called NVMe-over-Adaptive-Fabric (NVMe-oAF), that applications could leverage to eliminate the high-latency and low-bandwidth incurred by remote I/O requests over TCP/IP. NVMe-oAF accelerates I/O intensive applications using locality awareness along with optimized shared memory and TCP/IP paths. The adaptiveness of the fabric stems from the ability to adaptively select shared memory or TCP channel and further applying optimizations for the chosen channel. To evaluate NVMe-oAF, we co-design Intel&#39;s SPDK library with our designs and show up to 7.1x bandwidth improvement and up to 4.2x latency reduction for various workloads over commodity TCP/IP-based Ethernet networks (e.g., 10Gbps, 25Gbps, and 100Gbps). We achieve similar (or sometimes better) performance when compared to NVMe-over-RDMA by avoiding the cumbersome management of RDMA in HPC cloud environments. Finally, we also co-design NVMe-oAF with H5bench to showcase the benefit it brings to HDF5 applications. Our evaluation indicates up to a 7x bandwidth improvement when compared with the network file system (NFS).},
+booktitle = {Proceedings of the 31st International Symposium on High-Performance Parallel and Distributed Computing},
+pages = {56–70},
+numpages = {15},
+keywords = {nvme-over-fabrics, shared memory, hpc cloud, spdk},
+location = {Minneapolis, MN, USA},
+pdf = {https://dl.acm.org/doi/pdf/10.1145/3502181.3531476},
+series = {HPDC &#39;22}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Journal Article</p>
+              <strong class="title">
+                  [Biostatistics &#39;22]&nbsp; 
+		  <a href="/publications/journals-biostatistics-ben22.html">
+		  Bayesian Group Testing with Dilution Effects
+		  </a>
+		  </strong>
+              <p class="authors">Curtis Tatsuoka, Weicong Chen, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Biostatistics</span>,
+                    <span class="year">2022</span>
+		    &nbsp;(kxac004)
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#journals-biostatistics-ben22abs">Abstract</a></li>
+                <li><a href="#journals-biostatistics-ben22cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://doi.org/10.1093/biostatistics/kxac004" target="_blank">Full text</a></li>
+                </ul>
+              <div id="journals-biostatistics-ben22abs" class="collapse">
+                <p><strong>Abstract: </strong> A Bayesian framework for group testing under dilution effects has been developed, using lattice-based models. This work has particular relevance given the pressing public health need to enhance testing capacity for coronavirus disease 2019 and future pandemics, and the need for wide-scale and repeated testing for surveillance under constantly varying conditions. The proposed Bayesian approach allows for dilution effects in group testing and for general test response distributions beyond just binary outcomes. It is shown that even under strong dilution effects, an intuitive group testing selection rule that relies on the model order structure, referred to as the Bayesian halving algorithm, has attractive optimal convergence properties. Analogous look-ahead rules that can reduce the number of stages in classification by selecting several pooled tests at a time are proposed and evaluated as well. Group testing is demonstrated to provide great savings over individual testing in the number of tests needed, even for moderately high prevalence levels. However, there is a trade-off with higher number of testing stages, and increased variability. A web-based calculator is introduced to assist in weighing these factors and to guide decisions on when and how to pool under various conditions. High-performance distributed computing methods have also been implemented for considering larger pool sizes, when savings from group testing can be even more dramatic.</p>
+              </div>
+              </div>
+            <div id="journals-biostatistics-ben22cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "Bayesian Group Testing with Dilution Effects"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#journals-biostatistics-ben22pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#journals-biostatistics-ben22bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="journals-biostatistics-ben22pt" onclick="selectdiv('journals-biostatistics-ben22pt')">
+          <p>Curtis Tatsuoka, Weicong Chen, and Xiaoyi Lu. Bayesian Group Testing with Dilution Effects. Biostatistics, 04 2022. kxac004. URL: https://doi.org/10.1093/biostatistics/kxac004, arXiv:https://academic.oup.com/biostatistics/advance-article-pdf/doi/10.1093/biostatistics/kxac004/43355708/kxac004.pdf, doi:10.1093/biostatistics/kxac004.</p>
+        </div>
+        <div class="tab-pane" id="journals-biostatistics-ben22bt" onclick="selectdiv('journals-biostatistics-ben22bt')">
+          <p><pre>@article{journals-biostatistics-ben22,
+    author = {Tatsuoka, Curtis and Chen, Weicong and Lu, Xiaoyi},
+    title = &#34;{Bayesian Group Testing with Dilution Effects}&#34;,
+    journal = {Biostatistics},
+    year = {2022},
+    month = {04},
+    abstract = &#34;{A Bayesian framework for group testing under dilution effects has been developed, using lattice-based models. This work has particular relevance given the pressing public health need to enhance testing capacity for coronavirus disease 2019 and future pandemics, and the need for wide-scale and repeated testing for surveillance under constantly varying conditions. The proposed Bayesian approach allows for dilution effects in group testing and for general test response distributions beyond just binary outcomes. It is shown that even under strong dilution effects, an intuitive group testing selection rule that relies on the model order structure, referred to as the Bayesian halving algorithm, has attractive optimal convergence properties. Analogous look-ahead rules that can reduce the number of stages in classification by selecting several pooled tests at a time are proposed and evaluated as well. Group testing is demonstrated to provide great savings over individual testing in the number of tests needed, even for moderately high prevalence levels. However, there is a trade-off with higher number of testing stages, and increased variability. A web-based calculator is introduced to assist in weighing these factors and to guide decisions on when and how to pool under various conditions. High-performance distributed computing methods have also been implemented for considering larger pool sizes, when savings from group testing can be even more dramatic.}&#34;,
+    issn = {1465-4644},
+    doi = {10.1093/biostatistics/kxac004},
+    url = {https://doi.org/10.1093/biostatistics/kxac004},
+    note = {kxac004},
+    eprint = {https://academic.oup.com/biostatistics/advance-article-pdf/doi/10.1093/biostatistics/kxac004/43355708/kxac004.pdf},
+    series = {Biostatistics &#39;22}    
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
             <div class="media-body">
               <p class="type hidden">Conference Proceedings</p>
               <strong class="title">
@@ -388,6 +642,57 @@ In this paper, we first list and categorize the idiosyncratic behavior of PMEM b
 	Series = {SC &#39;21},
 	Title = {HatRPC: Hint-Accelerated Thrift RPC over RDMA},
 	Year = {2021}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [SEC &#39;21]&nbsp; 
+		  <a href="/publications/conf-sec-yujie21.html">
+		  Characterizing and Accelerating End-to-End EdgeAI Inference Systems for Object Detection Applications
+		  </a>
+		  </strong>
+              <p class="authors">Yujie Hui, Jeffrey Lien, Xiaovi Lu</p>
+              <p>
+                    <span class="journal">2021 IEEE/ACM Symposium on Edge Computing (SEC)</span>,
+                    <span class="year">2021</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#conf-sec-yujie21cite" data-toggle="modal">Citation</a></li>
+                </ul>
+              </div>
+            <div id="conf-sec-yujie21cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "Characterizing and Accelerating End-to-End EdgeAI Inference Systems for Object Detection Applications"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-sec-yujie21pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-sec-yujie21bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-sec-yujie21pt" onclick="selectdiv('conf-sec-yujie21pt')">
+          <p>Yujie Hui, Jeffrey Lien, and Xiaovi Lu. Characterizing and accelerating end-to-end edgeai inference systems for object detection applications. In 2021 IEEE/ACM Symposium on Edge Computing (SEC), volume of SEC &#39;21, 01-12. 2021. doi:10.1145/3453142.3491294.</p>
+        </div>
+        <div class="tab-pane" id="conf-sec-yujie21bt" onclick="selectdiv('conf-sec-yujie21bt')">
+          <p><pre>@INPROCEEDINGS{conf-sec-yujie21,
+  author={Hui, Yujie and Lien, Jeffrey and Lu, Xiaovi},
+  booktitle={2021 IEEE/ACM Symposium on Edge Computing (SEC)}, 
+  title={Characterizing and Accelerating End-to-End EdgeAI Inference Systems for Object Detection Applications}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={01-12},
+  doi={10.1145/3453142.3491294},
+  series = {SEC &#39;21}  
 }</pre></p>
         </div>
       </div>
@@ -4375,6 +4680,55 @@ abstract = &#34;MapReduce is the most popular parallel computing framework for b
 	Year = {2016},
 	series = {JSC &#39;16},
 	Bdsk-Url-1 = {https://doi.org/10.1007/s11227-016-1760-5}}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [BPOE &#39;16]&nbsp; 
+		  <a href="/publications/conf-bpoe-kunal.html">
+		  Characterizing Cloudera Impala Workloads with BigDataBench on InfiniBand Clusters
+		  </a>
+		  </strong>
+              <p class="authors">Kunal Kulkarni, Xiayi Lu, Dhabaleswar K. Panda</p>
+              <p>
+                    <span class="journal">Proceedings of The 7th International Workshop on Big Data Benchmarks, Performance, Optimization, and Emerging Hardware (BPOE-7)</span>,
+                    <span class="year">2016</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#conf-bpoe-kunalcite" data-toggle="modal">Citation</a></li>
+                </ul>
+              </div>
+            <div id="conf-bpoe-kunalcite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "Characterizing Cloudera Impala Workloads with BigDataBench on InfiniBand Clusters"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-bpoe-kunalpt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-bpoe-kunalbt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-bpoe-kunalpt" onclick="selectdiv('conf-bpoe-kunalpt')">
+          <p>Kunal Kulkarni, Xiayi Lu, and Dhabaleswar K. Panda. Characterizing cloudera impala workloads with bigdatabench on infiniband clusters. In Proceedings of The 7th International Workshop on Big Data Benchmarks, Performance, Optimization, and Emerging Hardware (BPOE-7), BPOE &#39;16. April 2016.</p>
+        </div>
+        <div class="tab-pane" id="conf-bpoe-kunalbt" onclick="selectdiv('conf-bpoe-kunalbt')">
+          <p><pre>@inproceedings{conf-bpoe-kunal,
+  author={Kulkarni, Kunal and  Lu, Xiayi and Panda, Dhabaleswar K.},
+  title={Characterizing Cloudera Impala Workloads with BigDataBench on InfiniBand Clusters},
+  booktitle={Proceedings of The 7th International Workshop on Big Data Benchmarks, Performance, Optimization, and Emerging Hardware (BPOE-7)},
+  year={2016},
+  month={April},
+  location={ Atlanta, Georgia },
+  series = {BPOE &#39;16}
+}</pre></p>
         </div>
       </div>
       <div class="modal-footer">
