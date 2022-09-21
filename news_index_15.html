@@ -77,6 +77,78 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="haiyang-got-the-phd-degree-congrats"></a>
+          <h1>
+            <a href="/news/haiyang-got-the-phd-degree-congrats.html">
+              Haiyang got the Ph.D. degree! Congrats!
+            </a>
+          </h1>
+        </header>
+        <p>My advised Ph.D. student Haiyang Shi has successfully defended his thesis and graduated. Congratulations, Dr. Shi!</p>
+<a class="anchor" id="thesis-info"></a><h2>Thesis Info</h2>
+<p><strong>Title: Designing High-Performance Erasure Coding Schemes for Next-Generation Storage Systems</strong></p>
+<p><strong>Year and Degree</strong>: 2020, Doctor of Philosophy, Ohio State University, Computer Science and Engineering.</p>
+<p><strong>Committee</strong></p>
+<ul>
+<li>Xiaoyi Lu (Advisor)</li>
+<li>Xiaodong Zhang (Committee Member)</li>
+<li>Christopher Stewart (Committee Member)</li>
+<li>Yang Wang (Committee Member)</li>
+</ul>
+<p><strong>Abstract</strong></p>
+<p>Replication has been a cornerstone of reliable distributed storage systems for
+years. Replicating data at multiple locations in the system maintains
+sufficient redundancy to tolerate individual failures. However, the exploding
+volume and speed of data growth let researchers and engineers rethink about
+using storage-efficient fault tolerance mechanisms to replace replication in
+designing or re-designing reliable distributed storage systems. One promising
+alternative of replication is Erasure Coding (EC), which trades off extra
+compu- tation for high reliability and availability at a prominently low
+storage overhead. Therefore, many existing distributed storage systems (e.g.,
+HDFS 3.x, Ceph, QFS, Google Colossus, Facebook f4, and Baidu Atlas) have
+started to adopt EC to achieve storage-efficient fault tolerance. However, as
+EC introduces extra calculations into systems, there are several crucial
+challenges to think through for exploiting EC. Such as how to alleviate its
+computation overhead and bring emergent devices and technologies into the
+pictures for designing high-performance erasure-coded distributed storage
+systems. On modern HPC clusters and data centers, there are many powerful
+hardware devices (e.g., CPUs, General-Purpose Graphics Processing Units
+(GPGPUs), Field-Programmable Gate Arrays (FPGAs), and Smart Network Interface
+Cards (SmartNICs)) that are capable to carry out EC computation. To alleviate
+the EC overhead, various hardware-optimized EC schemes have been proposed in
+the community to leverage the advanced devices. In this dissertation, we first
+introduce a unified multi-rail EC library that enables upper-layer applications
+to leverage heterogeneous EC-capable hardware devices to perform EC operations
+simultaneously and introduces asynchronous APIs to facilitate overlapping
+opportunities between computation and communication.  </p>
+<p>Our comprehensive explorations illustrate that EC computation is in tight
+conjunction with data transmission (for dispatching EC results). Hence, we
+think that the EC-capable network devices (e.g., SmartNICs) are more promising
+and will be widely-used for EC calculations in designing next-generation
+erasure-coded distributed storage systems. Towards fully taking advantage of
+the EC offload capability on modern SmartNICs, we propose a tripartite graph
+based EC paradigm, which is able to tackle the limitations of
+current-generation EC offload schemes, bring more parallelism and overlapping,
+fully utilize networked resources, and therefore reduce the EC execution time.
+Moreover, we also present a set of coherent in-network EC primitives that can
+be easily integrated into existing state-of-the-art EC schemes and utilized in
+designing advanced EC schemes to fully leverage the advantages of the coherent
+in-network EC capabilities on commodity SmartNICs. Using coherent in-network EC
+primitives can further reduce CPU involvement and DMA traffics and thus speed
+up erasure-coded distributed storage systems. </p>
+<p>To demonstrate the potential performance gains of the proposed designs, we
+co-design commonly-used distributed storage systems (i.e., HDFS and Memcached)
+with our proposed designs, and thoroughly evaluate the co-designed systems with
+Hadoop benchmarks and Yahoo! Cloud Serving Benchmark (YCSB) on small-scale and
+production-scale HPC clusters. The evaluations illustrate that erasure-coded
+distributed storage systems enhanced with the proposed designs obtain
+significant or considerable performance improvement.</p>
+<p><strong>Keywords</strong></p>
+<p>Erasure Coding; Distributed Storage System; RDMA; SmartNIC;</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="a-tutorial-got-accepted-in-iiswc20"></a>
           <h1>
             <a href="/news/a-tutorial-got-accepted-in-iiswc20.html">
@@ -229,82 +301,6 @@ in end-to-end Multi-Get latencies over the state-of-the-art CPU-optimized
 non-SIMD MemC3 hash table design, on a high-performance compute cluster with
 Intel Skylake processors and InfiniBand EDR interconnects.</p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="dipti-got-the-phd-degree-congrats"></a>
-          <h1>
-            <a href="/news/dipti-got-the-phd-degree-congrats.html">
-              Dipti got the Ph.D. degree! Congrats!
-            </a>
-          </h1>
-        </header>
-        <p>My co-advised Ph.D. student Dipti Shankar has successfully defended her thesis and graduated. Congratulations, Dr. Shankar!</p>
-<a class="anchor" id="thesis-info"></a><h2>Thesis Info</h2>
-<p><strong>Title: Designing Fast, Resilient and Heterogeneity-Aware Key-Value Storage on Modern HPC Clusters</strong></p>
-<p><strong>Year and Degree</strong>: 2019, Doctor of Philosophy, Ohio State University, Computer Science and Engineering.</p>
-<p><strong>Committee</strong></p>
-<ul>
-<li>Dhabaleswar K. Panda (Advisor)</li>
-<li>Xiaoyi Lu (Co-Advisor)</li>
-<li>Feng Qin (Committee Member)</li>
-<li>Gagan Agrawal (Committee Member)</li>
-</ul>
-<p><strong>Abstract</strong></p>
-<p>With the recent emergence of in-memory computing for Big Data analytics,
-memory-centric and distributed key-value storage has become vital to
-accelerating data processing workloads, in high-performance computing (HPC) and
-data center environments. This has led to several research works focusing on
-advanced key-value store designs with Remote- Direct-Memory-Access (RDMA) and
-hybrid `DRAM+NVM’ storage designs. However, these existing designs are
-constrained by the blocking store/retrieve semantics; incurring additional
-complexity with the introduction of high data availability and durability
-requirements. To cater to the performance, scalability, durability and
-resilience needs of the diverse key-value store-based workloads (e.g., online
-transaction processing, offline data analytics, etc.), it is therefore vital to
-fully exploit resources on modern HPC systems. Moreover, to maximize server
-scalability and end-to-end performance, it is necessary to focus on designing
-an RDMA-aware communication engine that goes beyond optimizing the key-value
-store middleware for better client-side latencies.</p>
-<p>Towards addressing this, in this dissertation, we present a `holistic approach’
-to designing high-performance, resilient and heterogeneity-aware key-value
-storage for HPC clusters, that encompasses: (1) RDMA-enabled networking, (2)
-high-speed NVMs, (3) emerging byte-addressable persistent memory devices, and,
-(4) SIMD-enabled multi-core CPU compute capabilities. We first introduce
-non-blocking API extensions to the RDMA- Memcached client, that allows an
-application to separate the request issue and completion phases. This
-facilitates overlapping opportunities by truly leveraging the one-sided
-characteristics of the underlying RDMA communication engine, while conforming
-to the basic Set/Get semantics. Secondly, we analyze the overhead of employing
-memory-efficient resilience via Erasure Coding (EC), in an online fashion.
-Based on this, we extend our proposed RDMA-aware key-value store, that supports
-non-blocking API semantics, to enable overlapping the EC encoding/decoding
-compute phases with the scatter/gather communication protocol involved in
-resiliently storing the distributed key-value data objects.</p>
-<p>This work also examines durable key-value store designs for emerging persistent
-memory technologies. While RDMA-based protocols employed in existing volatile
-DRAM-based key-value stores can be directly leveraged, we find that there is a
-need for a more integrated approach to fully exploit the fine-grained
-durability of these new byte-addressable storage devices. We propose 'RDMP-KV’,
-that employs a hybrid 'server-reply/server- bypass’ approach to 'durably’ store
-individual key-value pair objects on the remote persistent memory-equipped
-servers via RDMA. RDMP-KV’s runtime can easily adapt to existing
-(server-assisted durability) and emerging (appliance durability) RDMA-capable
-interconnects, while ensuring server scalability and remote data consistency.
-Finally, the thesis explores SIMD-accelerated CPU-centric hash table designs,
-that can enable higher server throughput. We propose an end-to-end SIMD-aware
-key-value store design, 'SCOR- KV’, which introduces optimistic
-'RDMA+SIMD’-aware client-centric request/response offloading protocols. SCOR-KV
-can minimize the server-side data processing overheads to achieve better
-scalability, without compromising on the client-side latencies.</p>
-<p>With this as the basis, we demonstrate the potential performance gains of the
-proposed designs with online (e.g, YCSB) and offline (e.g, in-memory and
-distributed burst-buffer over Lustre for Hadoop I/O) workloads on small-scale
-and production-scale HPC clusters.</p>
-<p><strong>Keywords</strong></p>
-<p>High-Performance Computing; Key-Value Store; RDMA; Persistent Memory;</p>
-<p><a href="https://etd.ohiolink.edu/apexprod/rws_olink/r/1501/10?clear=10&amp;p10_accession_num=osu1563522337179638">source</a></p>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -330,6 +326,11 @@ and production-scale HPC clusters.</p>
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#haiyang-got-the-phd-degree-congrats">
+                <i class="icon-chevron-left"></i> Haiyang got the Ph.D. degree! Congrats!
+              </a>
+            </li>
+            <li>
               <a href="#a-tutorial-got-accepted-in-iiswc20">
                 <i class="icon-chevron-left"></i> A tutorial got accepted in IISWC20!
               </a>
@@ -347,11 +348,6 @@ and production-scale HPC clusters.</p>
             <li>
               <a href="#simdht-bench-paper-got-accepted-in-iiswc19-and-nominated-as-a-bp-candidate">
                 <i class="icon-chevron-left"></i> SimdHT-Bench paper got accepted in IISWC19 and nominated as a BP Candidate!
-              </a>
-            </li>
-            <li>
-              <a href="#dipti-got-the-phd-degree-congrats">
-                <i class="icon-chevron-left"></i> Dipti got the Ph.D. degree! Congrats!
               </a>
             </li>
           </ul>

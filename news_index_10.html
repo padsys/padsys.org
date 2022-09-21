@@ -77,6 +77,22 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="we-got-an-academic-senate-faculty-grant-congrats"></a>
+          <h1>
+            <a href="/news/we-got-an-academic-senate-faculty-grant-congrats.html">
+              We got an Academic Senate Faculty Grant! Congrats!
+            </a>
+          </h1>
+        </header>
+        <p>Our team received the Academic Senate Faculty Grant for "Networking and Data
+Processing Infrastructure for Collaborative Research on Agriculture between UC
+Merced and Merced College". Prof. Lu is the overall PI for this grant.</p>
+<p>Congratulations to our great team!</p>
+<p>Thanks a lot for UCM's support!!!</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="padsys-lab-moves-to-ucm"></a>
           <h1>
             <a href="/news/padsys-lab-moves-to-ucm.html">
@@ -191,78 +207,6 @@ challenges of system design with PMEM.</p>
 <p><a href="http://vldb.org/pvldb/vol14/p626-gugnani.pdf">pdf</a></p>
 <p><a href="https://github.com/padsys/PMIdioBench">code</a></p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="haiyang-got-the-phd-degree-congrats"></a>
-          <h1>
-            <a href="/news/haiyang-got-the-phd-degree-congrats.html">
-              Haiyang got the Ph.D. degree! Congrats!
-            </a>
-          </h1>
-        </header>
-        <p>My advised Ph.D. student Haiyang Shi has successfully defended his thesis and graduated. Congratulations, Dr. Shi!</p>
-<a class="anchor" id="thesis-info"></a><h2>Thesis Info</h2>
-<p><strong>Title: Designing High-Performance Erasure Coding Schemes for Next-Generation Storage Systems</strong></p>
-<p><strong>Year and Degree</strong>: 2020, Doctor of Philosophy, Ohio State University, Computer Science and Engineering.</p>
-<p><strong>Committee</strong></p>
-<ul>
-<li>Xiaoyi Lu (Advisor)</li>
-<li>Xiaodong Zhang (Committee Member)</li>
-<li>Christopher Stewart (Committee Member)</li>
-<li>Yang Wang (Committee Member)</li>
-</ul>
-<p><strong>Abstract</strong></p>
-<p>Replication has been a cornerstone of reliable distributed storage systems for
-years. Replicating data at multiple locations in the system maintains
-sufficient redundancy to tolerate individual failures. However, the exploding
-volume and speed of data growth let researchers and engineers rethink about
-using storage-efficient fault tolerance mechanisms to replace replication in
-designing or re-designing reliable distributed storage systems. One promising
-alternative of replication is Erasure Coding (EC), which trades off extra
-compu- tation for high reliability and availability at a prominently low
-storage overhead. Therefore, many existing distributed storage systems (e.g.,
-HDFS 3.x, Ceph, QFS, Google Colossus, Facebook f4, and Baidu Atlas) have
-started to adopt EC to achieve storage-efficient fault tolerance. However, as
-EC introduces extra calculations into systems, there are several crucial
-challenges to think through for exploiting EC. Such as how to alleviate its
-computation overhead and bring emergent devices and technologies into the
-pictures for designing high-performance erasure-coded distributed storage
-systems. On modern HPC clusters and data centers, there are many powerful
-hardware devices (e.g., CPUs, General-Purpose Graphics Processing Units
-(GPGPUs), Field-Programmable Gate Arrays (FPGAs), and Smart Network Interface
-Cards (SmartNICs)) that are capable to carry out EC computation. To alleviate
-the EC overhead, various hardware-optimized EC schemes have been proposed in
-the community to leverage the advanced devices. In this dissertation, we first
-introduce a unified multi-rail EC library that enables upper-layer applications
-to leverage heterogeneous EC-capable hardware devices to perform EC operations
-simultaneously and introduces asynchronous APIs to facilitate overlapping
-opportunities between computation and communication.  </p>
-<p>Our comprehensive explorations illustrate that EC computation is in tight
-conjunction with data transmission (for dispatching EC results). Hence, we
-think that the EC-capable network devices (e.g., SmartNICs) are more promising
-and will be widely-used for EC calculations in designing next-generation
-erasure-coded distributed storage systems. Towards fully taking advantage of
-the EC offload capability on modern SmartNICs, we propose a tripartite graph
-based EC paradigm, which is able to tackle the limitations of
-current-generation EC offload schemes, bring more parallelism and overlapping,
-fully utilize networked resources, and therefore reduce the EC execution time.
-Moreover, we also present a set of coherent in-network EC primitives that can
-be easily integrated into existing state-of-the-art EC schemes and utilized in
-designing advanced EC schemes to fully leverage the advantages of the coherent
-in-network EC capabilities on commodity SmartNICs. Using coherent in-network EC
-primitives can further reduce CPU involvement and DMA traffics and thus speed
-up erasure-coded distributed storage systems. </p>
-<p>To demonstrate the potential performance gains of the proposed designs, we
-co-design commonly-used distributed storage systems (i.e., HDFS and Memcached)
-with our proposed designs, and thoroughly evaluate the co-designed systems with
-Hadoop benchmarks and Yahoo! Cloud Serving Benchmark (YCSB) on small-scale and
-production-scale HPC clusters. The evaluations illustrate that erasure-coded
-distributed storage systems enhanced with the proposed designs obtain
-significant or considerable performance improvement.</p>
-<p><strong>Keywords</strong></p>
-<p>Erasure Coding; Distributed Storage System; RDMA; SmartNIC;</p>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -288,6 +232,11 @@ significant or considerable performance improvement.</p>
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#we-got-an-academic-senate-faculty-grant-congrats">
+                <i class="icon-chevron-left"></i> We got an Academic Senate Faculty Grant! Congrats!
+              </a>
+            </li>
+            <li>
               <a href="#padsys-lab-moves-to-ucm">
                 <i class="icon-chevron-left"></i> PADSYS Lab Moves to UCM!
               </a>
@@ -305,11 +254,6 @@ significant or considerable performance improvement.</p>
             <li>
               <a href="#a-paper-got-accepted-in-vldb-2021">
                 <i class="icon-chevron-left"></i> A paper got accepted in VLDB 2021!
-              </a>
-            </li>
-            <li>
-              <a href="#haiyang-got-the-phd-degree-congrats">
-                <i class="icon-chevron-left"></i> Haiyang got the Ph.D. degree! Congrats!
               </a>
             </li>
           </ul>
