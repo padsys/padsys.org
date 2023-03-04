@@ -84,7 +84,7 @@
         <div class="publication-controls">
           <ul class="nav nav-pills nav-stacked clearfix">
             <li class=active>
-              <a href="#" data-toggle="pill" onclick="filterList('All')">All [136]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('All')">All [137]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book')">Book [1]</a>
             </li><li>
@@ -92,7 +92,7 @@
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [118]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [15]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [16]</a>
             </li>
           </ul>
           <input class="search search-query" type="text" placeholder="Search publications">
@@ -106,6 +106,76 @@
         </div>
         <ul class="list">
           <li class="media">
+            <div class="media-body">
+              <p class="type hidden">Journal Article</p>
+              <strong class="title">
+                  [JCST &#39;23]&nbsp; 
+		  <a href="/publications/journals-jcst-Weingram23.html">
+		  xCCL: A Survey of Industry-Led Collective Communication Libraries for Deep Learning
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/adam-weingram.html">Adam Weingram</a>, <a href="/people/yuke-li.html">Yuke Li</a>, <a href="/people/hao-qi.html">Hao Qi</a>, <a href="/people/darren-ng.html">Darren Ng</a>, <a href="/people/liuyao-dai.html">Liuyao Dai</a>, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Journal of Computer Science and Technology</span>,
+                    <span class="year">2023</span>
+		    &nbsp;(Invited Paper for the Special Issue in Honor of Professor Kai Hwang’s 80th Birthday)
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#journals-jcst-Weingram23abs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#journals-jcst-Weingram23kw">Keywords</a></li>
+                <li><a href="#journals-jcst-Weingram23cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://jcst.ict.ac.cn/EN/abstract/article_2965.shtml" target="_blank">Full text</a></li>
+                </ul>
+              <div id="journals-jcst-Weingram23kw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> collective; deep learning; distributed training; GPUDirect; RDMA (remote direct memory access)
+                </p>
+              </div>
+              <div id="journals-jcst-Weingram23abs" class="collapse">
+                <p><strong>Abstract: </strong> Machine learning techniques have become ubiquitous both in industry and academic applications. Increasing model sizes and training data volumes necessitate fast and efficient distributed training approaches. Collective communications greatly simplify inter- and intra-node data transfer and are an essential part of the distributed training process as information such as gradients must be shared between processing nodes. In this paper, we survey the current state-of-the-art collective communication libraries (namely xCCL, including NCCL, oneCCL, RCCL, MSCCL, ACCL, and Gloo), with a focus on the industry-led ones for deep learning workloads. We investigate the design features of these xCCLs, discuss their use cases in the industry deep learning workloads, compare their performance with industry-made benchmarks (i.e., NCCL Tests and PARAM), and discuss key take-aways and interesting observations. We believe our survey sheds light on potential research directions of future designs for xCCLs.</p>
+              </div>
+              </div>
+            <div id="journals-jcst-Weingram23cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "xCCL: A Survey of Industry-Led Collective Communication Libraries for Deep Learning"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#journals-jcst-Weingram23pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#journals-jcst-Weingram23bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="journals-jcst-Weingram23pt" onclick="selectdiv('journals-jcst-Weingram23pt')">
+          <p>Adam Weingram, Yuke Li, Hao Qi, Darren Ng, Liuyao Dai, and Xiaoyi Lu. Xccl: a survey of industry-led collective communication libraries for deep learning. Journal of Computer Science and Technology, 38(1):166, 2023. Invited Paper for the Special Issue in Honor of Professor Kai Hwang’s 80th Birthday. URL: https://jcst.ict.ac.cn/EN/abstract/article_2965.shtml, doi:10.1007/s11390-023-2894-6.</p>
+        </div>
+        <div class="tab-pane" id="journals-jcst-Weingram23bt" onclick="selectdiv('journals-jcst-Weingram23bt')">
+          <p><pre>@article{journals-jcst-Weingram23,
+author = {Weingram, Adam and Li, Yuke and Qi, Hao and Ng, Darren and Dai, Liuyao and Lu, Xiaoyi},
+title = {xCCL: A Survey of Industry-Led Collective Communication Libraries for Deep Learning},
+publisher = {Journal of Computer Science and Technology},
+year = {2023},
+journal = {Journal of Computer Science and Technology},
+volume = {38},
+number = {1},
+eid = {166},
+numpages = {29},
+pages = {166},
+keywords = {collective; deep learning; distributed training; GPUDirect; RDMA (remote direct memory access)},
+url = {https://jcst.ict.ac.cn/EN/abstract/article_2965.shtml},
+doi = {10.1007/s11390-023-2894-6},
+abstract = {Machine learning techniques have become ubiquitous both in industry and academic applications. Increasing model sizes and training data volumes necessitate fast and efficient distributed training approaches. Collective communications greatly simplify inter- and intra-node data transfer and are an essential part of the distributed training process as information such as gradients must be shared between processing nodes. In this paper, we survey the current state-of-the-art collective communication libraries (namely xCCL, including NCCL, oneCCL, RCCL, MSCCL, ACCL, and Gloo), with a focus on the industry-led ones for deep learning workloads. We investigate the design features of these xCCLs, discuss their use cases in the industry deep learning workloads, compare their performance with industry-made benchmarks (i.e., NCCL Tests and PARAM), and discuss key take-aways and interesting observations. We believe our survey sheds light on potential research directions of future designs for xCCLs.},
+note = {Invited Paper for the Special Issue in Honor of Professor Kai Hwang’s 80th Birthday},
+series = {JCST &#39;23}
+}    </pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
             <div class="media-body">
               <p class="type hidden">Book</p>
               <strong class="title">
