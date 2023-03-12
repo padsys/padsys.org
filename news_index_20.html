@@ -77,6 +77,47 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="simdht-bench-paper-got-accepted-in-iiswc19-and-nominated-as-a-bp-candidate"></a>
+          <h1>
+            <a href="/news/simdht-bench-paper-got-accepted-in-iiswc19-and-nominated-as-a-bp-candidate.html">
+              SimdHT-Bench paper got accepted in IISWC19 and nominated as a BP Candidate!
+            </a>
+          </h1>
+        </header>
+        <p>A paper is accepted in IISWC 2019: SimdHT-Bench: Characterizing SIMD-Aware Hash
+Table Designs on Emerging CPU Architectures. This paper got nominated as a
+<strong>Best Paper Award Candidate</strong>.</p>
+<p>Congratulations, Dr. Shankar!</p>
+<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
+<p><strong>[IISWC'19] SimdHT-Bench: Characterizing SIMD-Aware Hash Table Designs on Emerging CPU Architectures (Best Paper Award Nomination)</strong></p>
+<p>Dipti Shankar, Xiaoyi Lu, and Dhabaleswar K. Panda.</p>
+<p>In Proceedings of 2019 IEEE International Symposium on Workload Characterization (IISWC), 2019.</p>
+<p><strong>Abstract</strong></p>
+<p>With the emergence of modern multi-core CPU architectures that support data
+parallelism via vectorization, several storage systems have been employing
+SIMD-based techniques to optimize data-parallel operations on in-memory
+structures like hash-tables. In this paper, we perform an in-depth
+characterization of the opportunities for incorporating AVX vectorization-based
+SIMD-aware designs for hash table lookups on emerging CPU architectures. We
+analyze the challenges and design dimensions involved in exploiting
+vectorization-based parallel key searching over cache-optimized non-SIMD hash
+tables. Based on this, we design a comprehensive micro-benchmark suite,
+SimdHT-Bench, that enables evaluating the performance and applicability of CPU
+SIMD-aware hash table designs for accelerating different read-intensive
+workloads. With SimdHT-Bench, we study five different use-case scenarios with
+varied workload patterns, on the latest Intel Skylake and Intel Cascade Lake
+multi-core CPU nodes. Further, to validate the applicability of SimdHT-Bench,
+we employ these performance studies to design a high-performance SIMD-aware
+RDMA-based in-memory key-value store to accelerate the Memcached ‘Multi-Get’
+workload. We demonstrate that the SIMD-integrated designs can achieve up to
+1.45x–2.04x improvement in server-side Get throughput and up to 34% improvement
+in end-to-end Multi-Get latencies over the state-of-the-art CPU-optimized
+non-SIMD MemC3 hash table design, on a high-performance compute cluster with
+Intel Skylake processors and InfiniBand EDR interconnects.</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="dipti-got-the-phd-degree-congrats"></a>
           <h1>
             <a href="/news/dipti-got-the-phd-degree-congrats.html">
@@ -270,28 +311,6 @@ instance, our proposed C- GDR can outperform default MVAPICH2-GDR schemes by up
 to 66% on micro-benchmarks and up to 26% on HPC applications over a
 container-based environment.</p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="xiaoyi-will-serve-as-tpcschairs-for-multiple-2019-conferences"></a>
-          <h1>
-            <a href="/news/xiaoyi-will-serve-as-tpcschairs-for-multiple-2019-conferences.html">
-              Xiaoyi will serve as TPCs/Chairs for multiple 2019 conferences!
-            </a>
-          </h1>
-        </header>
-        <p>Xiaoyi will serve as a General Co-Chair for <a href="http://www.benchcouncil.org/bench19/index.html">Bench 2019</a>. 
-Please submit your papers to Bench 2019. <a href="http://www.benchcouncil.org/bench19/cfp.html">Call for Papers</a></p>
-<p>Xiaoyi will serve as a TPC Co-Chair for <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2019/">The 5th IEEE International Workshop on High-Performance Big Data and Cloud Computing (HPBDC 2019)</a>.
-Please submit your papers to HPBDC 2019. <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2019/#cfp">Call for Papers</a></p>
-<p>Xiaoyi will serve as TPCs for the following conferences in 2019!</p>
-<ul>
-<li><a href="https://sc19.supercomputing.org">SC 2019</a></li>
-<li><a href="https://hipc.org/">HiPC 2019</a></li>
-<li><a href="http://www.icccn.org">ICCCN 2019</a></li>
-<li>Others</li>
-</ul>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -317,6 +336,11 @@ Please submit your papers to HPBDC 2019. <a href="http://web.cse.ohio-state.edu/
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#simdht-bench-paper-got-accepted-in-iiswc19-and-nominated-as-a-bp-candidate">
+                <i class="icon-chevron-left"></i> SimdHT-Bench paper got accepted in IISWC19 and nominated as a BP Candidate!
+              </a>
+            </li>
+            <li>
               <a href="#dipti-got-the-phd-degree-congrats">
                 <i class="icon-chevron-left"></i> Dipti got the Ph.D. degree! Congrats!
               </a>
@@ -334,11 +358,6 @@ Please submit your papers to HPBDC 2019. <a href="http://web.cse.ohio-state.edu/
             <li>
               <a href="#c-gdr-paper-got-accepted-in-ipdps19">
                 <i class="icon-chevron-left"></i> C-GDR paper got accepted in IPDPS19!
-              </a>
-            </li>
-            <li>
-              <a href="#xiaoyi-will-serve-as-tpcschairs-for-multiple-2019-conferences">
-                <i class="icon-chevron-left"></i> Xiaoyi will serve as TPCs/Chairs for multiple 2019 conferences!
               </a>
             </li>
           </ul>
