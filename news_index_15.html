@@ -77,6 +77,42 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="nvme-cr-paper-got-accepted-in-ipdps21"></a>
+          <h1>
+            <a href="/news/nvme-cr-paper-got-accepted-in-ipdps21.html">
+              NVMe-CR paper got accepted in IPDPS21!
+            </a>
+          </h1>
+        </header>
+        <p>A paper is accepted in IPDPS 2021: NVMe-CR: A Scalable Ephemeral Storage Runtime for Checkpoint/Restart with NVMe-over-Fabrics. </p>
+<p>Congratulations, Shashank and Tianxi!</p>
+<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
+<p><strong>[IPDPS'21] NVMe-CR: A Scalable Ephemeral Storage Runtime for Checkpoint/Restart with NVMe-over-Fabrics</strong></p>
+<p>Shashank Gugnani, Tianxi Li, and Xiaoyi Lu.</p>
+<p>In Proceedings of the 35th IEEE International Parallel and Distributed Processing Symposium (IPDPS), 2021.</p>
+<p><strong>Abstract</strong></p>
+<p>Emerging SSDs with NVMe-over-Fabrics (NVMf) support provide new opportunities
+to significantly improve the performance of IO-intensive HPC applications.
+However, state-of-the-art parallel filesystems can not extract the best
+possible performance from fast NVMe SSDs and are not designed for
+latency-critical ephemeral IO tasks, such as checkpoint/restart. In this paper,
+we propose a powerful abstraction called microfs to peel away unnecessary
+software layers and eliminate namespace coordination. Building upon this
+abstraction, we present the design of NVMe-CR, a scalable ephemeral storage
+runtime for clusters with disaggregated compute and storage. NVMe-CR proposes
+techniques like metadata provenance, log record coalescing, and logically
+isolated shared device access, built around the microfs abstraction, to reduce
+the overhead of writing millions of concurrent checkpoint files. NVMe-CR
+utilizes high-density all-flash arrays accessible via NVMf to absorb bursty
+checkpoint IO and increase the progress rates of HPC applications obliviously.
+Using the ECP CoMD application as a use case, results show that on a local
+cluster our runtime can achieve near perfect (&gt; 0.96) efficiency at 448
+processes. Moreover, our designs can reduce checkpoint overhead by as much as
+2x compared to state-of-the- art storage systems.</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="a-paper-got-accepted-in-vldb-2021"></a>
           <h1>
             <a href="/news/a-paper-got-accepted-in-vldb-2021.html">
@@ -281,29 +317,6 @@ with PMEM-oblivious RDMA-‘Server-Reply’ protocols. Our evaluations also show
 that RDMP-KV outperforms a distributed PMEM-based filesystem by up to 65% and a
 recent RDMA-to-PMEM framework by up to 71%.</p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences"></a>
-          <h1>
-            <a href="/news/xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences.html">
-              Xiaoyi will serve as TPCs/Chairs for multiple 2020 conferences!
-            </a>
-          </h1>
-        </header>
-        <p>Xiaoyi will serve as a TPC Vice-Chair for <a href="https://www.ieeecloudsummit.org">IEEE Cloud Summit 2020</a>.
-Please submit your papers to IEEE Cloud Summit 2020. <a href="https://www.ieeecloudsummit.org/call-for-papers">Call for Papers</a></p>
-<p>Xiaoyi will serve as a TPC Co-Chair for <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2020/">The 6th IEEE International Workshop on High-Performance Big Data and Cloud Computing (HPBDC 2020)</a>.
-Please submit your papers to HPBDC 2020. <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2020/#cfp">Call for Papers</a></p>
-<p>Xiaoyi will serve as TPCs for the following conferences in 2020!</p>
-<ul>
-<li><a href="https://sc20.supercomputing.org">SC 2020</a> (Research Posters Track)</li>
-<li><a href="https://hipc.org/">HiPC 2020</a></li>
-<li><a href="http://cloudbus.org/ccgrid2020/">CCGrid 2020</a></li>
-<li><a href="https://www.computer.org/digital-library/journals/td/call-for-papers-special-section-on-parallel-and-distributed-computing-techniques-for-ai-ml-and-dl">TPDS's special section on "Parallel and Distributed Computing Techniques for AI, ML and DL"</a></li>
-<li>Others</li>
-</ul>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -329,6 +342,11 @@ Please submit your papers to HPBDC 2020. <a href="http://web.cse.ohio-state.edu/
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#nvme-cr-paper-got-accepted-in-ipdps21">
+                <i class="icon-chevron-left"></i> NVMe-CR paper got accepted in IPDPS21!
+              </a>
+            </li>
+            <li>
               <a href="#a-paper-got-accepted-in-vldb-2021">
                 <i class="icon-chevron-left"></i> A paper got accepted in VLDB 2021!
               </a>
@@ -346,11 +364,6 @@ Please submit your papers to HPBDC 2020. <a href="http://web.cse.ohio-state.edu/
             <li>
               <a href="#two-papers-got-accepted-in-sc-2020">
                 <i class="icon-chevron-left"></i> Two papers got accepted in SC 2020!
-              </a>
-            </li>
-            <li>
-              <a href="#xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences">
-                <i class="icon-chevron-left"></i> Xiaoyi will serve as TPCs/Chairs for multiple 2020 conferences!
               </a>
             </li>
           </ul>
