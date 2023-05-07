@@ -84,13 +84,13 @@
         <div class="publication-controls">
           <ul class="nav nav-pills nav-stacked clearfix">
             <li class=active>
-              <a href="#" data-toggle="pill" onclick="filterList('All')">All [137]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('All')">All [138]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book')">Book [1]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book Chapter')">Book Chapter [2]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [118]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [119]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [16]</a>
             </li>
@@ -106,6 +106,68 @@
         </div>
         <ul class="list">
           <li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [IPDPS &#39;23]&nbsp; 
+		  <a href="/publications/conf-ipdps-chen23.html">
+		  SBGT: Scaling Bayesian-based Group Testing for Disease Surveillance
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/weicong-chen.html">Weicong Chen</a>, <a href="/people/hao-qi.html">Hao Qi</a>, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Curtis Tatsuoka</p>
+              <p>
+                    <span class="journal">Proceedings of IEEE International Parallel and Distributed Processing Symposium</span>,
+                    <span class="year">2023</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-ipdps-chen23abs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#conf-ipdps-chen23kw">Keywords</a></li>
+                <li><a href="#conf-ipdps-chen23cite" data-toggle="modal">Citation</a></li>
+                </ul>
+              <div id="conf-ipdps-chen23kw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> Group testing, Bayesian, Lattices, Spark, COVID-19
+                </p>
+              </div>
+              <div id="conf-ipdps-chen23abs" class="collapse">
+                <p><strong>Abstract: </strong> The COVID-19 pandemic underscored the necessity for disease surveillance using group testing. Novel Bayesian methods using lattice models were proposed, which offer substantial improvements in group testing efficiency by precisely quantifying uncertainty in diagnoses, acknowledging varying individual risk and dilution effects, and guiding optimally convergent sequential pooled test selections using a Bayesian Halving Algorithm. Computationally, however, Bayesian group testing poses considerable challenges as computational complexity grows exponentially with sample size. This can lead to shortcomings in reaching a desirable scale without practical limitations. We propose a new framework for scaling Bayesian group testing based on Spark: SBGT. We show that SBGT is lightning fast and highly scalable. In particular, SBGT is up to 376x, 1733x, and 1523x faster than the state-of-the-art framework in manipulating lattice models, performing test selections, and conducting statistical analyses, respectively, while achieving up to 97.9</p>
+              </div>
+              </div>
+            <div id="conf-ipdps-chen23cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "SBGT: Scaling Bayesian-based Group Testing for Disease Surveillance"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ipdps-chen23pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ipdps-chen23bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ipdps-chen23pt" onclick="selectdiv('conf-ipdps-chen23pt')">
+          <p>Weicong Chen, Hao Qi, Xiaoyi Lu, and Curtis Tatsuoka. Sbgt: scaling bayesian-based group testing for disease surveillance. In Proceedings of IEEE International Parallel and Distributed Processing Symposium, IPDPS &#39;23. IEEE Computer Society, May 2023.</p>
+        </div>
+        <div class="tab-pane" id="conf-ipdps-chen23bt" onclick="selectdiv('conf-ipdps-chen23bt')">
+          <p><pre>@inproceedings{conf-ipdps-chen23,
+  author = {Chen, Weicong and Qi, Hao and Lu, Xiaoyi and Tatsuoka, Curtis},
+  booktitle = {Proceedings of IEEE International Parallel and Distributed Processing Symposium},
+  keywords = {Group testing, Bayesian, Lattices, Spark, COVID-19},
+  publisher = {IEEE Computer Society},
+  title = {SBGT: Scaling Bayesian-based Group Testing for Disease Surveillance},
+  abstract = {The COVID-19 pandemic underscored the necessity for disease surveillance using group testing. Novel Bayesian methods using lattice models were proposed, which offer substantial improvements in group testing efficiency by precisely quantifying uncertainty in diagnoses, acknowledging varying individual risk
+and dilution effects, and guiding optimally convergent sequential pooled test selections using a Bayesian Halving Algorithm. Computationally, however, Bayesian group testing poses considerable challenges as computational complexity grows exponentially with sample size. This can lead to shortcomings in reaching a desirable scale without practical limitations. We propose a new framework for scaling Bayesian group testing based on Spark: SBGT. We show that SBGT is lightning fast and highly scalable. In particular, SBGT is up to 376x, 1733x, and 1523x faster than the state-of-the-art framework in manipulating lattice models, performing test selections, and conducting statistical analyses, respectively, while achieving up to 97.9\% scaling efficiency up to 4096 CPU cores. More importantly, SBGT fulfills our mission towards reaching applicable scale for guiding pooling decisions in wide-scale disease surveillance, and other large scale group testing applications.},
+  series = {IPDPS &#39;23},
+  month = {May},
+  year = {2023}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
             <div class="media-body">
               <p class="type hidden">Journal Article</p>
               <strong class="title">
@@ -437,7 +499,7 @@ series = {HPDC &#39;22}
 		  HiBGT: High-Performance Bayesian Group Testing for COVID-19
 		  </a>
 		  </strong>
-              <p class="authors"><a href="/people/weicong-chen.html">Weicong Chen</a>, Curtis Tatsuoka, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p class="authors"><a href="/people/weicong-chen.html">Weicong Chen</a>, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Curtis Tatsuoka</p>
               <p>
                     <span class="journal">Proceedings of the 29th IEEE International Conference on High Performance Computing</span>,
                     <span class="year">2022</span>
@@ -460,11 +522,11 @@ series = {HPDC &#39;22}
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="conf-hipc-Chen22pt" onclick="selectdiv('conf-hipc-Chen22pt')">
-          <p>Weicong Chen, Curtis Tatsuoka, and Xiaoyi Lu. Hibgt: high-performance bayesian group testing for covid-19. In Proceedings of the 29th IEEE International Conference on High Performance Computing, HiPC &#39;22. IEEE, 2022. Acceptance Rate: 26%, 35/131.</p>
+          <p>Weicong Chen, Xiaoyi Lu, and Curtis Tatsuoka. Hibgt: high-performance bayesian group testing for covid-19. In Proceedings of the 29th IEEE International Conference on High Performance Computing, HiPC &#39;22. IEEE, 2022. Acceptance Rate: 26%, 35/131.</p>
         </div>
         <div class="tab-pane" id="conf-hipc-Chen22bt" onclick="selectdiv('conf-hipc-Chen22bt')">
           <p><pre>@inproceedings{conf-hipc-Chen22,
-  author = {Chen, Weicong and Tatsuoka, Curtis and Lu, Xiaoyi},
+  author = {Chen, Weicong and Lu, Xiaoyi and Tatsuoka, Curtis},
   booktitle = {Proceedings of the 29th IEEE International Conference on High Performance Computing},
   publisher = {IEEE},
   title = {HiBGT: High-Performance Bayesian Group Testing for COVID-19},
