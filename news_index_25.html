@@ -77,6 +77,49 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="umr-ec-paper-got-accepted-in-hpdc19"></a>
+          <h1>
+            <a href="/news/umr-ec-paper-got-accepted-in-hpdc19.html">
+              UMR-EC paper got accepted in HPDC19!
+            </a>
+          </h1>
+        </header>
+        <p>A paper is accepted in HPDC 2019: UMR-EC: A Unified and Multi-Rail Erasure Coding Library for High-Performance Distributed Storage Systems. This year, HPDC only accepted 22 papers out of 106. 11 papers have gone through shepherding. This paper got accepted directly. The first author of this paper is one of my Ph.D. students, Haiyang Shi. Congratulations to Haiyang and other co-authors!</p>
+<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
+<p><strong>[HPDC'19] UMR-EC: A Unified and Multi-Rail Erasure Coding Library for High-Performance Distributed Storage Systems</strong></p>
+<p>Haiyang Shi, Xiaoyi Lu, Dipti Shankar, and Dhabaleswar K. Panda.</p>
+<p>In Proceedings of the 28th ACM International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2019. (Acceptance Rate: 20.7%, 22/106)</p>
+<p><strong>Abstract</strong></p>
+<p>Distributed storage systems typically need data to be stored redundantly to
+guarantee data durability and reliability. While the conventional approach
+towards this objective is to store multiple replicas, today’s unprecedented
+data growth rates encourage modern distributed storage systems to employ
+Erasure Coding (EC) techniques, which can achieve better storage efficiency.
+Various hardware-based EC schemes have been proposed in the community to
+leverage the advanced compute capabilities on modern data center and cloud
+environments. Currently, there is no unified and easy way for distributed
+storage systems to fully exploit multiple devices such as CPUs, GPUs, and
+network devices (i.e., multi-rail support) to perform EC operations in
+parallel; thus, leading to the under-utilization of the available compute
+power. In this paper, we first introduce an analytical model to analyze the
+design scope of efficient EC schemes in distributed storage systems. Guided by
+the performance model, we propose UMR-EC, a Unified and Multi-Rail Erasure
+Coding library that can fully exploit heterogeneous EC coders. Our proposed
+interface is complemented by asynchronous semantics with optimized
+metadata-free scheme and EC rate-aware task scheduling that can enable a
+highly-efficient I/O pipeline. To show the benefits and effectiveness of
+UMR-EC, we re-design HDFS 3.x write/read pipelines based on the guidelines
+observed in the proposed performance model. Our performance evaluations show
+that our proposed designs can outperform the write performance of replication
+schemes and the default HDFS EC coder by 3.7x - 6.1x and 2.4x - 3.3x,
+respectively, and can improve the performance of read with failure recoveries
+up to 5.1x compared with the default HDFS EC coder. Compared with the fastest
+available CPU coder (i.e., ISA-L), our proposed designs have an improvement of
+up to 66.0% and 19.4% for write and read with failure recoveries, respectively.</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="c-gdr-paper-got-accepted-in-ipdps19"></a>
           <h1>
             <a href="/news/c-gdr-paper-got-accepted-in-ipdps19.html">
@@ -193,6 +236,11 @@ Please submit your papers to HPBDC 2019. <a href="http://web.cse.ohio-state.edu/
       <nav>
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
+            <li>
+              <a href="#umr-ec-paper-got-accepted-in-hpdc19">
+                <i class="icon-chevron-left"></i> UMR-EC paper got accepted in HPDC19!
+              </a>
+            </li>
             <li>
               <a href="#c-gdr-paper-got-accepted-in-ipdps19">
                 <i class="icon-chevron-left"></i> C-GDR paper got accepted in IPDPS19!
