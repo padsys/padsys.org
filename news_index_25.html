@@ -77,6 +77,181 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences"></a>
+          <h1>
+            <a href="/news/xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences.html">
+              Xiaoyi will serve as TPCs/Chairs for multiple 2020 conferences!
+            </a>
+          </h1>
+        </header>
+        <p>Xiaoyi will serve as a TPC Vice-Chair for <a href="https://www.ieeecloudsummit.org">IEEE Cloud Summit 2020</a>.
+Please submit your papers to IEEE Cloud Summit 2020. <a href="https://www.ieeecloudsummit.org/call-for-papers">Call for Papers</a></p>
+<p>Xiaoyi will serve as a TPC Co-Chair for <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2020/">The 6th IEEE International Workshop on High-Performance Big Data and Cloud Computing (HPBDC 2020)</a>.
+Please submit your papers to HPBDC 2020. <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2020/#cfp">Call for Papers</a></p>
+<p>Xiaoyi will serve as TPCs for the following conferences in 2020!</p>
+<ul>
+<li><a href="https://sc20.supercomputing.org">SC 2020</a> (Research Posters Track)</li>
+<li><a href="https://hipc.org/">HiPC 2020</a></li>
+<li><a href="http://cloudbus.org/ccgrid2020/">CCGrid 2020</a></li>
+<li><a href="https://www.computer.org/digital-library/journals/td/call-for-papers-special-section-on-parallel-and-distributed-computing-techniques-for-ai-ml-and-dl">TPDS's special section on "Parallel and Distributed Computing Techniques for AI, ML and DL"</a></li>
+<li>Others</li>
+</ul>
+      </article>
+      <hr>
+      <article>
+        <header>
+          <a class="anchor" id="simdht-bench-paper-got-accepted-in-iiswc19-and-nominated-as-a-bp-candidate"></a>
+          <h1>
+            <a href="/news/simdht-bench-paper-got-accepted-in-iiswc19-and-nominated-as-a-bp-candidate.html">
+              SimdHT-Bench paper got accepted in IISWC19 and nominated as a BP Candidate!
+            </a>
+          </h1>
+        </header>
+        <p>A paper is accepted in IISWC 2019: SimdHT-Bench: Characterizing SIMD-Aware Hash
+Table Designs on Emerging CPU Architectures. This paper got nominated as a
+<strong>Best Paper Award Candidate</strong>.</p>
+<p>Congratulations, Dr. Shankar!</p>
+<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
+<p><strong>[IISWC'19] SimdHT-Bench: Characterizing SIMD-Aware Hash Table Designs on Emerging CPU Architectures (Best Paper Award Nomination)</strong></p>
+<p>Dipti Shankar, Xiaoyi Lu, and Dhabaleswar K. Panda.</p>
+<p>In Proceedings of 2019 IEEE International Symposium on Workload Characterization (IISWC), 2019.</p>
+<p><strong>Abstract</strong></p>
+<p>With the emergence of modern multi-core CPU architectures that support data
+parallelism via vectorization, several storage systems have been employing
+SIMD-based techniques to optimize data-parallel operations on in-memory
+structures like hash-tables. In this paper, we perform an in-depth
+characterization of the opportunities for incorporating AVX vectorization-based
+SIMD-aware designs for hash table lookups on emerging CPU architectures. We
+analyze the challenges and design dimensions involved in exploiting
+vectorization-based parallel key searching over cache-optimized non-SIMD hash
+tables. Based on this, we design a comprehensive micro-benchmark suite,
+SimdHT-Bench, that enables evaluating the performance and applicability of CPU
+SIMD-aware hash table designs for accelerating different read-intensive
+workloads. With SimdHT-Bench, we study five different use-case scenarios with
+varied workload patterns, on the latest Intel Skylake and Intel Cascade Lake
+multi-core CPU nodes. Further, to validate the applicability of SimdHT-Bench,
+we employ these performance studies to design a high-performance SIMD-aware
+RDMA-based in-memory key-value store to accelerate the Memcached ‘Multi-Get’
+workload. We demonstrate that the SIMD-integrated designs can achieve up to
+1.45x–2.04x improvement in server-side Get throughput and up to 34% improvement
+in end-to-end Multi-Get latencies over the state-of-the-art CPU-optimized
+non-SIMD MemC3 hash table design, on a high-performance compute cluster with
+Intel Skylake processors and InfiniBand EDR interconnects.</p>
+      </article>
+      <hr>
+      <article>
+        <header>
+          <a class="anchor" id="dipti-got-the-phd-degree-congrats"></a>
+          <h1>
+            <a href="/news/dipti-got-the-phd-degree-congrats.html">
+              Dipti got the Ph.D. degree! Congrats!
+            </a>
+          </h1>
+        </header>
+        <p>My co-advised Ph.D. student Dipti Shankar has successfully defended her thesis and graduated. Congratulations, Dr. Shankar!</p>
+<a class="anchor" id="thesis-info"></a><h2>Thesis Info</h2>
+<p><strong>Title: Designing Fast, Resilient and Heterogeneity-Aware Key-Value Storage on Modern HPC Clusters</strong></p>
+<p><strong>Year and Degree</strong>: 2019, Doctor of Philosophy, Ohio State University, Computer Science and Engineering.</p>
+<p><strong>Committee</strong></p>
+<ul>
+<li>Dhabaleswar K. Panda (Advisor)</li>
+<li>Xiaoyi Lu (Co-Advisor)</li>
+<li>Feng Qin (Committee Member)</li>
+<li>Gagan Agrawal (Committee Member)</li>
+</ul>
+<p><strong>Abstract</strong></p>
+<p>With the recent emergence of in-memory computing for Big Data analytics,
+memory-centric and distributed key-value storage has become vital to
+accelerating data processing workloads, in high-performance computing (HPC) and
+data center environments. This has led to several research works focusing on
+advanced key-value store designs with Remote- Direct-Memory-Access (RDMA) and
+hybrid `DRAM+NVM’ storage designs. However, these existing designs are
+constrained by the blocking store/retrieve semantics; incurring additional
+complexity with the introduction of high data availability and durability
+requirements. To cater to the performance, scalability, durability and
+resilience needs of the diverse key-value store-based workloads (e.g., online
+transaction processing, offline data analytics, etc.), it is therefore vital to
+fully exploit resources on modern HPC systems. Moreover, to maximize server
+scalability and end-to-end performance, it is necessary to focus on designing
+an RDMA-aware communication engine that goes beyond optimizing the key-value
+store middleware for better client-side latencies.</p>
+<p>Towards addressing this, in this dissertation, we present a `holistic approach’
+to designing high-performance, resilient and heterogeneity-aware key-value
+storage for HPC clusters, that encompasses: (1) RDMA-enabled networking, (2)
+high-speed NVMs, (3) emerging byte-addressable persistent memory devices, and,
+(4) SIMD-enabled multi-core CPU compute capabilities. We first introduce
+non-blocking API extensions to the RDMA- Memcached client, that allows an
+application to separate the request issue and completion phases. This
+facilitates overlapping opportunities by truly leveraging the one-sided
+characteristics of the underlying RDMA communication engine, while conforming
+to the basic Set/Get semantics. Secondly, we analyze the overhead of employing
+memory-efficient resilience via Erasure Coding (EC), in an online fashion.
+Based on this, we extend our proposed RDMA-aware key-value store, that supports
+non-blocking API semantics, to enable overlapping the EC encoding/decoding
+compute phases with the scatter/gather communication protocol involved in
+resiliently storing the distributed key-value data objects.</p>
+<p>This work also examines durable key-value store designs for emerging persistent
+memory technologies. While RDMA-based protocols employed in existing volatile
+DRAM-based key-value stores can be directly leveraged, we find that there is a
+need for a more integrated approach to fully exploit the fine-grained
+durability of these new byte-addressable storage devices. We propose 'RDMP-KV’,
+that employs a hybrid 'server-reply/server- bypass’ approach to 'durably’ store
+individual key-value pair objects on the remote persistent memory-equipped
+servers via RDMA. RDMP-KV’s runtime can easily adapt to existing
+(server-assisted durability) and emerging (appliance durability) RDMA-capable
+interconnects, while ensuring server scalability and remote data consistency.
+Finally, the thesis explores SIMD-accelerated CPU-centric hash table designs,
+that can enable higher server throughput. We propose an end-to-end SIMD-aware
+key-value store design, 'SCOR- KV’, which introduces optimistic
+'RDMA+SIMD’-aware client-centric request/response offloading protocols. SCOR-KV
+can minimize the server-side data processing overheads to achieve better
+scalability, without compromising on the client-side latencies.</p>
+<p>With this as the basis, we demonstrate the potential performance gains of the
+proposed designs with online (e.g, YCSB) and offline (e.g, in-memory and
+distributed burst-buffer over Lustre for Hadoop I/O) workloads on small-scale
+and production-scale HPC clusters.</p>
+<p><strong>Keywords</strong></p>
+<p>High-Performance Computing; Key-Value Store; RDMA; Persistent Memory;</p>
+<p><a href="https://etd.ohiolink.edu/apexprod/rws_olink/r/1501/10?clear=10&amp;p10_accession_num=osu1563522337179638">source</a></p>
+      </article>
+      <hr>
+      <article>
+        <header>
+          <a class="anchor" id="triec-paper-got-accepted-in-sc19-and-nominated-as-a-bsp-finalist"></a>
+          <h1>
+            <a href="/news/triec-paper-got-accepted-in-sc19-and-nominated-as-a-bsp-finalist.html">
+              TriEC paper got accepted in SC19 and nominated as a BSP Finalist!
+            </a>
+          </h1>
+        </header>
+        <p>A paper is accepted in SC 2019: TriEC: Tripartite Graph Based Erasure Coding
+NIC Offload. This year, SC only had 72 papers being accepted directly and 15
+papers asked for major revisions out of 344 initial submissions. This paper got
+accepted directly and nominated as a <strong>Best Student Paper (BSP) Finalist</strong>. </p>
+<p>Congratulations to my student, Haiyang!</p>
+<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
+<p><strong>[SC'19] TriEC: Tripartite Graph Based Erasure Coding NIC Offload (Best Student Paper Finalist)</strong></p>
+<p>Haiyang Shi and Xiaoyi Lu.</p>
+<p>In Proceedings of the 32nd International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2019. (Acceptance Rate: 22.7%, 78/344)</p>
+<p><strong>Abstract</strong></p>
+<p>Erasure Coding (EC) NIC offload is a promising technology for designing
+next-generation distributed storage systems. However, this paper has identified
+three major limitations of current-generation EC NIC offload schemes on modern
+SmartNICs. Thus, this paper proposes a new EC NIC offload paradigm based on the
+tripartite graph model, namely TriEC. TriEC supports both encode-and-send and
+receive-and-decode operations efficiently. Through theorem-based proofs,
+co-designs with memcached (i.e., TriEC-Cache), and extensive experiments, we
+show that TriEC is correct and can deliver better performance than the
+state-of-the-art EC NIC offload schemes (i.e., BiEC). Benchmark evaluations
+demonstrate that TriEC outperforms BiEC by up to 1.82x and 2.33x for encoding
+and recovering, respectively. With extended YCSB workloads, TriEC reduces the
+average write latency by up to 23.2% and the recovery time by up to 37.8%.
+TriEC outperforms BiEC by 1.32x for a full-node recovery with 8 million
+records.</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="umr-ec-paper-got-accepted-in-hpdc19"></a>
           <h1>
             <a href="/news/umr-ec-paper-got-accepted-in-hpdc19.html">
@@ -117,101 +292,6 @@ up to 5.1x compared with the default HDFS EC coder. Compared with the fastest
 available CPU coder (i.e., ISA-L), our proposed designs have an improvement of
 up to 66.0% and 19.4% for write and read with failure recoveries, respectively.</p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="c-gdr-paper-got-accepted-in-ipdps19"></a>
-          <h1>
-            <a href="/news/c-gdr-paper-got-accepted-in-ipdps19.html">
-              C-GDR paper got accepted in IPDPS19!
-            </a>
-          </h1>
-        </header>
-        <p>A paper is accepted in IPDPS 2019: C-GDR: High-Performance Container-aware GPUDirect MPI Communication Schemes on RDMA Networks. Congratulations to all the authors.</p>
-<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
-<p><strong>[IPDPS'19] C-GDR: High-Performance Container-aware GPUDirect MPI Communication Schemes on RDMA Networks</strong></p>
-<p>Jie Zhang, Xiaoyi Lu, Ching-Hsiang Chu, and Dhabaleswar K. Panda.</p>
-<p>In Proceedings of the 33rd IEEE International Parallel and Distributed Processing Symposium (IPDPS), 2019.</p>
-<p><strong>Abstract</strong></p>
-<p>In recent years, GPU-based platforms have received significant success for
-parallel applications. In addition to highly optimized computation kernels on
-GPUs, the cost of data movement on GPU clusters plays critical roles in
-delivering high performance for end applications. Many recent studies have been
-proposed to optimize the performance of GPU- or CUDA-aware communication
-runtimes and these designs have been widely adopted in the emerging GPU-based
-applications. These studies mainly focus on improving the communication
-performance on native environments, i.e., physical machines, however GPU-based
-communication schemes on cloud environments are not well studied yet. This
-paper first investigates the performance characteristics of state-of-the-art
-GPU-based communication schemes on both native and container-based
-environments, which show a significant demand to design high-performance
-container-aware communication schemes in GPU-enabled runtimes to deliver
-near-native performance for end applications on clouds. Next, we propose the
-C-GDR approach to design high-performance Container-aware GPUDirect
-communication schemes on RDMA networks. C-GDR allows communication runtimes to
-successfully detect process locality, GPU residency, NUMA, architecture
-information, and communication pattern to enable intelligent and dynamic
-selection of the best communication and data movement schemes on GPU-enabled
-clouds. We have integrated C-GDR with the MVAPICH2 library. Our evaluations
-show that MVAPICH2 with C-GDR has clear performance benefits on container-based
-cloud environments, compared to default MVAPICH2-GDR and Open MPI. For
-instance, our proposed C- GDR can outperform default MVAPICH2-GDR schemes by up
-to 66% on micro-benchmarks and up to 26% on HPC applications over a
-container-based environment.</p>
-      </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="xiaoyi-will-serve-as-tpcschairs-for-multiple-2019-conferences"></a>
-          <h1>
-            <a href="/news/xiaoyi-will-serve-as-tpcschairs-for-multiple-2019-conferences.html">
-              Xiaoyi will serve as TPCs/Chairs for multiple 2019 conferences!
-            </a>
-          </h1>
-        </header>
-        <p>Xiaoyi will serve as a General Co-Chair for <a href="http://www.benchcouncil.org/bench19/index.html">Bench 2019</a>. 
-Please submit your papers to Bench 2019. <a href="http://www.benchcouncil.org/bench19/cfp.html">Call for Papers</a></p>
-<p>Xiaoyi will serve as a TPC Co-Chair for <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2019/">The 5th IEEE International Workshop on High-Performance Big Data and Cloud Computing (HPBDC 2019)</a>.
-Please submit your papers to HPBDC 2019. <a href="http://web.cse.ohio-state.edu/~lu.932/hpbdc2019/#cfp">Call for Papers</a></p>
-<p>Xiaoyi will serve as TPCs for the following conferences in 2019!</p>
-<ul>
-<li><a href="https://sc19.supercomputing.org">SC 2019</a></li>
-<li><a href="https://hipc.org/">HiPC 2019</a></li>
-<li><a href="http://www.icccn.org">ICCCN 2019</a></li>
-<li>Others</li>
-</ul>
-      </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="we-got-an-nsf-grant-congrats"></a>
-          <h1>
-            <a href="/news/we-got-an-nsf-grant-congrats.html">
-              We got an NSF grant! Congrats!
-            </a>
-          </h1>
-        </header>
-        <p>A collaborative grant for research on large-scale hybrid memory systems is funded by NSF. I'm the PI from the OSU side.</p>
-<p>Congratulations to our great team!</p>
-<p>Thanks a lot for NSF's support!!!</p>
-<p><img src="https://www.nsf.gov/awardsearch/images/common/head.gif"></img></p>
-<p>Grant Information: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1822987">SPX: Collaborative Research: Memory Fabric: Data Management for Large-scale Hybrid Memory Systems</a></p>
-      </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="padsys-lab-starts"></a>
-          <h1>
-            <a href="/news/padsys-lab-starts.html">
-              PADSYS Lab Starts!
-            </a>
-          </h1>
-        </header>
-        <p>I start my new faculty position from this month! I'm looking forward to working with self-motivated students who are interested in doing system research.</p>
-<p>More importantly, we are happy to announce that PADSYS Lab Starts the great journey from The Ohio State University (OSU)!</p>
-<p><img src="https://i.imgur.com/p9ZrmKdl.jpg" style="width:640px;"></img>
-(Courtesy: Celebration by Nick Youngson CC BY-SA 3.0 Alpha Stock Images)</p>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -224,8 +304,8 @@ Please submit your papers to HPBDC 2019. <a href="http://web.cse.ohio-state.edu/
               </a>
             </li>
             <li><a href="/news_archive.html">Archive</a></li>
-            <li class="disabled">
-              <a href="#">
+            <li>
+              <a href="/news_index_30.html">
                 <span id="older"></span> <i class="icon-chevron-sign-right"></i>
               </a>
             </li>
@@ -237,28 +317,28 @@ Please submit your papers to HPBDC 2019. <a href="http://web.cse.ohio-state.edu/
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#xiaoyi-will-serve-as-tpcschairs-for-multiple-2020-conferences">
+                <i class="icon-chevron-left"></i> Xiaoyi will serve as TPCs/Chairs for multiple 2020 conferences!
+              </a>
+            </li>
+            <li>
+              <a href="#simdht-bench-paper-got-accepted-in-iiswc19-and-nominated-as-a-bp-candidate">
+                <i class="icon-chevron-left"></i> SimdHT-Bench paper got accepted in IISWC19 and nominated as a BP Candidate!
+              </a>
+            </li>
+            <li>
+              <a href="#dipti-got-the-phd-degree-congrats">
+                <i class="icon-chevron-left"></i> Dipti got the Ph.D. degree! Congrats!
+              </a>
+            </li>
+            <li>
+              <a href="#triec-paper-got-accepted-in-sc19-and-nominated-as-a-bsp-finalist">
+                <i class="icon-chevron-left"></i> TriEC paper got accepted in SC19 and nominated as a BSP Finalist!
+              </a>
+            </li>
+            <li>
               <a href="#umr-ec-paper-got-accepted-in-hpdc19">
                 <i class="icon-chevron-left"></i> UMR-EC paper got accepted in HPDC19!
-              </a>
-            </li>
-            <li>
-              <a href="#c-gdr-paper-got-accepted-in-ipdps19">
-                <i class="icon-chevron-left"></i> C-GDR paper got accepted in IPDPS19!
-              </a>
-            </li>
-            <li>
-              <a href="#xiaoyi-will-serve-as-tpcschairs-for-multiple-2019-conferences">
-                <i class="icon-chevron-left"></i> Xiaoyi will serve as TPCs/Chairs for multiple 2019 conferences!
-              </a>
-            </li>
-            <li>
-              <a href="#we-got-an-nsf-grant-congrats">
-                <i class="icon-chevron-left"></i> We got an NSF grant! Congrats!
-              </a>
-            </li>
-            <li>
-              <a href="#padsys-lab-starts">
-                <i class="icon-chevron-left"></i> PADSYS Lab Starts!
               </a>
             </li>
           </ul>
