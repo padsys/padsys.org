@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRLMFMXHSX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BRLMFMXHSX');
+    </script>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>PADSYS Lab  | Publications </title>
+    <meta name="description" content="PADSYS Lab">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google-site-verification" content="nYD5zMH9wJ2yVNGSVyucER2a5ImxWiVGohvZa29ioPU">
+
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link type="text/plain" rel="author" href="/humans.txt">
+
+    <!-- CSS -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Load modernizr here (other JavaScript at the bottom of the page -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="/index.html">PADSYS Lab</a>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <i class="icon-double-angle-down"></i>
+            </a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li>
+                  <a href="/about.html">About</a>
+                </li>
+                <li>
+                  <a href="/news.html">News</a>
+                </li>
+                <li>
+                  <a href="/people.html">People</a>
+                </li>
+                <li class=active>
+                  <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                  <a href="/research.html">Research</a>
+                </li>
+                <li>
+                  <a href="/courses.html">Courses</a>
+                </li>              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+<div class="container">
+  <div class="row">
+    <div class="offset1 span7">
+      <header>
+        <h2>
+          An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression
+          <h4>
+            <span class="journal">Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)</span>,
+            <span class="year">2024</span>
+            </h4>
+        </h2>
+        <p><em>Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Zhaorui Zhang, Jinyang Liu, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Ken Raffenetti, Hui Zhou, Kai Zhao, Zizhong Chen, Franck Cappello, Yanfei Guo, Rajeev Thakur</em></p>
+      </header>
+      <h3>Abstract</h3>
+      <p>With the ever-increasing computing power of supercomputers and the growing scale of scientific applications, the efficiency of MPI collective communications turns out to be a critical bottleneck in large-scale distributed and parallel processing. The large message size in MPI collectives is particularly concerning because it can significantly degrade the overall parallel performance. To address this issue, prior research simply applies the off-the-shelf fix-rate lossy compressors in the MPI collectives, leading to suboptimal performance, limited generalizability, and unbounded errors. In this paper, we propose a novel solution, called C-Coll, which leverages error-bounded lossy compression to significantly reduce the message size, resulting in a substantial reduction in communication cost. The key contributions are three-fold. (1) We develop two general, optimized lossy-compression-based frameworks for both types of MPI collectives (collective data movement as well as collective computation), based on their particular characteristics. Our framework not only reduces communication cost but also preserves data accuracy. (2) We customize SZx, an ultra-fast error-bounded lossy compressor, to meet the specific needs of collective communication. (3) We integrate C-Coll into multiple collectives, such as MPI_Allreduce, MPI_Scatter, and MPI_Bcast, and perform a comprehensive evaluation based on real-world scientific datasets. Experiments show that our solution outperforms the original MPI collectives as well as multiple baselines and related efforts by 1.8-2.7X.</p>
+      </div>
+    <div class="span3">
+      <h4>Conference Proceedings</h4>
+      <dl>
+        
+          <dt>Booktitle</dt>
+          <dd>Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)</dd>
+        
+          <dt>Publisher</dt>
+          <dd>IEEE Computer Society</dd>
+        
+          <dt>Series</dt>
+          <dd>IPDPS &#39;24</dd>
+        
+          <dt>Address</dt>
+          <dd>San Francisco, California, USA</dd>
+        
+          <dt>Month</dt>
+          <dd>May 27-31</dd>
+        
+      </dl>
+      <h4>Cite</h4>
+      <p>
+        <a href="#conf-ipdps-jiajun24cite"  onclick="showmodaltab('conf-ipdps-jiajun24', 'pt');">Plain text</a>
+      </p>
+      <p>
+        <a href="#conf-ipdps-jiajun24cite" onclick="showmodaltab('conf-ipdps-jiajun24', 'bt');">BibTeX</a>
+      </p>
+      <p>
+        <span class="rightcol-link">
+    <a href="https://github.com/padsys/padsys.org/edit/master/publications/conf-ipdps-jiajun24.html"
+     data-tooltip class="edit-link" title="Edit on Github">
+      <i class="icon-github"></i>
+    </a>
+  </span>
+      </p>
+    </div>
+  </div>
+  <div id="conf-ipdps-jiajun24cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ipdps-jiajun24pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ipdps-jiajun24bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ipdps-jiajun24pt" onclick="selectdiv('conf-ipdps-jiajun24pt')">
+          <p>Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Zhaorui Zhang, Jinyang Liu, Xiaoyi Lu, Ken Raffenetti, Hui Zhou, Kai Zhao, Zizhong Chen, Franck Cappello, Yanfei Guo, and Rajeev Thakur. An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression. In Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS), IPDPS &#39;24. San Francisco, California, USA, May 27-31 2024. IEEE Computer Society.</p>
+        </div>
+        <div class="tab-pane" id="conf-ipdps-jiajun24bt" onclick="selectdiv('conf-ipdps-jiajun24bt')">
+          <p><pre>@inproceedings{conf-ipdps-jiajun24,
+  title=&#34;{An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression}&#34;,
+  author={Huang, Jiajun and Di, Sheng and Yu, Xiaodong and Zhai, Yujia and Zhang, Zhaorui and Liu, Jinyang and Lu, Xiaoyi and Raffenetti, Ken and Zhou, Hui and Zhao, Kai and Chen, Zizhong and Cappello, Franck and Guo, Yanfei and Thakur, Rajeev},
+  booktitle={Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  publisher = {IEEE Computer Society},
+  series = {IPDPS &#39;24},
+  abstract = {With the ever-increasing computing power of supercomputers and the growing scale of scientific applications, the efficiency of MPI collective communications turns out to be a critical bottleneck in large-scale distributed and parallel processing. The large message size in MPI collectives is particularly concerning because it can significantly degrade the overall parallel performance. To address this issue, prior research simply applies the off-the-shelf fix-rate lossy compressors in the MPI collectives, leading to suboptimal performance, limited generalizability, and unbounded errors. In this paper, we propose a novel solution, called C-Coll, which leverages error-bounded lossy compression to significantly reduce the message size, resulting in a substantial reduction in communication cost. The key contributions are three-fold. (1) We develop two general, optimized lossy-compression-based frameworks for both types of MPI collectives (collective data movement as well as collective computation), based on their particular characteristics. Our framework not only reduces communication cost but also preserves data accuracy. (2) We customize SZx, an ultra-fast error-bounded lossy compressor, to meet the specific needs of collective communication. (3) We integrate C-Coll into multiple collectives, such as MPI_Allreduce, MPI_Scatter, and MPI_Bcast, and perform a comprehensive evaluation based on real-world scientific datasets. Experiments show that our solution outperforms the original MPI collectives as well as multiple baselines and related efforts by 1.8-2.7X.},
+  year={2024},
+  address={San Francisco, California, USA},
+  month={May 27-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer>
+      <div class="row-fluid footer">
+        <div class="span5 offset1">
+          <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US" title="Content licensed under CC-Attribution-Unported License" data-tooltip rel="license" target="_blank">
+            <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png">
+          </a>
+          <a href="/humans.txt" data-tooltip title="Colophon">
+            <img alt="humans.txt" src="http://humanstxt.org/img/oficial-logos/humanstxt-isolated-blank.gif">
+          </a>
+        </div>
+        <div class="span5 text-right">
+          <a href="https://www.youtube.com/channel/UCn-Sf06h7-5Me2aphMCCP-g" data-tooltip title="Videos on YouTube">
+            <i class="icon-youtube"></i>
+          </a>
+          <a href="https://github.com/padsys" data-tooltip title="Code on Github">
+            <i class="icon-github"></i>
+          </a>
+          <a href="mailto:xiaoyi.lu@ucmerced.edu" data-tooltip title="Email the lab">
+            <i class="icon-envelope"></i>
+          </a>
+          <a href="/about.html#contact" data-tooltip title="Snail mail: PADSYS Lab, SE2, 5200 N. Lake Road, Merced, CA 95343">
+            <i class="icon-home"></i>
+          </a>
+          <a href="/about.html#contact" data-tooltip title="Phone: TBD">
+            <i class="icon-phone"></i>
+          </a>
+          <a href="/about.html#contact" data-tooltip title="Fax: TBD">
+            <i class="icon-print"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/static/js/list.min.js"></script>
+    <script src="/static/js/list.paging.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    
+  </body>
+</html>

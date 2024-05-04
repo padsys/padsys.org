@@ -84,15 +84,15 @@
         <div class="publication-controls">
           <ul class="nav nav-pills nav-stacked clearfix">
             <li class=active>
-              <a href="#" data-toggle="pill" onclick="filterList('All')">All [146]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('All')">All [153]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book')">Book [1]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book Chapter')">Book Chapter [2]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [127]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [132]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [16]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [18]</a>
             </li>
           </ul>
           <input class="search search-query" type="text" placeholder="Search publications">
@@ -106,6 +106,347 @@
         </div>
         <ul class="list">
           <li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [IPDPS &#39;24]&nbsp; 
+		  <a href="/publications/conf-ipdps-jiajun24.html">
+		  An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression
+		  </a>
+		  </strong>
+              <p class="authors">Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Zhaorui Zhang, Jinyang Liu, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Ken Raffenetti, Hui Zhou, Kai Zhao, Zizhong Chen, Franck Cappello, Yanfei Guo, Rajeev Thakur</p>
+              <p>
+                    <span class="journal">Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)</span>,
+                    <span class="year">2024</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-ipdps-jiajun24abs">Abstract</a></li>
+                <li><a href="#conf-ipdps-jiajun24cite" data-toggle="modal">Citation</a></li>
+                </ul>
+              <div id="conf-ipdps-jiajun24abs" class="collapse">
+                <p><strong>Abstract: </strong> With the ever-increasing computing power of supercomputers and the growing scale of scientific applications, the efficiency of MPI collective communications turns out to be a critical bottleneck in large-scale distributed and parallel processing. The large message size in MPI collectives is particularly concerning because it can significantly degrade the overall parallel performance. To address this issue, prior research simply applies the off-the-shelf fix-rate lossy compressors in the MPI collectives, leading to suboptimal performance, limited generalizability, and unbounded errors. In this paper, we propose a novel solution, called C-Coll, which leverages error-bounded lossy compression to significantly reduce the message size, resulting in a substantial reduction in communication cost. The key contributions are three-fold. (1) We develop two general, optimized lossy-compression-based frameworks for both types of MPI collectives (collective data movement as well as collective computation), based on their particular characteristics. Our framework not only reduces communication cost but also preserves data accuracy. (2) We customize SZx, an ultra-fast error-bounded lossy compressor, to meet the specific needs of collective communication. (3) We integrate C-Coll into multiple collectives, such as MPI_Allreduce, MPI_Scatter, and MPI_Bcast, and perform a comprehensive evaluation based on real-world scientific datasets. Experiments show that our solution outperforms the original MPI collectives as well as multiple baselines and related efforts by 1.8-2.7X.</p>
+              </div>
+              </div>
+            <div id="conf-ipdps-jiajun24cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ipdps-jiajun24pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ipdps-jiajun24bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ipdps-jiajun24pt" onclick="selectdiv('conf-ipdps-jiajun24pt')">
+          <p>Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Zhaorui Zhang, Jinyang Liu, Xiaoyi Lu, Ken Raffenetti, Hui Zhou, Kai Zhao, Zizhong Chen, Franck Cappello, Yanfei Guo, and Rajeev Thakur. An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression. In Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS), IPDPS &#39;24. San Francisco, California, USA, May 27-31 2024. IEEE Computer Society.</p>
+        </div>
+        <div class="tab-pane" id="conf-ipdps-jiajun24bt" onclick="selectdiv('conf-ipdps-jiajun24bt')">
+          <p><pre>@inproceedings{conf-ipdps-jiajun24,
+  title=&#34;{An Optimized Error-controlled MPI Collective Framework Integrated with Lossy Compression}&#34;,
+  author={Huang, Jiajun and Di, Sheng and Yu, Xiaodong and Zhai, Yujia and Zhang, Zhaorui and Liu, Jinyang and Lu, Xiaoyi and Raffenetti, Ken and Zhou, Hui and Zhao, Kai and Chen, Zizhong and Cappello, Franck and Guo, Yanfei and Thakur, Rajeev},
+  booktitle={Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  publisher = {IEEE Computer Society},
+  series = {IPDPS &#39;24},
+  abstract = {With the ever-increasing computing power of supercomputers and the growing scale of scientific applications, the efficiency of MPI collective communications turns out to be a critical bottleneck in large-scale distributed and parallel processing. The large message size in MPI collectives is particularly concerning because it can significantly degrade the overall parallel performance. To address this issue, prior research simply applies the off-the-shelf fix-rate lossy compressors in the MPI collectives, leading to suboptimal performance, limited generalizability, and unbounded errors. In this paper, we propose a novel solution, called C-Coll, which leverages error-bounded lossy compression to significantly reduce the message size, resulting in a substantial reduction in communication cost. The key contributions are three-fold. (1) We develop two general, optimized lossy-compression-based frameworks for both types of MPI collectives (collective data movement as well as collective computation), based on their particular characteristics. Our framework not only reduces communication cost but also preserves data accuracy. (2) We customize SZx, an ultra-fast error-bounded lossy compressor, to meet the specific needs of collective communication. (3) We integrate C-Coll into multiple collectives, such as MPI_Allreduce, MPI_Scatter, and MPI_Bcast, and perform a comprehensive evaluation based on real-world scientific datasets. Experiments show that our solution outperforms the original MPI collectives as well as multiple baselines and related efforts by 1.8-2.7X.},
+  year={2024},
+  address={San Francisco, California, USA},
+  month={May 27-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Journal Article</p>
+              <strong class="title">
+                  [IEEE Micro&#39;24]&nbsp; 
+		  <a href="/publications/journals-micro24-liuyao.html">
+		  High-Speed Data Communication with Advanced Networks in Large Language Model Training
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/liuyao-dai.html">Liuyao Dai</a>, <a href="/people/hao-qi.html">Hao Qi</a>, <a href="/people/weicong-chen.html">Weicong Chen</a>, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">IEEE Micro</span>,
+                    <span class="year">2024</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#journals-micro24-liuyaoabs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#journals-micro24-liuyaokw">Keywords</a></li>
+                <li><a href="#journals-micro24-liuyaocite" data-toggle="modal">Citation</a></li>
+                </ul>
+              <div id="journals-micro24-liuyaokw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> training;parallel processing;data models;computational modeling;decoding;tcpip;synchronization;high-speed networks;large language models
+                </p>
+              </div>
+              <div id="journals-micro24-liuyaoabs" class="collapse">
+                <p><strong>Abstract: </strong> Large language models (LLMs) like Generative Pre-trained Transformer, Bidirectional Encoder Representations from Transformers, and T5 are pivotal in natural language processing. Their distributed training is influenced by high-speed interconnects. This article characterizes their training performance across various interconnects and communication protocols: TCP/IP, Internet Protocol over InfiniBand, (IPoIB), and Remote Direct Memory Access (RDMA), using data and model parallelism. RDMA-100 Gbps outperforms IPoIB-100 Gbps and TCP/IP-10 Gbps, with average gains of 2.5x and 4.8x in data parallelism, while in model parallelism, the gains were 1.1x and 1.2x. RDMA achieves the highest interconnect utilization (up to 60 Gbps), compared to IPoIB with up to 20 Gbps and TCP/IP with up to 9 Gbps. Larger models demand increased communication bandwidth, with AllReduce in data parallelism consuming up to 91</p>
+              </div>
+              </div>
+            <div id="journals-micro24-liuyaocite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "High-Speed Data Communication with Advanced Networks in Large Language Model Training"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#journals-micro24-liuyaopt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#journals-micro24-liuyaobt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="journals-micro24-liuyaopt" onclick="selectdiv('journals-micro24-liuyaopt')">
+          <p>Liuyao Dai, Hao Qi, Weicong Chen, and Xiaoyi Lu. High-Speed Data Communication with Advanced Networks in Large Language Model Training. IEEE Micro, 44(02):31-40, mar 2024. doi:10.1109/MM.2024.3360081.</p>
+        </div>
+        <div class="tab-pane" id="journals-micro24-liuyaobt" onclick="selectdiv('journals-micro24-liuyaobt')">
+          <p><pre>@article{journals-micro24-liuyao,
+author = {Dai, Liuyao and Qi, Hao and Chen, Weicong and Lu, Xiaoyi},
+title = &#34;{High-Speed Data Communication with Advanced Networks in Large Language Model Training}&#34;,
+journal = {IEEE Micro},
+year = {2024},
+volume = {44},
+number = {02},
+issn = {1937-4143},
+pages = {31-40},
+abstract = {Large language models (LLMs) like Generative Pre-trained Transformer, Bidirectional Encoder Representations from Transformers, and T5 are pivotal in natural language processing. Their distributed training is influenced by high-speed interconnects. This article characterizes their training performance across various interconnects and communication protocols: TCP/IP, Internet Protocol over InfiniBand, (IPoIB), and Remote Direct Memory Access (RDMA), using data and model parallelism. RDMA-100 Gbps outperforms IPoIB-100 Gbps and TCP/IP-10 Gbps, with average gains of 2.5x and 4.8x in data parallelism, while in model parallelism, the gains were 1.1x and 1.2x. RDMA achieves the highest interconnect utilization (up to 60 Gbps), compared to IPoIB with up to 20 Gbps and TCP/IP with up to 9 Gbps. Larger models demand increased communication bandwidth, with AllReduce in data parallelism consuming up to 91% of training time, and forward receive and back-embedding AllReduce in model parallelism taking up to 90%. The larger-scale experiment confirms that communication predominates iterations. Our findings underscore the significance of communication in distributed LLM training and present opportunities for optimization.},
+keywords = {training;parallel processing;data models;computational modeling;decoding;tcpip;synchronization;high-speed networks;large language models},
+doi = {10.1109/MM.2024.3360081},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+series = {IEEE Micro&#39;24},
+month = {mar}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Journal Article</p>
+              <strong class="title">
+                  [IEEE Micro&#39;24]&nbsp; 
+		  <a href="/publications/journals-micro24-yuke.html">
+		  Compression Analysis for BlueField-2/3 Data Processing Units: Lossy and Lossless Perspectives
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/yuke-li.html">Yuke Li</a>, <a href="/people/arjun-kashyap.html">Arjun Kashyap</a>, Yanfei Guo, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">IEEE Micro</span>,
+                    <span class="year">2024</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#journals-micro24-yukeabs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#journals-micro24-yukekw">Keywords</a></li>
+                <li><a href="#journals-micro24-yukecite" data-toggle="modal">Citation</a></li>
+                </ul>
+              <div id="journals-micro24-yukekw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> engines;task analysis;data compression;throughput;memory management;hardware acceleration;distributed databases;data processing;smart devices;system-on-chip
+                </p>
+              </div>
+              <div id="journals-micro24-yukeabs" class="collapse">
+                <p><strong>Abstract: </strong> A data processing unit (DPU) with programmable smart network interface card containing system-on-chip (SoC) cores is now a valuable addition to the host CPU, finding use in high-performance computing (HPC) and data center clusters for its advanced features, notably, a hardware-based data compression engine (C-engine). With the convergence of big data, HPC, and machine learning, data volumes burden communication and storage, making efficient compression vital. This positions DPUs as tools to accelerate compression workloads and enhance data-intensive applications. This article characterizes lossy (e.g., SZ3) and lossless (e.g., DEFLATE, lz4, and zlib) compression algorithms using seven real-world datasets on Nvidia BlueField-2/-3 DPUs. We explore the potential opportunities for offloading these compression workloads from the host. Our findings demonstrate that the C-engine within the DPU can achieve up to 26.8x speedup compared to its SoC core. We also provide insights on harnessing BlueField for compression, presenting seven crucial takeaways to steer future compression research with DPUs.</p>
+              </div>
+              </div>
+            <div id="journals-micro24-yukecite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "Compression Analysis for BlueField-2/3 Data Processing Units: Lossy and Lossless Perspectives"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#journals-micro24-yukept" data-toggle="tab">Plain text</a></li>
+        <li><a href="#journals-micro24-yukebt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="journals-micro24-yukept" onclick="selectdiv('journals-micro24-yukept')">
+          <p>Yuke Li, Arjun Kashyap, Yanfei Guo, and Xiaoyi Lu. Compression Analysis for BlueField-2/3 Data Processing Units: Lossy and Lossless Perspectives. IEEE Micro, 44(02):8-19, mar 2024. doi:10.1109/MM.2023.3343636.</p>
+        </div>
+        <div class="tab-pane" id="journals-micro24-yukebt" onclick="selectdiv('journals-micro24-yukebt')">
+          <p><pre>@article{journals-micro24-yuke,
+author = {Li, Yuke and Kashyap, Arjun and Guo, Yanfei and Lu, Xiaoyi},
+title = &#34;{Compression Analysis for BlueField-2/3 Data Processing Units: Lossy and Lossless Perspectives}&#34;,
+journal = {IEEE Micro},
+year = {2024},
+volume = {44},
+number = {02},
+issn = {1937-4143},
+pages = {8-19},
+abstract = {A data processing unit (DPU) with programmable smart network interface card containing system-on-chip (SoC) cores is now a valuable addition to the host CPU, finding use in high-performance computing (HPC) and data center clusters for its advanced features, notably, a hardware-based data compression engine (C-engine). With the convergence of big data, HPC, and machine learning, data volumes burden communication and storage, making efficient compression vital. This positions DPUs as tools to accelerate compression workloads and enhance data-intensive applications. This article characterizes lossy (e.g., SZ3) and lossless (e.g., DEFLATE, lz4, and zlib) compression algorithms using seven real-world datasets on Nvidia BlueField-2/-3 DPUs. We explore the potential opportunities for offloading these compression workloads from the host. Our findings demonstrate that the C-engine within the DPU can achieve up to 26.8x speedup compared to its SoC core. We also provide insights on harnessing BlueField for compression, presenting seven crucial takeaways to steer future compression research with DPUs.},
+keywords = {engines;task analysis;data compression;throughput;memory management;hardware acceleration;distributed databases;data processing;smart devices;system-on-chip},
+doi = {10.1109/MM.2023.3343636},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+series = {IEEE Micro&#39;24},
+month = {mar}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [IPDPS &#39;24]&nbsp; 
+		  <a href="/publications/conf-ipdps24-yuke.html">
+		  Accelerating Lossy and Lossless Compression on Emerging BlueField DPU Architectures
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/yuke-li.html">Yuke Li</a>, <a href="/people/arjun-kashyap.html">Arjun Kashyap</a>, <a href="/people/weicong-chen.html">Weicong Chen</a>, Yanfei Guo, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)</span>,
+                    <span class="year">2024</span>
+		    &nbsp;(Best Paper Award Nomination)
+		    </p>
+              <ul class="nav">
+                <li><a href="#conf-ipdps24-yukecite" data-toggle="modal">Citation</a></li>
+                </ul>
+              </div>
+            <div id="conf-ipdps24-yukecite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "Accelerating Lossy and Lossless Compression on Emerging BlueField DPU Architectures"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ipdps24-yukept" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ipdps24-yukebt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ipdps24-yukept" onclick="selectdiv('conf-ipdps24-yukept')">
+          <p>Yuke Li, Arjun Kashyap, Weicong Chen, Yanfei Guo, and Xiaoyi Lu. Accelerating Lossy and Lossless Compression on Emerging BlueField DPU Architectures. In Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS), IPDPS &#39;24. San Francisco, California, USA, May 27-31 2024. IEEE Computer Society. Best Paper Award Nomination.</p>
+        </div>
+        <div class="tab-pane" id="conf-ipdps24-yukebt" onclick="selectdiv('conf-ipdps24-yukebt')">
+          <p><pre>@inproceedings{conf-ipdps24-yuke,
+  title=&#34;{Accelerating Lossy and Lossless Compression on Emerging BlueField DPU Architectures}&#34;,
+  author={Li, Yuke and Kashyap, Arjun and Chen, Weicong and Guo, Yanfei and Lu, Xiaoyi},
+  booktitle={Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  publisher = {IEEE Computer Society},
+  series = {IPDPS &#39;24},
+  year={2024},
+  address={San Francisco, California, USA},
+  note={Best Paper Award Nomination},
+  month={May 27-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [IPDPS &#39;24]&nbsp; 
+		  <a href="/publications/conf-ipdps-jasanur24.html">
+		  DRUTO: Upper-Bounding Silent Data Corruption Vulnerability in GPU Applications
+		  </a>
+		  </strong>
+              <p class="authors">Md Hasanur Rahman, Sheng Di, Shengjian Guo, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Guanpeng Li, Franck Cappello</p>
+              <p>
+                    <span class="journal">Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)</span>,
+                    <span class="year">2024</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#conf-ipdps-jasanur24cite" data-toggle="modal">Citation</a></li>
+                </ul>
+              </div>
+            <div id="conf-ipdps-jasanur24cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "DRUTO: Upper-Bounding Silent Data Corruption Vulnerability in GPU Applications"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ipdps-jasanur24pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ipdps-jasanur24bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ipdps-jasanur24pt" onclick="selectdiv('conf-ipdps-jasanur24pt')">
+          <p>Md Hasanur Rahman, Sheng Di, Shengjian Guo, Xiaoyi Lu, Guanpeng Li, and Franck Cappello. DRUTO: Upper-Bounding Silent Data Corruption Vulnerability in GPU Applications. In Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS), IPDPS &#39;24. San Francisco, California, USA, May 27-31 2024. IEEE Computer Society.</p>
+        </div>
+        <div class="tab-pane" id="conf-ipdps-jasanur24bt" onclick="selectdiv('conf-ipdps-jasanur24bt')">
+          <p><pre>@inproceedings{conf-ipdps-jasanur24,
+  title=&#34;{DRUTO: Upper-Bounding Silent Data Corruption Vulnerability in GPU Applications}&#34;,
+  author={Rahman, Md Hasanur and Di, Sheng and Guo, Shengjian and Lu, Xiaoyi and Li, Guanpeng and Cappello, Franck},
+  booktitle={Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  publisher = {IEEE Computer Society},
+  series = {IPDPS &#39;24},
+  year={2024},
+  address={San Francisco, California, USA},
+  month={May 27-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [IPDPS &#39;24]&nbsp; 
+		  <a href="/publications/conf-ipdps24-darren.html">
+		  NVMe-oPF: Designing Efficient Priority Schemes for NVMe-over-Fabrics with Multi-Tenancy Support
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/darren-ng.html">Darren Ng</a>, <a href="/people/andrew-lin.html">Andrew Lin</a>, <a href="/people/arjun-kashyap.html">Arjun Kashyap</a>, Guanpeng Li, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)</span>,
+                    <span class="year">2024</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#conf-ipdps24-darrencite" data-toggle="modal">Citation</a></li>
+                </ul>
+              </div>
+            <div id="conf-ipdps24-darrencite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "NVMe-oPF: Designing Efficient Priority Schemes for NVMe-over-Fabrics with Multi-Tenancy Support"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ipdps24-darrenpt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ipdps24-darrenbt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ipdps24-darrenpt" onclick="selectdiv('conf-ipdps24-darrenpt')">
+          <p>Darren Ng, Andrew Lin, Arjun Kashyap, Guanpeng Li, and Xiaoyi Lu. NVMe-oPF: Designing Efficient Priority Schemes for NVMe-over-Fabrics with Multi-Tenancy Support. In Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS), IPDPS &#39;24. San Francisco, California, USA, May 27-31 2024. IEEE Computer Society.</p>
+        </div>
+        <div class="tab-pane" id="conf-ipdps24-darrenbt" onclick="selectdiv('conf-ipdps24-darrenbt')">
+          <p><pre>@inproceedings{conf-ipdps24-darren,
+  title=&#34;{NVMe-oPF: Designing Efficient Priority Schemes for NVMe-over-Fabrics with Multi-Tenancy Support}&#34;,
+  author={Ng, Darren and Lin, Andrew and Kashyap, Arjun and Li, Guanpeng and Lu, Xiaoyi},
+  booktitle={Proceedings of the 38th IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  publisher = {IEEE Computer Society},
+  series = {IPDPS &#39;24},
+  year={2024},
+  address={San Francisco, California, USA},
+  month={May 27-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
             <div class="media-body">
               <p class="type hidden">Conference Proceedings</p>
               <strong class="title">
@@ -198,6 +539,55 @@
     series = {ModSim &#39;23},
     note = {Poster Paper},
     year={2023}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [MlSys Workshop&#39;23]&nbsp; 
+		  <a href="/publications/conf-mlsysw-yujie23.html">
+		  Learning Distributed Protocols with Zero Knowledge
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/yujie-hui.html">Yujie Hui</a>, Drew Ripberger, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Yang Wang</p>
+              <p>
+                    <span class="journal">Machine Learning for Systems 2023 (MlSys Workshop at NeurIPS 2023)</span>,
+                    <span class="year">2023</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#conf-mlsysw-yujie23cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://openreview.net/forum?id=u0Ncut8ru5" target="_blank">Full text</a></li>
+                </ul>
+              </div>
+            <div id="conf-mlsysw-yujie23cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "Learning Distributed Protocols with Zero Knowledge"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-mlsysw-yujie23pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-mlsysw-yujie23bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-mlsysw-yujie23pt" onclick="selectdiv('conf-mlsysw-yujie23pt')">
+          <p>Yujie Hui, Drew Ripberger, Xiaoyi Lu, and Yang Wang. Learning Distributed Protocols with Zero Knowledge. In Machine Learning for Systems 2023 (MlSys Workshop at NeurIPS 2023), MlSys Workshop&#39;23. 2023. URL: https://openreview.net/forum?id=u0Ncut8ru5.</p>
+        </div>
+        <div class="tab-pane" id="conf-mlsysw-yujie23bt" onclick="selectdiv('conf-mlsysw-yujie23bt')">
+          <p><pre>@inproceedings{conf-mlsysw-yujie23,
+title=&#34;{Learning Distributed Protocols with Zero Knowledge}&#34;,
+author={Hui, Yujie and Ripberger, Drew and Lu, Xiaoyi and Wang, Yang},
+booktitle={Machine Learning for Systems 2023 (MlSys Workshop at NeurIPS 2023)},
+year={2023},
+series = {MlSys Workshop&#39;23},
+url={https://openreview.net/forum?id=u0Ncut8ru5}
 }</pre></p>
         </div>
       </div>
