@@ -84,13 +84,13 @@
         <div class="publication-controls">
           <ul class="nav nav-pills nav-stacked clearfix">
             <li class=active>
-              <a href="#" data-toggle="pill" onclick="filterList('All')">All [153]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('All')">All [154]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book')">Book [1]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book Chapter')">Book Chapter [2]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [132]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [133]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [18]</a>
             </li>
@@ -338,6 +338,60 @@ month = {mar}
   address={San Francisco, California, USA},
   note={Best Paper Award Nomination},
   month={May 27-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [ICS &#39;24]&nbsp; 
+		  <a href="/publications/conf-ics24-jiajun-gzccl.html">
+		  gZCCL: Compression-Accelerated Collective Communication Framework for GPU Clusters
+		  </a>
+		  </strong>
+              <p class="authors">Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Jinyang Liu, Yafan Huang, Ken Raffenetti, Hui Zhou, Kai Zhao, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Zizhong Chen, Franck Cappello, Yanfei Guo, Rajeev Thakur</p>
+              <p>
+                    <span class="journal">Proceedings of the 38th International Conference on Supercomputing (ICS)</span>,
+                    <span class="year">2024</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-ics24-jiajun-gzcclabs">Abstract</a></li>
+                <li><a href="#conf-ics24-jiajun-gzcclcite" data-toggle="modal">Citation</a></li>
+                </ul>
+              <div id="conf-ics24-jiajun-gzcclabs" class="collapse">
+                <p><strong>Abstract: </strong> GPU-aware collective communication has become a major bottleneck for modern computing platforms as GPU computing power rapidly rises. A traditional approach is to directly integrate lossy compression into GPU-aware collectives, which can lead to serious performance issues such as underutilized GPU devices and uncontrolled data distortion. In order to address these issues, in this paper, we propose gZCCL, a first-ever general framework that designs and optimizes GPU-aware, compression-enabled collectives with an accuracy-aware design to control error propagation. To validate our framework, we evaluate the performance on up to 512 NVIDIA A100 GPUs with real-world applications and datasets. Experimental results demonstrate that our gZCCL-accelerated collectives, including both collective computation (Allreduce) and collective data movement (Scatter), can outperform NCCL as well as Cray MPI by up to 4.5X and 28.7X, respectively. Furthermore, our accuracy evaluation with an image-stacking application confirms the high reconstructed data quality of our accuracy-aware framework.</p>
+              </div>
+              </div>
+            <div id="conf-ics24-jiajun-gzcclcite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "gZCCL: Compression-Accelerated Collective Communication Framework for GPU Clusters"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ics24-jiajun-gzcclpt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ics24-jiajun-gzcclbt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ics24-jiajun-gzcclpt" onclick="selectdiv('conf-ics24-jiajun-gzcclpt')">
+          <p>Jiajun Huang, Sheng Di, Xiaodong Yu, Yujia Zhai, Jinyang Liu, Yafan Huang, Ken Raffenetti, Hui Zhou, Kai Zhao, Xiaoyi Lu, Zizhong Chen, Franck Cappello, Yanfei Guo, and Rajeev Thakur. gZCCL: Compression-Accelerated Collective Communication Framework for GPU Clusters. In Proceedings of the 38th International Conference on Supercomputing (ICS), ICS &#39;24. Kyoto University, Kyoto, Japan, June 2024.</p>
+        </div>
+        <div class="tab-pane" id="conf-ics24-jiajun-gzcclbt" onclick="selectdiv('conf-ics24-jiajun-gzcclbt')">
+          <p><pre>@inproceedings{conf-ics24-jiajun-gzccl,
+  author    = {Huang, Jiajun and Di, Sheng and Yu, Xiaodong and Zhai, Yujia and Liu, Jinyang and Huang, Yafan and Raffenetti, Ken and Zhou, Hui and Zhao, Kai and Lu, Xiaoyi and Chen, Zizhong and Cappello, Franck and Guo, Yanfei and Thakur, Rajeev},
+  title     = &#34;{gZCCL: Compression-Accelerated Collective Communication Framework for GPU Clusters}&#34;,
+  booktitle = {Proceedings of the 38th International Conference on Supercomputing (ICS)},
+  year      = {2024},
+  address  = {Kyoto University, Kyoto, Japan},
+  month     = {June},
+  series = {ICS &#39;24},
+  abstract = {GPU-aware collective communication has become a major bottleneck for modern computing platforms as GPU computing power rapidly rises. A traditional approach is to directly integrate lossy compression into GPU-aware collectives, which can lead to serious performance issues such as underutilized GPU devices and uncontrolled data distortion. In order to address these issues, in this paper, we propose gZCCL, a first-ever general framework that designs and optimizes GPU-aware, compression-enabled collectives with an accuracy-aware design to control error propagation. To validate our framework, we evaluate the performance on up to 512 NVIDIA A100 GPUs with real-world applications and datasets. Experimental results demonstrate that our gZCCL-accelerated collectives, including both collective computation (Allreduce) and collective data movement (Scatter), can outperform NCCL as well as Cray MPI by up to 4.5X and 28.7X, respectively. Furthermore, our accuracy evaluation with an image-stacking application confirms the high reconstructed data quality of our accuracy-aware framework.}
 }</pre></p>
         </div>
       </div>
