@@ -14,7 +14,7 @@
     </script>
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-    <title>PADSYS Lab  | People </title>
+    <title>PADSYS Lab  | Publications </title>
     <meta name="description" content="PADSYS Lab">
     <meta name="viewport" content="width=device-width">
     <meta name="google-site-verification" content="nYD5zMH9wJ2yVNGSVyucER2a5ImxWiVGohvZa29ioPU">
@@ -33,7 +33,7 @@
     <!-- Load modernizr here (other JavaScript at the bottom of the page -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   </head>
-  <body data-spy="scroll" data-target=".headers-sidenav">
+  <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -54,10 +54,10 @@
                 <li>
                   <a href="/news.html">News</a>
                 </li>
-                <li class=active>
+                <li>
                   <a href="/people.html">People</a>
                 </li>
-                <li>
+                <li class=active>
                   <a href="/publications.html">Publications</a>
                 </li>
                 <li>
@@ -74,74 +74,90 @@
     </nav>
 <div class="container">
   <div class="row">
-    <div class="offset1 span8">
-      <div class="research-unit clearfix">
-        <header>
-          <img class="pull-right" src="https://sites.ucmerced.edu/files/luxi/files/hao-qi.jpg" width="200">
-          <h1>Hao Qi</h1>
-          <p>Ph.D. Student</p>
-          <ul class="two-column">
-            <li><a href="mailto:hqi6@ucmerced.edu"><i class="icon-envelope"></i> Email</a></li>
-            </ul>
-        </header>
-      </div>
-    </div>
-  </div>
-  <div class="row">
     <div class="offset1 span7">
-      <a class="anchor" id="about-me"></a>
-      <a class="anchor" id="short-bio"></a><h2>Short Bio</h2>
-<p>Hello! My name is Hao Qi, a Ph.D. student in the PADSYS Lab at University of 
-California, Merced. My advisor is <a href="https://sites.ucmerced.edu/luxi">Prof.Xiaoyi Lu</a>. 
-Previously (2019-2021), I was a Ph.D. student at the Ohio State University (OSU). 
-I got my M.S. degree in Biomedical Engineering from OSU before I joined the PADSYS Lab.</p>
-<a class="anchor" id="research-interests"></a><h2>Research Interests</h2>
-<p>My research interests mainly include high-performance computing, parallel computing, 
-and system for machine learning.</p>
-      <a class="anchor" id="publications"></a>
-      <h2>Publications</h2>
-      <ul class="icons-ul">
-        <li>
-          <i class="icon-li icon-file-alt"></i><a href="/publications/conf-icnp24-jianbo.html"><strong>[ICNP &#39;24]</strong> KSpeed: Beating I/O Bottlenecks of Data Provisioning for RDMA Training Clusters</a>
-        </li><li>
-          <i class="icon-li icon-file-alt"></i><a href="/publications/journals-micro24-liuyao.html"><strong>[IEEE Micro&#39;24]</strong> High-Speed Data Communication with Advanced Networks in Large Language Model Training</a>
-        </li><li>
-          <i class="icon-li icon-file-alt"></i><a href="/publications/conf-hoti-llm-hao23.html"><strong>[HotI &#39;23]</strong> Performance Characterization of Large Language Models on High-Speed Interconnects</a>
-        </li><li>
-          <i class="icon-li icon-file-alt"></i><a href="/publications/conf-ipdps-chen23.html"><strong>[IPDPS &#39;23]</strong> SBGT: Scaling Bayesian-based Group Testing for Disease Surveillance</a>
-        </li><li>
-          <i class="icon-li icon-file-alt"></i><a href="/publications/journals-jcst-Weingram23.html"><strong>[JCST &#39;23]</strong> xCCL: A Survey of Industry-Led Collective Communication Libraries for Deep Learning</a>
-        </li><li>
-          <i class="icon-li icon-file-alt"></i><a href="/publications/conf-sc-hao23-poster.html"><strong>[SC &#39;23]</strong> Early Experience in Characterizing Training Large Language Models on Modern HPC Clusters</a>
-        </li><li>
-          <i class="icon-li icon-file-alt"></i><a href="/publications/journals-tbench-yukeli22.html"><strong>[TBench &#39;22]</strong> Understanding hot interconnects with an extensive benchmark survey</a>
-        </li>
-      </ul>
-      
-    </div>
-    <div class="offset1 span2">
-      <nav>
-        <div class="headers-sidenav">
-          <ul class="nav nav-tabs nav-stacked">
-            <li>
-              <a href="#about-me">
-                <i class="icon-chevron-left"></i> About me
-              </a>
-            </li>
-            <li>
-              <a href="#publications">
-                <i class="icon-chevron-left"></i> Publications
-              </a>
-            </li>
-          </ul>
-          <span class="rightcol-link">
-    <a href="https://github.com/padsys/padsys.org/edit/master/people/hao-qi.html"
+      <header>
+        <h2>
+          KSpeed: Beating I/O Bottlenecks of Data Provisioning for RDMA Training Clusters
+          <h4>
+            <span class="journal">Proceedings of The 32nd IEEE International Conference on Network Protocols (ICNP)</span>,
+            <span class="year">2024</span>
+            &nbsp;<span>(Acceptance Rate: 50/205=24%)</span>
+            </h4>
+        </h2>
+        <p><em>Jianbo Dong, <a href="/people/hao-qi.html">Hao Qi</a>, Tianjing Xu, Xiaoli Liu, Chen Wei, Rongyao, Wang, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Zheng Cao, Binzhang Fu</em></p>
+      </header>
+      </div>
+    <div class="span3">
+      <h4>Conference Proceedings</h4>
+      <dl>
+        
+          <dt>Booktitle</dt>
+          <dd>Proceedings of The 32nd IEEE International Conference on Network Protocols (ICNP)</dd>
+        
+          <dt>Publisher</dt>
+          <dd>IEEE Computer Society</dd>
+        
+          <dt>Series</dt>
+          <dd>ICNP &#39;24</dd>
+        
+          <dt>Address</dt>
+          <dd>Charleroi, Belgium</dd>
+        
+          <dt>Note</dt>
+          <dd>Acceptance Rate: 50/205=24%</dd>
+        
+          <dt>Month</dt>
+          <dd>October 28-31</dd>
+        
+      </dl>
+      <h4>Cite</h4>
+      <p>
+        <a href="#conf-icnp24-jianbocite"  onclick="showmodaltab('conf-icnp24-jianbo', 'pt');">Plain text</a>
+      </p>
+      <p>
+        <a href="#conf-icnp24-jianbocite" onclick="showmodaltab('conf-icnp24-jianbo', 'bt');">BibTeX</a>
+      </p>
+      <p>
+        <span class="rightcol-link">
+    <a href="https://github.com/padsys/padsys.org/edit/master/publications/conf-icnp24-jianbo.html"
      data-tooltip class="edit-link" title="Edit on Github">
       <i class="icon-github"></i>
     </a>
   </span>
+      </p>
+    </div>
+  </div>
+  <div id="conf-icnp24-jianbocite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "KSpeed: Beating I/O Bottlenecks of Data Provisioning for RDMA Training Clusters"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-icnp24-jianbopt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-icnp24-jianbobt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-icnp24-jianbopt" onclick="selectdiv('conf-icnp24-jianbopt')">
+          <p>Jianbo Dong, Hao Qi, Tianjing Xu, Xiaoli Liu, Chen Wei, Rongyao, Wang, Xiaoyi Lu, Zheng Cao, and Binzhang Fu. KSpeed: Beating I/O Bottlenecks of Data Provisioning for RDMA Training Clusters. In Proceedings of The 32nd IEEE International Conference on Network Protocols (ICNP), ICNP &#39;24. Charleroi, Belgium, October 28-31 2024. IEEE Computer Society. Acceptance Rate: 50/205=24%.</p>
         </div>
-      </nav>
+        <div class="tab-pane" id="conf-icnp24-jianbobt" onclick="selectdiv('conf-icnp24-jianbobt')">
+          <p><pre>@inproceedings{conf-icnp24-jianbo,
+  title=&#34;{KSpeed: Beating I/O Bottlenecks of Data Provisioning for RDMA Training Clusters}&#34;,
+  author={Dong, Jianbo and Qi, Hao and Xu, Tianjing and Liu, Xiaoli and Wei, Chen and Wang, Rongyao, and Lu, Xiaoyi and Cao, Zheng and Fu, Binzhang},
+  booktitle={Proceedings of The 32nd IEEE International Conference on Network Protocols (ICNP)},
+  publisher = {IEEE Computer Society},
+  series = {ICNP &#39;24},
+  year={2024},
+  address={Charleroi, Belgium},
+  note={Acceptance Rate: 50/205=24\%},
+  month={October 28-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
     </div>
   </div>
 </div>
