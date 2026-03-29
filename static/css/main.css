@@ -554,6 +554,7 @@ img.thumbsize {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
+  aspect-ratio: 5/2;
   position: relative;
   margin: auto;
 }
