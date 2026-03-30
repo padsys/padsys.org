@@ -84,7 +84,7 @@
         <div class="publication-controls">
           <ul class="nav nav-pills nav-stacked clearfix">
             <li class=active>
-              <a href="#" data-toggle="pill" onclick="filterList('All')">All [161]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('All')">All [162]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book')">Book [1]</a>
             </li><li>
@@ -92,7 +92,7 @@
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [140]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [18]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [19]</a>
             </li>
           </ul>
           <input class="search search-query" type="text" placeholder="Search publications">
@@ -634,6 +634,73 @@ month = {mar}
   address={San Francisco, California, USA},
   note={Best Paper Award Nomination},
   month={May 27-31}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Journal Article</p>
+              <strong class="title">
+                  [SigMOD &#39;25]&nbsp; 
+		  <a href="/publications/conf-sigmod-yujie25.html">
+		  On the Feasibility and Benefits of Extensive Evaluation
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/yujie-hui.html">Yujie Hui</a>, Miao Yu, <a href="/people/hao-qi.html">Hao Qi</a>, Yifan Gan, <a href="/people/tianxi-li.html">Tianxi Li</a>, <a href="/people/yuke-li.html">Yuke Li</a>, Xueyuan Ren, Sixiang Ma, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a>, Yang Wang</p>
+              <p>
+                    <span class="journal">Proc. ACM Manag. Data</span>,
+                    <span class="year">2024</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-sigmod-yujie25abs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#conf-sigmod-yujie25kw">Keywords</a></li>
+                <li><a href="#conf-sigmod-yujie25cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://doi.org/10.1145/3677137" target="_blank">Full text</a></li>
+                </ul>
+              <div id="conf-sigmod-yujie25kw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> benchmarking, database performance evaluation
+                </p>
+              </div>
+              <div id="conf-sigmod-yujie25abs" class="collapse">
+                <p><strong>Abstract: </strong> Benchmark and system parameters often have a significant impact on performance evaluation, which raises a long-lasting question about which settings we should use.This paper studies the feasibility and benefits of extensive evaluation. A full extensive evaluation, which tests all possible settings, is usually too expensive. This work investigates whether it is possible to sample a subset of the settings and, upon them, generate observations that match those from a full extensive evaluation. Towards this goal, we have explored the incremental sampling approach, which starts by measuring a small subset of random settings, builds a prediction model on these samples using the popular ANOVA approach, adds more samples if the model is not accurate enough, and terminates otherwise.To summarize our findings: 1) Enhancing a research prototype to support extensive evaluation mostly involves changing hard-coded configurations, which does not take much effort. 2) Some systems are highly predictable, which means that they can achieve accurate predictions with a low sampling rate, but some systems are less predictable. 3) We have not found a method that can consistently outperform random sampling + ANOVA. Based on these findings, we provide recommendations to improve artifact predictability and strategies for selecting parameter values during evaluation.</p>
+              </div>
+              </div>
+            <div id="conf-sigmod-yujie25cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "On the Feasibility and Benefits of Extensive Evaluation"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-sigmod-yujie25pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-sigmod-yujie25bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-sigmod-yujie25pt" onclick="selectdiv('conf-sigmod-yujie25pt')">
+          <p>Yujie Hui, Miao Yu, Hao Qi, Yifan Gan, Tianxi Li, Yuke Li, Xueyuan Ren, Sixiang Ma, Xiaoyi Lu, and Yang Wang. On the Feasibility and Benefits of Extensive Evaluation. Proc. ACM Manag. Data, Oct 2024. URL: https://doi.org/10.1145/3677137, doi:10.1145/3677137.</p>
+        </div>
+        <div class="tab-pane" id="conf-sigmod-yujie25bt" onclick="selectdiv('conf-sigmod-yujie25bt')">
+          <p><pre>@article{conf-sigmod-yujie25,
+author = {Hui, Yujie and Yu, Miao and Qi, Hao and Gan, Yifan and Li, Tianxi and Li, Yuke and Ren, Xueyuan and Ma, Sixiang and Lu, Xiaoyi and Wang, Yang},
+title = &#34;{On the Feasibility and Benefits of Extensive Evaluation}&#34;,
+year = {2024},
+issue_date = {September 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3677137},
+doi = {10.1145/3677137},
+abstract = {Benchmark and system parameters often have a significant impact on performance evaluation, which raises a long-lasting question about which settings we should use.This paper studies the feasibility and benefits of extensive evaluation. A full extensive evaluation, which tests all possible settings, is usually too expensive. This work investigates whether it is possible to sample a subset of the settings and, upon them, generate observations that match those from a full extensive evaluation. Towards this goal, we have explored the incremental sampling approach, which starts by measuring a small subset of random settings, builds a prediction model on these samples using the popular ANOVA approach, adds more samples if the model is not accurate enough, and terminates otherwise.To summarize our findings: 1) Enhancing a research prototype to support extensive evaluation mostly involves changing hard-coded configurations, which does not take much effort. 2) Some systems are highly predictable, which means that they can achieve accurate predictions with a low sampling rate, but some systems are less predictable. 3) We have not found a method that can consistently outperform random sampling + ANOVA. Based on these findings, we provide recommendations to improve artifact predictability and strategies for selecting parameter values during evaluation.},
+journal = {Proc. ACM Manag. Data},
+month = {Oct},
+articleno = {201},
+series = {SigMOD &#39;25},
+keywords = {benchmarking, database performance evaluation}
 }</pre></p>
         </div>
       </div>
