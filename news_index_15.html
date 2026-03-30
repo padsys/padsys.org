@@ -77,6 +77,24 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="the-nvme-oaf-paper-got-accepted-in-hpdc22"></a>
+          <h1>
+            <a href="/news/the-nvme-oaf-paper-got-accepted-in-hpdc22.html">
+              The NVMe-oAF paper got accepted in HPDC22!
+            </a>
+          </h1>
+        </header>
+        <p>Our NVMe-oAF paper got accepted in HPDC 2022! Congratulations to Arjun!</p>
+<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
+<p><strong>[HPDC'22] NVMe-oAF: Towards Adaptive NVMe-oF for IO-Intensive Workloads on HPC Cloud</strong></p>
+<p>Arjun Kashyap and Xiaoyi Lu.</p>
+<p>In Proceedings of the 31st ACM International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2022. (Acceptance Rate: 19%)</p>
+<p><strong>Abstract</strong>
+Applications running inside containers or virtual machines, traditionally use TCP/IP for communication in HPC clouds and data centers. The TCP/IP path usually becomes a major performance bottleneck for applications performing NVMe-over-Fabrics (NVMe-oF) based I/O operations in disaggregated storage settings. We propose an adaptive communication channel, called NVMe-over-Adaptive-Fabric (NVMe-oAF), that applications could leverage to eliminate the high-latency and low-bandwidth incurred by remote I/O requests over TCP/IP. NVMe-oAF accelerates I/O intensive applications using locality awareness along with optimized shared memory and TCP/IP paths. The adaptiveness of the fabric stems from the ability to adaptively select shared memory or TCP channel and further applying optimizations for the chosen channel. To evaluate NVMe-oAF, we co-design Intel's SPDK library with our designs and show up to 7.1x bandwidth improvement and up to 4.2x latency reduction for various workloads over commodity TCP/IP-based Ethernet networks (e.g., 10Gbps, 25Gbps, and 100Gbps). We achieve similar (or sometimes better) performance when compared to NVMe-over-RDMA by avoiding the cumbersome management of RDMA in HPC cloud environments. Finally, we also co-design NVMe-oAF with H5bench to showcase the benefit it brings to HDF5 applications. Our evaluation indicates up to a 7x bandwidth improvement when compared with the network file system (NFS).</p>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="our-team-got-the-2022-2023-r1-graduate-research-fellowship-from-uc-merced-congrats"></a>
           <h1>
             <a href="/news/our-team-got-the-2022-2023-r1-graduate-research-fellowship-from-uc-merced-congrats.html">
@@ -143,21 +161,6 @@
 <p>Tianxi Li, Haiyang Shi, and Xiaoyi Lu.</p>
 <p>In Proceedings of the 34th International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021. (Tianxi and Haiyang are Co-First Authors.)</p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="prof-stewart-from-osu-visited-padsyscse-uc-merced"></a>
-          <h1>
-            <a href="/news/prof-stewart-from-osu-visited-padsyscse-uc-merced.html">
-              Prof. Stewart from OSU visited PADSYS/CSE, UC Merced!
-            </a>
-          </h1>
-        </header>
-        <p>We are so glad to have Prof. Christopher Stewart visited us in April 2021.</p>
-<p><a href="https://web.cse.ohio-state.edu/~stewart.962/">Prof. Christopher Stewart</a> is an associate professor from The Ohio State University. Dr. Stewart leads the <a href="https://web.cse.ohio-state.edu/~stewart.962/rerout.html">ReRout Lab</a> which produces computer systems research that reaches out. In April 2021, Prof. Stewart did a virtual visit at PADSYS/CSE, UC Merced. He gave an invited talk on "Data-Driven Management for Autonomous Systems."</p>
-<p>The <a href="https://www.youtube.com/watch?v=lOP6AR9xdb4">talk video</a> is publicly available on <a href="https://www.youtube.com/channel/UCn-Sf06h7-5Me2aphMCCP-g">PADSYS YouTube Channel</a>.</p>
-<p>Thanks a lot for visiting us, Prof. Stewart!</p>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -183,6 +186,11 @@
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#the-nvme-oaf-paper-got-accepted-in-hpdc22">
+                <i class="icon-chevron-left"></i> The NVMe-oAF paper got accepted in HPDC22!
+              </a>
+            </li>
+            <li>
               <a href="#our-team-got-the-2022-2023-r1-graduate-research-fellowship-from-uc-merced-congrats">
                 <i class="icon-chevron-left"></i> Our team got the 2022-2023 R1 Graduate Research Fellowship from UC Merced! Congrats!
               </a>
@@ -200,11 +208,6 @@
             <li>
               <a href="#hatrpc-paper-got-accepted-in-sc21">
                 <i class="icon-chevron-left"></i> HatRPC paper got accepted in SC21!
-              </a>
-            </li>
-            <li>
-              <a href="#prof-stewart-from-osu-visited-padsyscse-uc-merced">
-                <i class="icon-chevron-left"></i> Prof. Stewart from OSU visited PADSYS/CSE, UC Merced!
               </a>
             </li>
           </ul>
