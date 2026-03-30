@@ -84,13 +84,13 @@
         <div class="publication-controls">
           <ul class="nav nav-pills nav-stacked clearfix">
             <li class=active>
-              <a href="#" data-toggle="pill" onclick="filterList('All')">All [158]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('All')">All [161]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book')">Book [1]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Book Chapter')">Book Chapter [2]</a>
             </li><li>
-              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [137]</a>
+              <a href="#" data-toggle="pill" onclick="filterList('Conference Proceedings')">Conference Proceedings [140]</a>
             </li><li>
               <a href="#" data-toggle="pill" onclick="filterList('Journal Article')">Journal Article [18]</a>
             </li>
@@ -147,6 +147,200 @@
   year={2025},
   address={Leuven, Belgium},
   month={September}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [PPoPP &#39;25]&nbsp; 
+		  <a href="/publications/conf-ppopp-ben25.html">
+		  SBMGT: Scaling Bayesian Multinomial Group Testing
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/weicong-chen.html">Weicong Chen</a>, <a href="/people/hao-qi.html">Hao Qi</a>, Curtis Tatsuoka, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming</span>,
+                    <span class="year">2025</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-ppopp-ben25abs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#conf-ppopp-ben25kw">Keywords</a></li>
+                <li><a href="#conf-ppopp-ben25cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://doi.org/10.1145/3710848.3710861" target="_blank">Full text</a></li>
+                </ul>
+              <div id="conf-ppopp-ben25kw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> Bayesian methods, Graph algorithms, Multinomial group testing, Parallel algorithms
+                </p>
+              </div>
+              <div id="conf-ppopp-ben25abs" class="collapse">
+                <p><strong>Abstract: </strong> Group testing is a widely used binary classification method that efficiently distinguishes between samples with and without a binary-classifiable attribute by pooling and testing subsets of a group. Bayesian Group Testing (BGT) is the state-of-the-art approach, which integrates prior risk information into a Bayesian Boolean Lattice framework to minimize test counts and reduce false classifications. However, BGT, like other existing group testing techniques, struggles with multinomial group testing, where samples have multiple binary-classifiable attributes that can be individually distinguished simultaneously. We address this need by proposing Bayesian Multinomial Group Testing (BMGT), which includes a new Bayesian-based model and supporting theorems for an efficient and precise multinomial pooling strategy. We further design and develop SBMGT, a high-performance and scalable framework to tackle BMGT&#39;s computational challenges by proposing three key innovations: 1) a parallel binary-encoded product lattice model with up to 99.8% efficiency; 2) the Bayesian Balanced Partitioning Algorithm (BBPA), a multinomial pooling strategy optimized for parallel computation with up to 97.7% scaling efficiency on 4096 cores; and 3) a scalable multinomial group testing analytics framework, demonstrated in a real-world disease surveillance case study using AIDS and STDs datasets from Uganda, where SBMGT reduced tests by up to 54% and lowered false classification rates by 92% compared to BGT.</p>
+              </div>
+              </div>
+            <div id="conf-ppopp-ben25cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "SBMGT: Scaling Bayesian Multinomial Group Testing"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ppopp-ben25pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ppopp-ben25bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ppopp-ben25pt" onclick="selectdiv('conf-ppopp-ben25pt')">
+          <p>Weicong Chen, Hao Qi, Curtis Tatsuoka, and Xiaoyi Lu. SBMGT: Scaling Bayesian Multinomial Group Testing. In Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming, PPoPP &#39;25, 512–523. New York, NY, USA, 2025. Association for Computing Machinery. URL: https://doi.org/10.1145/3710848.3710861, doi:10.1145/3710848.3710861.</p>
+        </div>
+        <div class="tab-pane" id="conf-ppopp-ben25bt" onclick="selectdiv('conf-ppopp-ben25bt')">
+          <p><pre>@inproceedings{conf-ppopp-ben25,
+author = {Chen, Weicong and Qi, Hao and Tatsuoka, Curtis and Lu, Xiaoyi},
+title = &#34;{SBMGT: Scaling Bayesian Multinomial Group Testing}&#34;,
+year = {2025},
+isbn = {9798400714436},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3710848.3710861},
+doi = {10.1145/3710848.3710861},
+abstract = {Group testing is a widely used binary classification method that efficiently distinguishes between samples with and without a binary-classifiable attribute by pooling and testing subsets of a group. Bayesian Group Testing (BGT) is the state-of-the-art approach, which integrates prior risk information into a Bayesian Boolean Lattice framework to minimize test counts and reduce false classifications. However, BGT, like other existing group testing techniques, struggles with multinomial group testing, where samples have multiple binary-classifiable attributes that can be individually distinguished simultaneously. We address this need by proposing Bayesian Multinomial Group Testing (BMGT), which includes a new Bayesian-based model and supporting theorems for an efficient and precise multinomial pooling strategy. We further design and develop SBMGT, a high-performance and scalable framework to tackle BMGT&#39;s computational challenges by proposing three key innovations: 1) a parallel binary-encoded product lattice model with up to 99.8\% efficiency; 2) the Bayesian Balanced Partitioning Algorithm (BBPA), a multinomial pooling strategy optimized for parallel computation with up to 97.7\% scaling efficiency on 4096 cores; and 3) a scalable multinomial group testing analytics framework, demonstrated in a real-world disease surveillance case study using AIDS and STDs datasets from Uganda, where SBMGT reduced tests by up to 54\% and lowered false classification rates by 92\% compared to BGT.},
+booktitle = {Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming},
+pages = {512–523},
+numpages = {12},
+keywords = {Bayesian methods, Graph algorithms, Multinomial group testing, Parallel algorithms},
+location = {Las Vegas, NV, USA},
+series = {PPoPP &#39;25}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [SEC &#39;25]&nbsp; 
+		  <a href="/publications/conf-sec-feddes25.html">
+		  FedDES: Discrete Event Based Performance Simulation for Federated Learning Systems
+		  </a>
+		  </strong>
+              <p class="authors">Zhonghao Chen, <a href="/people/weicong-chen.html">Weicong Chen</a>, Duo Zhang, Kibaek Kim, Guanpeng Li, Sheng Di, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">Proceedings of the Tenth ACM/IEEE Symposium on Edge Computing</span>,
+                    <span class="year">2025</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-sec-feddes25abs">Abstract</a></li>
+                <li><a href="#" data-toggle="collapse" data-target="#conf-sec-feddes25kw">Keywords</a></li>
+                <li><a href="#conf-sec-feddes25cite" data-toggle="modal">Citation</a></li>
+                <li><a href="https://doi.org/10.1145/3769102.3770613" target="_blank">Full text</a></li>
+                </ul>
+              <div id="conf-sec-feddes25kw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> federated learning, discrete event simulation, performance
+                </p>
+              </div>
+              <div id="conf-sec-feddes25abs" class="collapse">
+                <p><strong>Abstract: </strong> Federated Learning (FL) is a scalable and privacy-preserving paradigm well-suited for edge computing. Real-world FL deployments face substantial systems challenges such as compute variability and communication delays, motivating researchers to leverage simulation before real deployment. Most existing FL simulators, however, struggle to scale efficiently and incur long runtimes even for small workloads. To address this, we present FedDES, a high-fidelity, framework-agnostic discrete-event simulation platform that accurately models the runtime behavior of FL systems, including client training, communication overhead, network dynamics, and aggregation strategies. FedDES supports flexible configurations and diverse aggregation approaches, achieving simulation error within 2% of real deployments and delivering over 1000\texttimes {} speedup compared to prior tools. Large-scale experiments with up to 131,072 clients further show that the aggregation strategy critically affects performance, especially under heterogeneous and variable network conditions typical of edge environments.</p>
+              </div>
+              </div>
+            <div id="conf-sec-feddes25cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "FedDES: Discrete Event Based Performance Simulation for Federated Learning Systems"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-sec-feddes25pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-sec-feddes25bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-sec-feddes25pt" onclick="selectdiv('conf-sec-feddes25pt')">
+          <p>Zhonghao Chen, Weicong Chen, Duo Zhang, Kibaek Kim, Guanpeng Li, Sheng Di, and Xiaoyi Lu. FedDES: Discrete Event Based Performance Simulation for Federated Learning Systems. In Proceedings of the Tenth ACM/IEEE Symposium on Edge Computing, SEC &#39;25. New York, NY, USA, 2025. Association for Computing Machinery. URL: https://doi.org/10.1145/3769102.3770613, doi:10.1145/3769102.3770613.</p>
+        </div>
+        <div class="tab-pane" id="conf-sec-feddes25bt" onclick="selectdiv('conf-sec-feddes25bt')">
+          <p><pre>@inproceedings{conf-sec-feddes25,
+author = {Chen, Zhonghao and Chen, Weicong and Zhang, Duo and Kim, Kibaek and Li, Guanpeng and Di, Sheng and Lu, Xiaoyi},
+title = &#34;{FedDES: Discrete Event Based Performance Simulation for Federated Learning Systems}&#34;,
+year = {2025},
+isbn = {9798400722387},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3769102.3770613},
+doi = {10.1145/3769102.3770613},
+abstract = {Federated Learning (FL) is a scalable and privacy-preserving paradigm well-suited for edge computing. Real-world FL deployments face substantial systems challenges such as compute variability and communication delays, motivating researchers to leverage simulation before real deployment. Most existing FL simulators, however, struggle to scale efficiently and incur long runtimes even for small workloads. To address this, we present FedDES, a high-fidelity, framework-agnostic discrete-event simulation platform that accurately models the runtime behavior of FL systems, including client training, communication overhead, network dynamics, and aggregation strategies. FedDES supports flexible configurations and diverse aggregation approaches, achieving simulation error within 2\% of real deployments and delivering over 1000\texttimes{} speedup compared to prior tools. Large-scale experiments with up to 131,072 clients further show that the aggregation strategy critically affects performance, especially under heterogeneous and variable network conditions typical of edge environments.},
+booktitle = {Proceedings of the Tenth ACM/IEEE Symposium on Edge Computing},
+articleno = {1},
+numpages = {16},
+keywords = {federated learning, discrete event simulation, performance},
+location = {the Hilton Arlington National Landing, Arlington, VA, USA},
+series = {SEC &#39;25}
+}</pre></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+          </li><li class="media">
+            <div class="media-body">
+              <p class="type hidden">Conference Proceedings</p>
+              <strong class="title">
+                  [IPDPS &#39;25]&nbsp; 
+		  <a href="/publications/conf-ipdps-sprt25.html">
+		  SPRT^2: Scalable, Parallel, and Real-Time fMRI Data Analysis on Heterogeneous Architectures
+		  </a>
+		  </strong>
+              <p class="authors"><a href="/people/weicong-chen.html">Weicong Chen</a>, Sarah J. Carr, Jing Zhang, Curtis Tatsuoka, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></p>
+              <p>
+                    <span class="journal">2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS)</span>,
+                    <span class="year">2025</span>
+		    </p>
+              <ul class="nav">
+                <li><a href="#" data-toggle="collapse" data-target="#conf-ipdps-sprt25kw">Keywords</a></li>
+                <li><a href="#conf-ipdps-sprt25cite" data-toggle="modal">Citation</a></li>
+                </ul>
+              <div id="conf-ipdps-sprt25kw" class="collapse">
+                <p class="keywords">
+                  <strong>Keywords: </strong> Data analysis;High performance computing;Data integrity;Scalability;Computer architecture;Functional magnetic resonance imaging;Big Data;Real-time systems;Sparse matrices;Optimization;Real-time fMRI data analysis;High-performance computing;Big data;Heterogeneous computing
+                </p>
+              </div>
+              </div>
+            <div id="conf-ipdps-sprt25cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3 id="title">Cite "SPRT^2: Scalable, Parallel, and Real-Time fMRI Data Analysis on Heterogeneous Architectures"</h3>
+    </div>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="cite">
+        <li class="active"><a href="#conf-ipdps-sprt25pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-ipdps-sprt25bt" data-toggle="tab">BibTeX</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="conf-ipdps-sprt25pt" onclick="selectdiv('conf-ipdps-sprt25pt')">
+          <p>Weicong Chen, Sarah J. Carr, Jing Zhang, Curtis Tatsuoka, and Xiaoyi Lu. SPRT^2: Scalable, Parallel, and Real-Time fMRI Data Analysis on Heterogeneous Architectures. In 2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS), volume of IPDPS &#39;25, 570-581. 2025. doi:10.1109/IPDPS64566.2025.00057.</p>
+        </div>
+        <div class="tab-pane" id="conf-ipdps-sprt25bt" onclick="selectdiv('conf-ipdps-sprt25bt')">
+          <p><pre>@INPROCEEDINGS{conf-ipdps-sprt25,
+  author={Chen, Weicong and Carr, Sarah J. and Zhang, Jing and Tatsuoka, Curtis and Lu, Xiaoyi},
+  booktitle={2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
+  title=&#34;{SPRT^2: Scalable, Parallel, and Real-Time fMRI Data Analysis on Heterogeneous Architectures}&#34;, 
+  year={2025},
+  volume={},
+  number={},
+  pages={570-581},
+  keywords={Data analysis;High performance computing;Data integrity;Scalability;Computer architecture;Functional magnetic resonance imaging;Big Data;Real-time systems;Sparse matrices;Optimization;Real-time fMRI data analysis;High-performance computing;Big data;Heterogeneous computing},
+  doi={10.1109/IPDPS64566.2025.00057},
+  series={IPDPS &#39;25}
 }</pre></p>
         </div>
       </div>
