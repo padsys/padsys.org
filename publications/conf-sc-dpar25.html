@@ -77,26 +77,26 @@
     <div class="offset1 span7">
       <header>
         <h2>
-          SBMGT: Scaling Bayesian Multinomial Group Testing
+          DPAR: High-Performance, Secure, and Scalable Differential Privacy-based AllReduce
           <h4>
-            <span class="journal">Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming</span>,
+            <span class="journal">Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</span>,
             <span class="year">2025</span>
-            &nbsp;<span>(Acceptance Rate: 20.1\%)</span>
+            &nbsp;<span>(Acceptance Rate: 21.2\%)</span>
             </h4>
         </h2>
-        <p><em><a href="/people/weicong-chen.html">Weicong Chen</a>, <a href="/people/hao-qi.html">Hao Qi</a>, Curtis Tatsuoka, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></em></p>
+        <p><em><a href="/people/hao-qi.html">Hao Qi</a>, <a href="/people/weicong-chen.html">Weicong Chen</a>, Chenghong Wang, <a href="/people/xiaoyi-lu.html">Xiaoyi Lu</a></em></p>
       </header>
       <h3>Abstract</h3>
-      <p>Group testing is a widely used binary classification method that efficiently distinguishes between samples with and without a binary-classifiable attribute by pooling and testing subsets of a group. Bayesian Group Testing (BGT) is the state-of-the-art approach, which integrates prior risk information into a Bayesian Boolean Lattice framework to minimize test counts and reduce false classifications. However, BGT, like other existing group testing techniques, struggles with multinomial group testing, where samples have multiple binary-classifiable attributes that can be individually distinguished simultaneously. We address this need by proposing Bayesian Multinomial Group Testing (BMGT), which includes a new Bayesian-based model and supporting theorems for an efficient and precise multinomial pooling strategy. We further design and develop SBMGT, a high-performance and scalable framework to tackle BMGT&#39;s computational challenges by proposing three key innovations: 1) a parallel binary-encoded product lattice model with up to 99.8% efficiency; 2) the Bayesian Balanced Partitioning Algorithm (BBPA), a multinomial pooling strategy optimized for parallel computation with up to 97.7% scaling efficiency on 4096 cores; and 3) a scalable multinomial group testing analytics framework, demonstrated in a real-world disease surveillance case study using AIDS and STDs datasets from Uganda, where SBMGT reduced tests by up to 54% and lowered false classification rates by 92% compared to BGT.</p>
+      <p>Secure, efficient, and scalable AllReduce-based data aggregation is essential for Artificial Intelligence (AI) and scientific applications on modern High-Performance Computing (HPC) and cloud infrastructures. As AllReduce is increasingly used across these distributed infrastructures, privacy has become a critical concern. State-of-the-art (SOTA) Homomorphic Encryption (HE)-based AllReduce solutions introduce high overhead, require secure key exchanges, and remain vulnerable to collusion. We propose DPAR, the first differentially private, collusion-resistant AllReduce framework optimized for large-scale HPC and AI workloads. DPAR introduces three key innovations: integrating Differential Privacy (DP) to eliminate collusion risks without key exchanges, scalable noise growth to preserve accuracy, and performance optimizations using a noise pooling mechanism. DPAR is a drop-in Message Passing Interface (MPI) AllReduce replacement, providing strong privacy with minimal performance cost. Evaluated on Delta and Frontier supercomputers with up to 8192 cores, DPAR outperforms the SOTA HE solution by up to 34.7% in modern AI workloads.</p>
       <h3>Full text links</h3>
-      <p><a href="https://doi.org/10.1145/3710848.3710861">External link</a></p>
+      <p><a href="https://doi.org/10.1145/3712285.3759828">External link</a></p>
       </div>
     <div class="span3">
       <h4>Conference Proceedings</h4>
       <dl>
         
           <dt>Isbn</dt>
-          <dd>9798400714436</dd>
+          <dd>9798400714665</dd>
         
           <dt>Publisher</dt>
           <dd>Association for Computing Machinery</dd>
@@ -105,37 +105,37 @@
           <dd>New York, NY, USA</dd>
         
           <dt>Doi</dt>
-          <dd>10.1145/3710848.3710861</dd>
+          <dd>10.1145/3712285.3759828</dd>
         
           <dt>Booktitle</dt>
-          <dd>Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming</dd>
+          <dd>Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</dd>
         
           <dt>Pages</dt>
-          <dd>512–523</dd>
+          <dd>1917–1934</dd>
         
           <dt>Numpages</dt>
-          <dd>12</dd>
+          <dd>18</dd>
         
           <dt>Location</dt>
-          <dd>Las Vegas, NV, USA</dd>
+          <dd>St. louis, MO, USA</dd>
         
           <dt>Series</dt>
-          <dd>PPoPP &#39;25</dd>
+          <dd>SC &#39;25</dd>
         
           <dt>Note</dt>
-          <dd>Acceptance Rate: 20.1\%</dd>
+          <dd>Acceptance Rate: 21.2\%</dd>
         
       </dl>
       <h4>Cite</h4>
       <p>
-        <a href="#conf-ppopp-ben25cite"  onclick="showmodaltab('conf-ppopp-ben25', 'pt');">Plain text</a>
+        <a href="#conf-sc-dpar25cite"  onclick="showmodaltab('conf-sc-dpar25', 'pt');">Plain text</a>
       </p>
       <p>
-        <a href="#conf-ppopp-ben25cite" onclick="showmodaltab('conf-ppopp-ben25', 'bt');">BibTeX</a>
+        <a href="#conf-sc-dpar25cite" onclick="showmodaltab('conf-sc-dpar25', 'bt');">BibTeX</a>
       </p>
       <p>
         <span class="rightcol-link">
-    <a href="https://github.com/padsys/padsys.org/edit/master/publications/conf-ppopp-ben25.html"
+    <a href="https://github.com/padsys/padsys.org/edit/master/publications/conf-sc-dpar25.html"
      data-tooltip class="edit-link" title="Edit on Github">
       <i class="icon-github"></i>
     </a>
@@ -143,38 +143,38 @@
       </p>
     </div>
   </div>
-  <div id="conf-ppopp-ben25cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
+  <div id="conf-sc-dpar25cite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="Cite this paper" aria-hidden="true">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      <h3 id="title">Cite "SBMGT: Scaling Bayesian Multinomial Group Testing"</h3>
+      <h3 id="title">Cite "DPAR: High-Performance, Secure, and Scalable Differential Privacy-based AllReduce"</h3>
     </div>
     <div class="modal-body">
       <ul class="nav nav-tabs" id="cite">
-        <li class="active"><a href="#conf-ppopp-ben25pt" data-toggle="tab">Plain text</a></li>
-        <li><a href="#conf-ppopp-ben25bt" data-toggle="tab">BibTeX</a></li>
+        <li class="active"><a href="#conf-sc-dpar25pt" data-toggle="tab">Plain text</a></li>
+        <li><a href="#conf-sc-dpar25bt" data-toggle="tab">BibTeX</a></li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane active" id="conf-ppopp-ben25pt" onclick="selectdiv('conf-ppopp-ben25pt')">
-          <p>Weicong Chen, Hao Qi, Curtis Tatsuoka, and Xiaoyi Lu. SBMGT: Scaling Bayesian Multinomial Group Testing. In Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming, PPoPP &#39;25, 512–523. New York, NY, USA, 2025. Association for Computing Machinery. Acceptance Rate: 20.1%. URL: https://doi.org/10.1145/3710848.3710861, doi:10.1145/3710848.3710861.</p>
+        <div class="tab-pane active" id="conf-sc-dpar25pt" onclick="selectdiv('conf-sc-dpar25pt')">
+          <p>Hao Qi, Weicong Chen, Chenghong Wang, and Xiaoyi Lu. DPAR: High-Performance, Secure, and Scalable Differential Privacy-based AllReduce. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, SC &#39;25, 1917–1934. New York, NY, USA, 2025. Association for Computing Machinery. Acceptance Rate: 21.2%. URL: https://doi.org/10.1145/3712285.3759828, doi:10.1145/3712285.3759828.</p>
         </div>
-        <div class="tab-pane" id="conf-ppopp-ben25bt" onclick="selectdiv('conf-ppopp-ben25bt')">
-          <p><pre>@inproceedings{conf-ppopp-ben25,
-author = {Chen, Weicong and Qi, Hao and Tatsuoka, Curtis and Lu, Xiaoyi},
-title = &#34;{SBMGT: Scaling Bayesian Multinomial Group Testing}&#34;,
+        <div class="tab-pane" id="conf-sc-dpar25bt" onclick="selectdiv('conf-sc-dpar25bt')">
+          <p><pre>@inproceedings{conf-sc-dpar25,
+author = {Qi, Hao and Chen, Weicong and Wang, Chenghong and Lu, Xiaoyi},
+title = &#34;{DPAR: High-Performance, Secure, and Scalable Differential Privacy-based AllReduce}&#34;,
 year = {2025},
-isbn = {9798400714436},
+isbn = {9798400714665},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3710848.3710861},
-doi = {10.1145/3710848.3710861},
-abstract = {Group testing is a widely used binary classification method that efficiently distinguishes between samples with and without a binary-classifiable attribute by pooling and testing subsets of a group. Bayesian Group Testing (BGT) is the state-of-the-art approach, which integrates prior risk information into a Bayesian Boolean Lattice framework to minimize test counts and reduce false classifications. However, BGT, like other existing group testing techniques, struggles with multinomial group testing, where samples have multiple binary-classifiable attributes that can be individually distinguished simultaneously. We address this need by proposing Bayesian Multinomial Group Testing (BMGT), which includes a new Bayesian-based model and supporting theorems for an efficient and precise multinomial pooling strategy. We further design and develop SBMGT, a high-performance and scalable framework to tackle BMGT&#39;s computational challenges by proposing three key innovations: 1) a parallel binary-encoded product lattice model with up to 99.8\% efficiency; 2) the Bayesian Balanced Partitioning Algorithm (BBPA), a multinomial pooling strategy optimized for parallel computation with up to 97.7\% scaling efficiency on 4096 cores; and 3) a scalable multinomial group testing analytics framework, demonstrated in a real-world disease surveillance case study using AIDS and STDs datasets from Uganda, where SBMGT reduced tests by up to 54\% and lowered false classification rates by 92\% compared to BGT.},
-booktitle = {Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming},
-pages = {512–523},
-numpages = {12},
-keywords = {Bayesian methods, Graph algorithms, Multinomial group testing, Parallel algorithms},
-location = {Las Vegas, NV, USA},
-series = {PPoPP &#39;25},
-note = {Acceptance Rate: 20.1\%}
+url = {https://doi.org/10.1145/3712285.3759828},
+doi = {10.1145/3712285.3759828},
+abstract = {Secure, efficient, and scalable AllReduce-based data aggregation is essential for Artificial Intelligence (AI) and scientific applications on modern High-Performance Computing (HPC) and cloud infrastructures. As AllReduce is increasingly used across these distributed infrastructures, privacy has become a critical concern. State-of-the-art (SOTA) Homomorphic Encryption (HE)-based AllReduce solutions introduce high overhead, require secure key exchanges, and remain vulnerable to collusion. We propose DPAR, the first differentially private, collusion-resistant AllReduce framework optimized for large-scale HPC and AI workloads. DPAR introduces three key innovations: integrating Differential Privacy (DP) to eliminate collusion risks without key exchanges, scalable noise growth to preserve accuracy, and performance optimizations using a noise pooling mechanism. DPAR is a drop-in Message Passing Interface (MPI) AllReduce replacement, providing strong privacy with minimal performance cost. Evaluated on Delta and Frontier supercomputers with up to 8192 cores, DPAR outperforms the SOTA HE solution by up to 34.7\% in modern AI workloads.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+pages = {1917–1934},
+numpages = {18},
+keywords = {AllReduce, Differential Privacy, Privacy Preserving},
+location = {St. louis, MO, USA},
+series = {SC &#39;25},
+note = {Acceptance Rate: 21.2\%}
 }</pre></p>
         </div>
       </div>
