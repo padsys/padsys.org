@@ -77,6 +77,29 @@
     <div class="offset1 span7">
       <article>
         <header>
+          <a class="anchor" id="shashank-got-the-phd-degree-congrats"></a>
+          <h1>
+            <a href="/news/shashank-got-the-phd-degree-congrats.html">
+              Shashank got the Ph.D. degree! Congrats!
+            </a>
+          </h1>
+        </header>
+        <p>My advised Ph.D. student Shashank Gugnani has successfully defended his thesis and graduated. </p>
+<p>Congratulations, Dr. Gugnani!</p>
+<a class="anchor" id="thesis-info"></a><h2>Thesis Info</h2>
+<p><strong>Title: Designing Scalable Storage Systems for Non-Volatile Memory</strong></p>
+<p><strong>Year and Degree</strong>: 2020, Doctor of Philosophy, Ohio State University, Computer Science and Engineering.</p>
+<p><strong>Committee</strong></p>
+<ul>
+<li>Xiaoyi Lu (Advisor)</li>
+<li>Feng Qin (Committee Member)</li>
+<li>Mike Bond (Committee Member)</li>
+<li>Yang Wang (Committee Member)</li>
+</ul>
+      </article>
+      <hr>
+      <article>
+        <header>
           <a class="anchor" id="nvme-cr-paper-got-accepted-in-ipdps21"></a>
           <h1>
             <a href="/news/nvme-cr-paper-got-accepted-in-ipdps21.html">
@@ -261,62 +284,6 @@ studies and system-level (like Hadoop/Spark/TensorFlow/Memcached) case studies
 to discuss how to efficiently use these new technologies for real applications.</p>
 <p><a href="http://www.iiswc.org/iiswc2020/index.html">source</a></p>
       </article>
-      <hr>
-      <article>
-        <header>
-          <a class="anchor" id="two-papers-got-accepted-in-sc-2020"></a>
-          <h1>
-            <a href="/news/two-papers-got-accepted-in-sc-2020.html">
-              Two papers got accepted in SC 2020!
-            </a>
-          </h1>
-        </header>
-        <p>Two papers are accepted in SC 2020: "INEC: Fast and
-Coherent In-Network Erasure Coding" and "RDMP-KV: Designing Remote Direct
-Memory Persistence-based Key-Value Stores with PMEM". </p>
-<p>Congratulations to
-Haiyang, Tianxi, Shashank, and Dr. Shankar!</p>
-<a class="anchor" id="paper-info"></a><h2>Paper Info</h2>
-<p><strong>[SC'20] INEC: Fast and Coherent In-Network Erasure Coding</strong></p>
-<p>Haiyang Shi and Xiaoyi Lu.</p>
-<p>In Proceedings of the 33rd International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2020. (Acceptance Rate: 22.3%)</p>
-<p><strong>Abstract</strong></p>
-<p>Erasure coding (EC) is a promising fault tolerance scheme that has been applied
-to many well-known distributed storage systems. The capability of Coherent EC
-Calculation and Networking on modern SmartNICs has demonstrated that EC will be
-an essential feature of in-network computing. In this paper, we propose a set
-of coherent in-network EC primitives, named INEC. Our analyses based on the
-proposed <mathjax>$\alpha$</mathjax>-<mathjax>$\beta$</mathjax> performance model demonstrate that INEC primitives can enable
-different kinds of EC schemes to fully leverage the EC offload capability on
-modern SmartNICs. We implement INEC on commodity RDMA NICs and integrate it
-into five state-of-the-art EC schemes. Our experiments show that INEC
-primitives significantly reduce 50th , 95th , and 99th percentile latencies,
-and accelerate the end-to-end throughput, write, and degraded read performance
-of the key-value store co-designed with INEC by up to 99.57%, 47.30%, and
-49.55%, respectively.</p>
-<p><strong>[SC'20] RDMP-KV: Designing Remote Direct Memory Persistence-based Key-Value Stores with PMEM</strong></p>
-<p>Tianxi Li*, Dipti Shankar*, Shashank Gugnani, and Xiaoyi Lu.</p>
-<p>In Proceedings of the 33rd International Conference for High Performance
-Computing, Networking, Storage and Analysis (SC), 2020. (Acceptance Rate:
-22.3%, *Co-First Authors)</p>
-<p><strong>Abstract</strong></p>
-<p>Byte-addressable persistent memory (PMEM) can be directly manipulated by Remote
-Direct Memory Access (RDMA) capable networks. However, existing studies to
-combine RDMA and PMEM can not deliver the desired performance due to their
-PMEM-oblivious communication protocols. In this paper, we propose novel
-PMEM-aware RDMA-based communication protocols for persistent key-value stores,
-referred to as Remote Direct Memory Persistence based Key-Value stores (RDMP-
-KV). RDMP-KV employs a hybrid ‘server-reply/server-bypass’ approach to
-‘durably’ store individual key-value objects on PMEM-equipped servers.
-RDMP-KV’s runtime can easily adapt to existing (server-assisted durability) and
-emerging (appliance durability) RDMA-capable interconnects, while ensuring
-server scalability through a lightweight consistency scheme. Performance
-evaluations show that RDMP-KV can improve the server-side performance with
-different persistent key-value storage architectures by up to 22x, as compared
-with PMEM-oblivious RDMA-‘Server-Reply’ protocols. Our evaluations also show
-that RDMP-KV outperforms a distributed PMEM-based filesystem by up to 65% and a
-recent RDMA-to-PMEM framework by up to 71%.</p>
-      </article>
     </div>
 
     <div class="offset1 span3">
@@ -342,6 +309,11 @@ recent RDMA-to-PMEM framework by up to 71%.</p>
         <div class="headers-sidenav">
           <ul class="nav nav-tabs nav-stacked">
             <li>
+              <a href="#shashank-got-the-phd-degree-congrats">
+                <i class="icon-chevron-left"></i> Shashank got the Ph.D. degree! Congrats!
+              </a>
+            </li>
+            <li>
               <a href="#nvme-cr-paper-got-accepted-in-ipdps21">
                 <i class="icon-chevron-left"></i> NVMe-CR paper got accepted in IPDPS21!
               </a>
@@ -359,11 +331,6 @@ recent RDMA-to-PMEM framework by up to 71%.</p>
             <li>
               <a href="#a-tutorial-got-accepted-in-iiswc20">
                 <i class="icon-chevron-left"></i> A tutorial got accepted in IISWC20!
-              </a>
-            </li>
-            <li>
-              <a href="#two-papers-got-accepted-in-sc-2020">
-                <i class="icon-chevron-left"></i> Two papers got accepted in SC 2020!
               </a>
             </li>
           </ul>
