@@ -6,12 +6,12 @@ This is the website repo for Parallel and Distributed Systems Laboratory
 ## Design Team
 
 - Chief: Xiaoyi Lu
-- Site: https://sites.ucmerced.edu/luxi
+- Site: https://padsys.org/people/xiaoyi-lu.html
 - Why?: Lead PADSYS Lab. The website is built by Xiaoyi for the lab.
 
 ## Site
 
-- Last update:02/04/2020
+- Last update:04/12/2026
 - Language: English 
 - Doctype: HTML, CSS, Javascript
 - IDE: vim
